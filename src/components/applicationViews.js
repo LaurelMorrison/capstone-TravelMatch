@@ -1,6 +1,7 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Homepage } from './home/home'
+import { Quizpage } from './quiz/quizList'
 
 export const ApplicationViews = () => {
   return (
@@ -10,6 +11,9 @@ export const ApplicationViews = () => {
         <Homepage />
       </Route>
 
+      <Route exact path="/quiz">
+        <Quizpage />
+      </Route>
 
     </>
   )

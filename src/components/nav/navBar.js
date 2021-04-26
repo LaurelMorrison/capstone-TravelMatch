@@ -16,14 +16,17 @@ const history = useHistory();
       <div>
       <img className="logo" src={logo} alt="logo"/>
       </div>
-      <div>
+      <div className="navLinks">
       <ul className="nav nav-pills nav-fill">
-        <li className="nav-item">
+        {/* <li className="nav-item"> */}
           <Link className="nav-link" to="/">Home</Link>
-        </li>
-        <li className="nav-item">
+        {/* </li>
+        <li className="nav-item"> */}
+          <Link className="nav-link" to="/quiz">Plan a trip</Link>
+        {/* </li>
+        <li className="nav-item"> */}
           <Link className="nav-link" onClick={handleLogout} to="/Login"> Logout </Link>
-        </li>
+        {/* </li> */}
       </ul>
       </div>
     </nav>

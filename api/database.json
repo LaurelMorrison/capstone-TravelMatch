@@ -3,7 +3,19 @@
     {
       "id": 1,
       "questionText": "Pick your top 3 Activities",
-      "calculationType": "matchMultiple"
+      "calculationType": "matchMultiple",
+      "answerOptions": [
+          {"answerText": "Hiking"},
+          {"answerText": "Bungee jumping"},
+          {"answerText": "Beach and more beach"},
+          {"answerText": "Cooking class"},
+          {"answerText": "Skiing"},
+          {"answerText": "Vineyard visit"},
+          {"answerText": "Cultural museums"},
+          {"answerText": "Shopping"},
+          {"answerText": "Bar hopping"},
+          {"answerText": "Snorkling"}
+      ]
     },
     {
       "id": 2,
