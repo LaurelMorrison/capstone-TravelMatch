@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# TravelMatch - Front-end Capstone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is TravelMatch?
 
-## Available Scripts
+Especially after a year of being stuck at home, people want to travel. This website is designed to help match your vacation criteria with potential destinations.
 
-In the project directory, you can run:
+TravelMatch will allow users to create a profile, fill out a vacation questionnaire and match them potential vacation destinations. The list of potential destinations will provide basic information, allowing you to compare multiple locations
 
-### `npm start`
+## Wireframe 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Screen Shot 2021-04-26 at 9 55 55 AM](https://user-images.githubusercontent.com/78938657/116094894-eba86c00-a675-11eb-908c-0d0f0a253145.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ERD
+![Screen Shot 2021-04-26 at 9 55 21 AM](https://user-images.githubusercontent.com/78938657/116094986-febb3c00-a675-11eb-9dee-d57e9990ac54.png)
 
-### `npm test`
+## Setup: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone this repository
+1. `cd` into the directory it creates
+1. In the `api` directory, open Postman and enter the mock data below.
+1. Run `json-server -p 8088 -w database.json` from the `api` directory.
+1. Run `npm install` from the root directory and wait for all depend
