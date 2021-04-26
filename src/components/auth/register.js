@@ -63,7 +63,7 @@ export const Register = () => {
             </dialog>
 
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Application Name</h1>
+                <h1 className="h3">Please Register for Application Name</h1>
                 <fieldset>
                     <label htmlFor="name"> Name: </label>
                     <input type="text" name="name" id="name" className="form-control" placeholder="name" required autoFocus value={registerUser.name} onChange={handleInputChange} />

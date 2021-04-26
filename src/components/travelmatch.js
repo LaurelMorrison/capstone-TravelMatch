@@ -3,6 +3,8 @@ import { Route, Redirect } from "react-router-dom"
 import { ApplicationViews } from "./applicationViews"
 import { Login } from "./auth/login"
 import { Register } from "./auth/register"
+import { NavBar } from "./nav/navBar"
+import { Footer } from "./nav/footer"
 
 export const TravelMatch = () => (
 
@@ -12,10 +14,11 @@ export const TravelMatch = () => (
         if (sessionStorage.getItem("travelmatch_user")) {
           return (
             <>
+              <NavBar />
               <div className="applicationView">
               <ApplicationViews />
               </div>
-
+              <Footer />
             </>
           )
         } else {
