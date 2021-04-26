@@ -4,7 +4,7 @@
 
 Especially after a year of being stuck at home, people want to travel. This website is designed to help match your vacation criteria with potential destinations.
 
-TravelMatch will allow users to create a profile, fill out a vacation questionnaire and match them potential vacation destinations. The list of potential destinations will provide basic information, allowing you to compare multiple locations
+TravelMatch will allow users to create a profile, fill out a vacation questionnaire. Once the answers are submitted, it will populate a list of potential vacation destinations. The list of potential destinations will provide basic information, allowing users to compare multiple locations
 
 ## Wireframe 
 
