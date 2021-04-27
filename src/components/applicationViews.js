@@ -1,7 +1,8 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Homepage } from './home/home'
-import { Quizpage } from './quiz/quizList'
+import { QuizQuestions } from './quiz/questions'
+import { ResultList } from './results/resultList'
 
 export const ApplicationViews = () => {
   return (
@@ -12,8 +13,13 @@ export const ApplicationViews = () => {
       </Route>
 
       <Route exact path="/quiz">
-        <Quizpage />
+        <QuizQuestions />
       </Route>
+
+      <Route exact path="/results">
+        <ResultList />
+      </Route>
+
 
     </>
   )
