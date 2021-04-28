@@ -5,42 +5,102 @@
       "questionText": "Pick your top 3 Activities",
       "calculationType": "matchMultiple",
       "answerOptions": [
-          {"answerText": "Hiking"},
-          {"answerText": "Bungee jumping"},
-          {"answerText": "Beach and more beach"},
-          {"answerText": "Cooking class"},
-          {"answerText": "Skiing"},
-          {"answerText": "Vineyard visit"},
-          {"answerText": "Cultural museums"},
-          {"answerText": "Shopping"},
-          {"answerText": "Bar hopping"},
-          {"answerText": "Snorkling"}
+        "Hiking",
+        "Bungee jumping",
+        "Beach and more beach",
+        "Cooking class",
+        "Skiing",
+        "Vineyard visit",
+        "Cultural museums",
+        "Shopping",
+        "Bar hopping",
+        "Snorkling"
       ]
     },
     {
       "id": 2,
       "questionText": "Dream Accomodations",
-      "calculationType": "matchOne"
+      "calculationType": "matchSingle",
+      "answerOptions": [
+        "Hiking",
+        "Bungee jumping",
+        "Beach and more beach",
+        "Cooking class",
+        "Skiing",
+        "Vineyard visit",
+        "Cultural museums",
+        "Shopping",
+        "Bar hopping",
+        "Snorkling"
+      ]
     },
     {
       "id": 3,
       "questionText": "On a vacation, you want to be...",
-      "calculationType": "matchOne"
+      "calculationType": "matchSingle",
+      "answerOptions": [
+        "Hiking",
+        "Bungee jumping",
+        "Beach and more beach",
+        "Cooking class",
+        "Skiing",
+        "Vineyard visit",
+        "Cultural museums",
+        "Shopping",
+        "Bar hopping",
+        "Snorkling"
+      ]
     },
     {
       "id": 4,
       "questionText": "Rate your ideal wather situation",
-      "calculationType": "sliderFunc"
+      "calculationType": "slider",
+      "answerOptions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
     },
     {
       "id": 5,
       "questionText": "Food situation",
-      "calculationType": "matchOne"
+      "calculationType": "matchSingle",
+      "answerOptions": [
+        "Hiking",
+        "Bungee jumping",
+        "Beach and more beach",
+        "Cooking class",
+        "Skiing",
+        "Vineyard visit",
+        "Cultural museums",
+        "Shopping",
+        "Bar hopping",
+        "Snorkling"
+      ]
     },
     {
       "id": 6,
       "questionText": "What's your budget?",
-      "calculationType": "sliderFunc"
+      "calculationType": "slider",
+      "answerOptions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
     }
   ],
   "questionOptions": [
@@ -107,8 +167,13 @@
     },
     {
       "email": "laurel@lm.com",
-      "name": " ",
+      "name": "laurel",
       "id": 4
+    },
+    {
+      "email": "tom@myspace.com",
+      "name": "Tom",
+      "id": 5
     }
   ],
   "userTrips": [
@@ -116,6 +181,7 @@
       "id": 1,
       "userId": 1,
       "locationId": 1,
+      "quizScore": "",
       "tripName": "Honeymoon",
       "tripType": "Couple's Retreat",
       "tripMonth": "October"
@@ -124,6 +190,7 @@
       "id": 2,
       "userId": 3,
       "locationId": 1,
+      "quizScore": "",
       "tripName": "Family Reunion",
       "tripType": "Family Vacay",
       "tripMonth": "July"
@@ -132,6 +199,7 @@
       "id": 3,
       "userId": 1,
       "locationId": 1,
+      "quizScore": "",
       "tripName": "Girl's Trip",
       "tripType": "Group Trip",
       "tripMonth": "June"
@@ -140,9 +208,7 @@
       "id": 4,
       "userId": 2,
       "locationId": 1,
-      "tripName": "Hiking Trip",
-      "tripType": "Solo Adventure",
-      "tripMonth": "April"
+      "quizScore": ""
     }
   ],
   "userAnswers": [
@@ -150,8 +216,11 @@
       "id": 1,
       "userId": 1,
       "userTripId": 1,
+      "tripName": "Hiking Trip",
+      "tripType": "Solo Adventure",
+      "tripMonth": "April",
       "activityAnswerId": 1,
-      "questionTwoResponse": "On a boat",
+      "response1": "On a boat",
       "questionThreeResponse": "Getting pampered",
       "questionFourResponse": 6,
       "questionFiveResponse": "5-star restaurant",
@@ -189,6 +258,97 @@
       "questionFourResponse": 9,
       "questionFiveResponse": "I want to cook!",
       "questionSixResponse": 2
+    },
+    {
+      "tripName": "Tom",
+      "tripType": "",
+      "tripMonth": "",
+      "userId": 5,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": 0,
+      "response5": "",
+      "response6": 0,
+      "id": 9
+    },
+    {
+      "tripName": "Tom",
+      "tripType": "",
+      "tripMonth": "",
+      "userId": 5,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": 5,
+      "response5": "",
+      "response6": 5,
+      "id": 10
+    },
+    {
+      "tripName": "",
+      "tripType": "",
+      "tripMonth": "",
+      "userId": 5,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": 5,
+      "response5": "",
+      "response6": 5,
+      "id": 11
+    },
+    {
+      "tripName": "Tom",
+      "tripType": "",
+      "tripMonth": "",
+      "userId": 5,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": 5,
+      "response5": "",
+      "response6": 5,
+      "id": 12
+    },
+    {
+      "tripName": "Tom",
+      "tripType": "",
+      "tripMonth": "",
+      "userId": 5,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": 5,
+      "response5": "",
+      "response6": 5,
+      "id": 13
+    },
+    {
+      "tripName": "Tom",
+      "tripType": "",
+      "tripMonth": "",
+      "userId": 5,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": 5,
+      "response5": "",
+      "response6": 5,
+      "id": 14
+    },
+    {
+      "tripName": "Tom",
+      "tripType": "",
+      "tripMonth": "",
+      "userId": 5,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": 5,
+      "response5": "",
+      "response6": 5,
+      "id": 15
     }
   ],
   "activityAnswers": [
