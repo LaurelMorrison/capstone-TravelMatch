@@ -349,6 +349,57 @@
       "response5": "",
       "response6": 5,
       "id": 15
+    },
+    {
+      "tripName": "",
+      "tripType": "",
+      "tripMonth": "",
+      "userId": 5,
+      "response1": [],
+      "response2": "",
+      "response3": "",
+      "response4": 5,
+      "response5": "",
+      "response6": 5,
+      "undefined": "Tom",
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "tripName": "hi",
+      "userId": 5,
+      "response1": "bungee",
+      "id": 18
+    },
+    {
+      "tripName": "hi",
+      "userId": 5,
+      "response1": "vineyard",
+      "id": 19
+    },
+    {
+      "tripName": "hi",
+      "userId": 5,
+      "response1": "cooking",
+      "response2": "apartment",
+      "response3": "adventure",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "lavish",
+      "id": 20
+    },
+    {
+      "tripName": "yo",
+      "userId": 5,
+      "response1": "beach",
+      "response2": "bungalow",
+      "response3": "adventure",
+      "response4": "moderate",
+      "response5": "restaurant",
+      "response6": "expensive",
+      "id": 21
     }
   ],
   "activityAnswers": [

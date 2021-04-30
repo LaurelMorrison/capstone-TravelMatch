@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 import { Homepage } from './home/home'
 import { QuizQuestions } from './quiz/questions'
 import { ResultList } from './results/resultList'
+import { CheckboxesGroup } from './quiz/multiForm'
 
 export const ApplicationViews = () => {
   return (
@@ -20,7 +21,10 @@ export const ApplicationViews = () => {
         <ResultList />
       </Route>
 
-
+      <Route exact path="/debug">
+        <CheckboxesGroup />
+      </Route>
+      
     </>
   )
 }
