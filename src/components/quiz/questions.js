@@ -132,7 +132,7 @@ export const QuizQuestions = (question) => {
                 <div>
                     <p>5/6</p>
                     <FormControl component="fieldset">
-                        <FormLabel htmlFor="response5" component="legend">On a vacation, you want to be:</FormLabel>
+                        <FormLabel htmlFor="response5" component="legend">What do you want to ea</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response5} onChange={handleControlledInputChange} name="response5" >
                             <FormControlLabel control={<Radio />} value="seafood" id="seafood" label="Seafood, please" />
                             <FormControlLabel control={<Radio />} value="healthy" id="healthy" label="Healthy is key" />
@@ -148,10 +148,10 @@ export const QuizQuestions = (question) => {
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response6" component="legend">What is your trip budget?</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response6} onChange={handleControlledInputChange} name="response6" >
-                            <FormControlLabel control={<Radio />} value="cheap" id="cheap" label="$" />
-                            <FormControlLabel control={<Radio />} value="affordable" id="affordable" label="$$" />
-                            <FormControlLabel control={<Radio />} value="lavish" id="lavish" label="$$$" />
-                            <FormControlLabel control={<Radio />} value="expensive" id="expensive" label="$$$$" />
+                            <FormControlLabel control={<Radio />} value="$" id="cheap" label="$" />
+                            <FormControlLabel control={<Radio />} value="$$" id="affordable" label="$$" />
+                            <FormControlLabel control={<Radio />} value="$$$" id="lavish" label="$$$" />
+                            <FormControlLabel control={<Radio />} value="$$$$" id="expensive" label="$$$$" />
                         </RadioGroup>
                     </FormControl>
                 </div>

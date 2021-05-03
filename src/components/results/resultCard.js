@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useHistory } from 'react-router';
 import "./result.css"
 import {addNewTrip} from "../../modules/UserTripManager"
@@ -18,14 +17,14 @@ export const DestinationCard = ({result}) => {
     const handleClickAddTrip = (event) => {
         event.preventDefault()
         setIsLoading(true)
-        addNewTrip()
+        addNewTrip(userTrip)
             .then(history.push("/trips"))
     }
 
     return(
         <div className="resultCard">
             <div className="cardImage">
-            <img className="destinationImg" src={result.locationImage} alt="destination picture"/>
+            <img className="destinationImg" src={result.locationImage} alt="destination"/>
             </div>
             <div>
             <h3>Name: {result.locationName}</h3>

@@ -257,6 +257,28 @@
       "response5": "restaurant",
       "response6": "expensive",
       "id": 18
+    },
+    {
+      "tripName": "",
+      "userId": 5,
+      "response1": "bungee",
+      "response2": "apartment",
+      "response3": "",
+      "response4": "moderate",
+      "response5": "local",
+      "response6": "lavish",
+      "id": 19
+    },
+    {
+      "tripName": "",
+      "userId": 5,
+      "response1": "cooking",
+      "response2": "hotel",
+      "response3": "cultural",
+      "response4": "hot",
+      "response5": "local",
+      "response6": "expensive",
+      "id": 20
     }
   ],
   "Locations": [
@@ -773,6 +795,180 @@
       "budget": [
         "$$$",
         "$$"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Zermatt, Switzerland",
+      "image": "../../images/zermatt.jpg",
+      "description": "You can sense the anticipation on the train from Täsch: couples gaze wistfully out of the window, kids fidget and stuff in Toblerone, folk rummage for their cameras. And then, as they arrive in Zermatt, all give little whoops of joy at the pop-up-book effect of the Matterhorn (4478m), the hypnotically beautiful, one-of-a-kind peak that rises like a shark's fin above town.",
+      "activity": [
+        "skiing",
+        "shopping",
+        "bar"
+      ],
+      "accomodation": [
+        "villa",
+        "resort",
+        "hotel"
+      ],
+      "mood": [
+        "relaxed",
+        "adventure",
+        "cultural"
+      ],
+      "temp": [
+        "snow",
+        "sweater"
+      ],
+      "food": [
+        "local",
+        "healthy",
+        "wine"
+      ],
+      "budget": [
+        "$$",
+        "$$$"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Cape Town, South Africa",
+      "image": "../../images/capetown.jpg",
+      "description": "A coming-together of cultures, cuisines and landscapes, there's nowhere quite like Cape Town, a singularly beautiful city crowned by the magnificent Table Mountain National Park.",
+      "activity": [
+        "hiking",
+        "beach",
+        "museum",
+        "vineyard"
+      ],
+      "accomodation": [
+        "hotel",
+        "apartment",
+        "resort"
+      ],
+      "mood": [
+        "party",
+        "cultural",
+        "adventure"
+      ],
+      "temp": [
+        "moderate",
+        "sweater"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "wine"
+      ],
+      "budget": [
+        "$$$",
+        "$$"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "St.John, Virgin Islands",
+      "image": "../../images/stjohn.jpg",
+      "description": "Two-thirds of St John is a protected national park, with gnarled trees and spiky cacti spilling over its edges. There are no airports or cruise-ship docks, and the usual Caribbean resorts are few and far between. It's blissfully low-key compared to its island neighbors.",
+      "activity": [
+        "hiking",
+        "beach",
+        "snorkeling",
+        "bar"
+      ],
+      "accomodation": [
+        "boat",
+        "bungalow",
+        "resort"
+      ],
+      "mood": [
+        "party",
+        "pampered",
+        "relaxed",
+        "adventure"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "restaurant",
+        "cook",
+        "seafood"
+      ],
+      "budget": [
+        "$$$",
+        "$$"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Park City, Utah",
+      "image": "../../images/parkcity.jpg",
+      "description": "Park City could certainly stake a rightful claim of being the “perfect mountain town.” Combining its silver mining town heritage, an artistic vibe and a deep appreciation for the outdoors, Park City strikes a balance between luxury and comfort, all the while showing a deep appreciation for athletics, arts and community.",
+      "activity": [
+        "hiking",
+        "skiing",
+        "bungee",
+        "bar"
+      ],
+      "accomodation": [
+        "hotel",
+        "resort",
+        "apartment"
+      ],
+      "mood": [
+        "learn",
+        "party",
+        "adventure"
+      ],
+      "temp": [
+        "sweater",
+        "snow"
+      ],
+      "food": [
+        "restaurant",
+        "local",
+        "cook"
+      ],
+      "budget": [
+        "$$",
+        "$"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Andes, Peru",
+      "image": "../../images/peru.jpg",
+      "description": "Peru is as complex as its most intricate and exquisite weavings. Festivals mark ancient rites, the urban vanguard fuels innovation and nature bestows splendid diversity.",
+      "activity": [
+        "hiking",
+        "cooking",
+        "museum",
+        "shopping"
+      ],
+      "accomodation": [
+        "hotel",
+        "villa"
+      ],
+      "mood": [
+        "party",
+        "cultural",
+        "adventure"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "restaurant",
+        "local",
+        "cook"
+      ],
+      "budget": [
+        "$$",
+        "$"
       ]
     }
   ]

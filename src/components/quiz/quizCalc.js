@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { getAllLocations } from "../../modules/LocationManager"
 import { getAnswerById } from "../../modules/UserAnswerManager"
-import { ResultList } from "../results/resultList";
 
 
 
@@ -38,7 +37,7 @@ export const getRankedLocation = async(userAnswerId) => {
   const rankedArray = scoreCalc(locations, userAnswer)
   rankedArray.sort((a,b) => b.score - a.score)
   console.log(rankedArray)
-  const topMatchArray = rankedArray.slice(0, 5)
+  const topMatchArray = rankedArray.slice(0, 20)
   return topMatchArray
 }
 

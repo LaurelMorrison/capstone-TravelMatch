@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from "react-dom";
 import { getTripByUserId } from "../../modules/UserTripManager"
+import { useHistory } from 'react-router';
 import {TripCard} from './tripCard'
 
 export const TripList = () => {

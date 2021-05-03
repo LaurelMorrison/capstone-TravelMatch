@@ -1,7 +1,5 @@
 const remoteURL = "http://localhost:8088"
 
-const currentUser = parseInt(sessionStorage.getItem("travelmatch_user"));
-
 export const getAllUserAnswers = () => {
     return fetch(`${remoteURL}/userAnswers`)
     .then(result => result.json())
