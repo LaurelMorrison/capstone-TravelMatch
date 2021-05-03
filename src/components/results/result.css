@@ -1,0 +1,10 @@
+.destinationImg {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.resultCard {
+  display: flex;
+}

@@ -3,7 +3,7 @@ import { Route } from "react-router-dom"
 import { Homepage } from './home/home'
 import { QuizQuestions } from './quiz/questions'
 import { ResultList } from './results/resultList'
-import { CheckboxesGroup } from './quiz/multiForm'
+import { TripList } from './user/tripList'
 
 export const ApplicationViews = () => {
   return (
@@ -17,14 +17,14 @@ export const ApplicationViews = () => {
         <QuizQuestions />
       </Route>
 
-      <Route exact path="/results">
+      <Route path="/results">
         <ResultList />
       </Route>
 
-      <Route exact path="/debug">
-        <CheckboxesGroup />
+      <Route path="/trips">
+        <TripList />
       </Route>
-      
+
     </>
   )
 }
