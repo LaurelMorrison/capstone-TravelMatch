@@ -10,7 +10,6 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import TextField from '@material-ui/core/TextField';
 
-
 const useStyles = makeStyles(theme => ({
     formControl: {
         minWidth: 150,
@@ -52,7 +51,9 @@ export const QuizQuestions = (question) => {
         event.preventDefault()
         setIsLoading(true)
         addNewAnswers(userAnswer)
-            .then(() => history.push("/results"))
+            .then((resultingAnswer) => {
+                history.push(`/results?userAnswerId=${resultingAnswer.id}`)
+            })
     }
 
 

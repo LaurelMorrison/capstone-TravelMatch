@@ -7,8 +7,8 @@ export const getAllUserAnswers = () => {
     .then(result => result.json())
 };
 
-export const getAnswersByUserId = (currentUser) => {
-    return fetch(`${remoteURL}/userAnswers/?currentUserId=${currentUser}&_expand=user`)
+export const getAnswerById = (id) => {
+    return fetch(`${remoteURL}/userAnswers/${id}`)
     .then(result => result.json())
 };
 

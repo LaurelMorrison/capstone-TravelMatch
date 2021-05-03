@@ -100,38 +100,174 @@
       "response5": "wine",
       "response6": "afforable",
       "id": 4
+    },
+    {
+      "tripName": "hi",
+      "userId": 5,
+      "response1": "beach",
+      "response2": "apartment",
+      "response3": "adventure",
+      "response4": "sweater",
+      "response5": "wine",
+      "response6": "lavish",
+      "id": 5
+    },
+    {
+      "tripName": "yo",
+      "userId": 5,
+      "response1": "hiking",
+      "response2": "resort",
+      "response3": "cultural",
+      "response4": "sweater",
+      "response5": "healthy",
+      "response6": "afforable",
+      "id": 6
+    },
+    {
+      "tripName": "",
+      "userId": 5,
+      "response1": "beach",
+      "response2": "hotel",
+      "response3": "learn",
+      "response4": "hot",
+      "response5": "restaurant",
+      "response6": "lavish",
+      "id": 7
+    },
+    {
+      "tripName": "",
+      "userId": 5,
+      "response1": "beach",
+      "response2": "",
+      "response3": "party",
+      "response4": "snow",
+      "response5": "local",
+      "response6": "lavish",
+      "id": 8
+    },
+    {
+      "tripName": "yo",
+      "userId": 5,
+      "response1": "cooking",
+      "response2": "boat",
+      "response3": "adventure",
+      "response4": "hot",
+      "response5": "local",
+      "response6": "afforable",
+      "id": 9
+    },
+    {
+      "tripName": "yo",
+      "userId": 5,
+      "response1": "beach",
+      "response2": "villa",
+      "response3": "cultural",
+      "response4": "snow",
+      "response5": "restaurant",
+      "response6": "lavish",
+      "id": 10
+    },
+    {
+      "tripName": "yo",
+      "userId": 5,
+      "response1": "beach",
+      "response2": "resort",
+      "response3": "learn",
+      "response4": "moderate",
+      "response5": "local",
+      "response6": "lavish",
+      "id": 11
+    },
+    {
+      "tripName": "",
+      "userId": 5,
+      "response1": "bungee",
+      "response2": "villa",
+      "response3": "party",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "expensive",
+      "id": 12
+    },
+    {
+      "tripName": "",
+      "userId": 5,
+      "response1": "beach",
+      "response2": "",
+      "response3": "cultural",
+      "response4": "moderate",
+      "response5": "local",
+      "response6": "cheap",
+      "id": 13
     }
   ],
   "Locations": [
     {
       "id": 1,
       "name": "Santorini",
-      "activity": "Hiking",
-      "accomodation": "Local villa",
-      "mood": "On an adventure",
-      "temp": "Snow bunny",
-      "food": "Healthy is key",
-      "budget": "$$"
+      "activity": [
+        "Hiking",
+        "Snorkling"
+      ],
+      "accomodation": [
+        "Local villa"
+      ],
+      "mood": [
+        "On an adventure"
+      ],
+      "temp": [
+        "Snow bunny"
+      ],
+      "food": [
+        "Healthy is key"
+      ],
+      "budget": [
+        "$$"
+      ]
     },
     {
       "id": 2,
       "name": "Cook Islands",
-      "activity": "Beach",
-      "accomodation": "City apartment",
-      "mood": "Getting pampered",
-      "temp": "Moderate is key",
-      "food": "Seafood, please",
-      "budget": "$$$$"
+      "activity": [
+        "Beach"
+      ],
+      "accomodation": [
+        "City apartment"
+      ],
+      "mood": [
+        "Getting pampered"
+      ],
+      "temp": [
+        "Moderate is key"
+      ],
+      "food": [
+        "Seafood, please"
+      ],
+      "budget": [
+        "$$$$"
+      ]
     },
     {
       "id": 3,
       "name": "Azores Islands",
-      "activity": "Snorkling",
-      "accomodation": "Posh hotel",
-      "mood": "A party animal",
-      "temp": "Hotter the better",
-      "food": "Local cuisine",
-      "budget": "$$$"
+      "activity": [
+        "Snorkling"
+      ],
+      "accomodation": [
+        "Posh hotel"
+      ],
+      "mood": [
+        "A party animal"
+      ],
+      "temp": [
+        "Hotter the better"
+      ],
+      "food": [
+        "Local cuisine"
+      ],
+      "budget": [
+        "$$$"
+      ]
     }
   ]
 }

@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import {QuizQuestions} from './questions'
 // import "./quiz.css";
 
-
 export const Quizpage = () => {
 
     // const handleSubmit = event => {

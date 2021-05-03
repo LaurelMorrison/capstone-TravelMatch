@@ -16,7 +16,7 @@ export const ApplicationViews = () => {
         <QuizQuestions />
       </Route>
 
-      <Route exact path="/results">
+      <Route path="/results">
         <ResultList />
       </Route>
 
