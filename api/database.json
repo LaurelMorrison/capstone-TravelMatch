@@ -54,6 +54,9 @@
       "locationId": 1,
       "quizScore": "",
       "tripName": "Boy's Trip"
+    },
+    {
+      "id": 5
     }
   ],
   "userAnswers": [
@@ -199,74 +202,577 @@
       "response5": "local",
       "response6": "cheap",
       "id": 13
+    },
+    {
+      "tripName": "paris",
+      "userId": 5,
+      "response1": "cooking",
+      "response2": "apartment",
+      "response3": "cultural",
+      "response4": "moderate",
+      "response5": "restaurant",
+      "response6": "lavish",
+      "id": 14
+    },
+    {
+      "tripName": "yo",
+      "userId": 5,
+      "response1": "bungee",
+      "response2": "apartment",
+      "response3": "learn",
+      "response4": "hot",
+      "response5": "wine",
+      "response6": "affordable",
+      "id": 15
+    },
+    {
+      "tripName": "yo",
+      "userId": 5,
+      "response1": "beach",
+      "response2": "resort",
+      "response3": "party",
+      "response4": "moderate",
+      "response5": "restaurant",
+      "response6": "lavish",
+      "id": 16
+    },
+    {
+      "tripName": "",
+      "userId": 5,
+      "response1": "cooking",
+      "response2": "resort",
+      "response3": "cultural",
+      "response4": "hot",
+      "response5": "restaurant",
+      "response6": "lavish",
+      "id": 17
+    },
+    {
+      "tripName": "boggle",
+      "userId": 5,
+      "response1": "hiking",
+      "response2": "villa",
+      "response3": "party",
+      "response4": "moderate",
+      "response5": "restaurant",
+      "response6": "expensive",
+      "id": 18
     }
   ],
   "Locations": [
     {
       "id": 1,
-      "name": "Santorini",
+      "name": "Santorini, Greece",
+      "image": "../../images/santorini.jpg",
+      "description": "Santorini is the supermodel of the Greek islands, a head-turner whose face is instantly recognisable around the world: multicoloured cliffs soar out of a sea-drowned caldera, topped by drifts of whitewashed buildings. With its reputation for dazzling panoramas, romantic sunsets and volcanic-sand beaches, it’s hardly surprising the island features on so many travellers’ bucket lists.",
       "activity": [
-        "Hiking",
-        "Snorkling"
+        "hiking",
+        "vineyard",
+        "cooking",
+        "museum"
       ],
       "accomodation": [
-        "Local villa"
+        "villa",
+        "boat",
+        "hotel",
+        "resort"
       ],
       "mood": [
-        "On an adventure"
+        "adventure",
+        "learn",
+        "cultural"
       ],
       "temp": [
-        "Snow bunny"
+        "moderate",
+        "sweater"
       ],
       "food": [
-        "Healthy is key"
+        "healthy",
+        "local",
+        "wine",
+        "restaurant"
       ],
       "budget": [
-        "$$"
+        "$$$",
+        "$$$$"
       ]
     },
     {
       "id": 2,
       "name": "Cook Islands",
+      "image": "../../images/cook.jpg",
+      "description": "Fifteen droplets of land cast across 2 million sq km of wild Pacific blue, the Cook Islands are simultaneously remote and accessible, modern and traditional.",
       "activity": [
-        "Beach"
+        "beach",
+        "snorkeling",
+        "hiking"
       ],
       "accomodation": [
-        "City apartment"
+        "bungalow",
+        "resort"
       ],
       "mood": [
-        "Getting pampered"
+        "pampered",
+        "relaxed"
       ],
       "temp": [
-        "Moderate is key"
+        "moderate",
+        "hot"
       ],
       "food": [
-        "Seafood, please"
+        "seafood",
+        "local"
       ],
       "budget": [
-        "$$$$"
+        "$$",
+        "$$$"
       ]
     },
     {
       "id": 3,
-      "name": "Azores Islands",
+      "name": "Azores Islands, Portugal",
+      "image": "../../images/azores.jpg",
+      "description": "This remote archipelago simply abounds with adventures; it is, in fact, the Hawaii of the mid-Atlantic. It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider. Then there is the landscape itself: a wonderland of seething mud pots, fantastical caverns, and vivid crater lakes that speak of a volcanic origin.",
       "activity": [
-        "Snorkling"
+        "beach",
+        "hiking",
+        "vineyard"
       ],
       "accomodation": [
-        "Posh hotel"
+        "hotel",
+        "bungalow",
+        "villa"
       ],
       "mood": [
-        "A party animal"
+        "cultural",
+        "relaxed",
+        "adventure"
       ],
       "temp": [
-        "Hotter the better"
+        "moderate",
+        "sweater"
       ],
       "food": [
-        "Local cuisine"
+        "seafood",
+        "wine",
+        "cook"
       ],
       "budget": [
+        "$$$",
+        "$$"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Jackson Hole, Wyoming",
+      "image": "../../images/jackson.jpg",
+      "description": "One of the state's most appealing towns. Hiding in a verdant valley between some of America’s most rugged and wild mountains, Jackson looks similar to other towns in the state – false-front roof lines, covered wooden walkways, saloons on every block – but it ain't quite the same.",
+      "activity": [
+        "skiing",
+        "hiking",
+        "shopping"
+      ],
+      "accomodation": [
+        "hotel",
+        "resort",
+        "apartment"
+      ],
+      "mood": [
+        "pampered",
+        "party",
+        "adventure"
+      ],
+      "temp": [
+        "snow",
+        "sweater"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "cook"
+      ],
+      "budget": [
+        "$$$",
+        "$$$$"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Paris, France",
+      "image": "../../images/paris.jpg",
+      "description": "Paris' monument-lined boulevards, museums, classical bistros and boutiques are enhanced by a new wave of multimedia galleries, creative wine bars, design shops and tech start-ups.",
+      "activity": [
+        "museum",
+        "bar",
+        "shopping"
+      ],
+      "accomodation": [
+        "hotel",
+        "apartment"
+      ],
+      "mood": [
+        "cultural",
+        "party",
+        "adventure",
+        "learn"
+      ],
+      "temp": [
+        "moderate",
+        "sweater"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "wine",
+        "local"
+      ],
+      "budget": [
+        "$$$",
+        "$$$$"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "South Island, New Zealand",
+      "image": "../../images/nz.jpg",
+      "description": "Get ready for mammoth national parks, dynamic Māori culture, and world-class surfing and skiing. New Zealand can be mellow or action-packed, but it's always epic.",
+      "activity": [
+        "hiking",
+        "bungee",
+        "skiing",
+        "vineyard"
+      ],
+      "accomodation": [
+        "hotel",
+        "villa",
+        "apartment"
+      ],
+      "mood": [
+        "cultural",
+        "adventure",
+        "learn"
+      ],
+      "temp": [
+        "moderate",
+        "sweater"
+      ],
+      "food": [
+        "cook",
+        "healthy",
+        "local"
+      ],
+      "budget": [
+        "$$$",
+        "$$$$"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Bora Bora, French Polynesia",
+      "image": "../../images/bora.jpg",
+      "description": "How not to be mesmerised by this stunning palette of sapphire, indigo and turquoise, all mixed together in modern-art abstractions? And these sand-edged motu (islets) and soaring rainforest-covered basaltic peaks? With such a dreamlike setting, Bora Bora is, unsurprisingly, a honeymooners’ choice. ",
+      "activity": [
+        "hiking",
+        "beach",
+        "bar"
+      ],
+      "accomodation": [
+        "hotel",
+        "villa",
+        "resort",
+        "boat"
+      ],
+      "mood": [
+        "party",
+        "pampered",
+        "relaxed"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "seafood"
+      ],
+      "budget": [
+        "$$$",
+        "$$$$"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "London, England",
+      "image": "../../images/london.jpg",
+      "description": "One of the world's most visited cities, London has something for everyone: from history and culture to fine food and good times.",
+      "activity": [
+        "museum",
+        "shopping",
+        "bar"
+      ],
+      "accomodation": [
+        "hotel",
+        "apartment"
+      ],
+      "mood": [
+        "cultural",
+        "party",
+        "learn"
+      ],
+      "temp": [
+        "moderate",
+        "sweater"
+      ],
+      "food": [
+        "restaurant",
+        "wine",
+        "local"
+      ],
+      "budget": [
+        "$$",
         "$$$"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Tokyo, Japan",
+      "image": "../../images/tokyo.jpg",
+      "description": "Yoking past and future, Tokyo dazzles with its traditional culture and passion for everything new.",
+      "activity": [
+        "shopping",
+        "cooking",
+        "museum",
+        "bar"
+      ],
+      "accomodation": [
+        "hotel",
+        "apartment"
+      ],
+      "mood": [
+        "party",
+        "cultural",
+        "adventure"
+      ],
+      "temp": [
+        "moderate",
+        "sweater"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "seafood"
+      ],
+      "budget": [
+        "$$$",
+        "$$$$"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Maui, Hawaii",
+      "image": "../../images/maui.jpg",
+      "description": "Maui lures travelers with an invigorating mix of natural beauty and outdoor fun, all shared with warm alohas.",
+      "activity": [
+        "hiking",
+        "beach",
+        "snorkeling",
+        "museum"
+      ],
+      "accomodation": [
+        "boat",
+        "bungalow",
+        "resort",
+        "hotel"
+      ],
+      "mood": [
+        "cultural",
+        "relaxed",
+        "pampered",
+        "adventure"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "seafood",
+        "healthy",
+        "local"
+      ],
+      "budget": [
+        "$$$",
+        "$$"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Banff National Park, Canada",
+      "image": "../../images/banff.jpg",
+      "description": "Sit atop a mountain, hike through the forest, feel the spray of a waterfall: Banff offers outdoor experiences at their simplest and best.",
+      "activity": [
+        "hiking",
+        "skiing",
+        "bar"
+      ],
+      "accomodation": [
+        "hotel",
+        "villa",
+        "resort",
+        "boat"
+      ],
+      "mood": [
+        "adventure",
+        "learn",
+        "relaxed"
+      ],
+      "temp": [
+        "sweater",
+        "snow"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "cook"
+      ],
+      "budget": [
+        "$",
+        "$$"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Florida Keys",
+      "image": "../../images/keys.jpg",
+      "description": "It’s hard not to fall for South Florida, with its sun-kissed beaches, alluring islands and wildlife-rich wetlands.",
+      "activity": [
+        "beach",
+        "snorkeling",
+        "bar"
+      ],
+      "accomodation": [
+        "hotel",
+        "bungalow",
+        "boat"
+      ],
+      "mood": [
+        "relaxed",
+        "party"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "restaurant",
+        "seafood",
+        "cook"
+      ],
+      "budget": [
+        "$",
+        "$$"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Phuket and the Andaman Coast, Thailand",
+      "image": "../../images/phuket.jpg",
+      "description": "The Andaman is Thailand’s dream coast: one of those places that you see on a postcard which make you want to quit your job and live in flip-flops…forever. And it is stunning. Pure-white beaches of soft sand, a turquoise sea, towering limestone cliffs and jungle-covered isles extend down the Andaman Sea.",
+      "activity": [
+        "snorkeling",
+        "beach",
+        "bar"
+      ],
+      "accomodation": [
+        "resort",
+        "boat",
+        "villa"
+      ],
+      "mood": [
+        "party",
+        "cultural",
+        "relaxed"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "seafood"
+      ],
+      "budget": [
+        "$",
+        "$$"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Bali, Indonesia",
+      "image": "../../images/bali.jpg",
+      "description": "The mere mention of Bali evokes thoughts of a paradise. It's more than a place; it's a mood, an aspiration, a tropical state of mind.",
+      "activity": [
+        "beach",
+        "snorkeling",
+        "bar"
+      ],
+      "accomodation": [
+        "villa",
+        "resort",
+        "bungalow"
+      ],
+      "mood": [
+        "relaxed",
+        "pampered"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "seafood"
+      ],
+      "budget": [
+        "$$$",
+        "$$$$"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Barcelona, Spain",
+      "image": "../../images/barcelona.jpg",
+      "description": "Barcelona is an enchanting seaside city with boundless culture, fabled architecture and a world-class drinking and dining scene.",
+      "activity": [
+        "shopping",
+        "cooking",
+        "museum",
+        "bar"
+      ],
+      "accomodation": [
+        "hotel",
+        "apartment",
+        "villa"
+      ],
+      "mood": [
+        "party",
+        "cultural",
+        "adventure"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "seafood"
+      ],
+      "budget": [
+        "$$$",
+        "$$"
       ]
     }
   ]

@@ -7,7 +7,6 @@ import { ResultList } from "../results/resultList";
 
 const resultFunc = (userAnswer, locationOfferings) => {
   const match = locationOfferings.filter(locationOffering => locationOffering.toLowerCase() === userAnswer.toLowerCase())
-  console.log(userAnswer, locationOfferings)
   return match.length ? 1 : 0
 }
 
@@ -22,7 +21,11 @@ const scoreCalc = (locations, userAnswer) => {
     score += resultFunc(userAnswer.response5, location.food)
     score += resultFunc(userAnswer.response6, location.budget)
     results.push({
-      location: location.name,
+      locationID: location.id,
+      locationName: location.name,
+      locationDescription: location.description,
+      locationActivities: location.activity,
+      locationImage: location.image,
       score: score
     })
   })
@@ -33,11 +36,10 @@ export const getRankedLocation = async(userAnswerId) => {
   const locations = await getAllLocations();
   const userAnswer = await getAnswerById(userAnswerId);
   const rankedArray = scoreCalc(locations, userAnswer)
+  rankedArray.sort((a,b) => b.score - a.score)
   console.log(rankedArray)
-  const topMatchArray = rankedArray.slice(0, 3)
+  const topMatchArray = rankedArray.slice(0, 5)
   return topMatchArray
 }
 
-//fix data
-//sort the results (by score)
-//show up on the result list
+

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from 'react-router';
-import "./result.css"
 import {addNewTrip} from "../../modules/UserTripManager"
 
 
-export const DestinationCard = ({result}) => {
+export const TripCard = ({result}) => {
     const [isLoading, setIsLoading] = useState(false)
     const history = useHistory();
 

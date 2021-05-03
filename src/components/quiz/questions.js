@@ -85,7 +85,7 @@ export const QuizQuestions = (question) => {
                             <FormControlLabel control={<Radio />} value="museum" id="museum" label="Cultural Museums" />
                             <FormControlLabel control={<Radio />} value="shopping" id="shopping" label="Shopping" />
                             <FormControlLabel control={<Radio />} value="bar" id="bar" label="Bar hopping" />
-                            <FormControlLabel control={<Radio />} value="snorkling" id="snorkling" label="Snorkling" />
+                            <FormControlLabel control={<Radio />} value="snorkeling" id="snorkeling" label="Snorkeling" />
                         </RadioGroup>
                     </FormControl>
                 </div>
@@ -149,7 +149,7 @@ export const QuizQuestions = (question) => {
                         <FormLabel htmlFor="response6" component="legend">What is your trip budget?</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response6} onChange={handleControlledInputChange} name="response6" >
                             <FormControlLabel control={<Radio />} value="cheap" id="cheap" label="$" />
-                            <FormControlLabel control={<Radio />} value="afforable" id="afforable" label="$$" />
+                            <FormControlLabel control={<Radio />} value="affordable" id="affordable" label="$$" />
                             <FormControlLabel control={<Radio />} value="lavish" id="lavish" label="$$$" />
                             <FormControlLabel control={<Radio />} value="expensive" id="expensive" label="$$$$" />
                         </RadioGroup>

@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 import { Homepage } from './home/home'
 import { QuizQuestions } from './quiz/questions'
 import { ResultList } from './results/resultList'
+import { TripList } from './user/tripList'
 
 export const ApplicationViews = () => {
   return (
@@ -18,6 +19,10 @@ export const ApplicationViews = () => {
 
       <Route path="/results">
         <ResultList />
+      </Route>
+
+      <Route path="/trips">
+        <TripList />
       </Route>
 
     </>
