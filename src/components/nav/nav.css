@@ -1,35 +1,35 @@
-.logo{
-    width: 200px;
+.logo {
+  width: 200px;
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.footer{
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    display: flex;
-    left:0px;
-    bottom:0px;
-    height:50px;
-    width:100%;
-    padding-top: 10px;
-    margin-top: 20px;
-    clear: all;
+.footer {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  padding-top: 10px;
+  margin-top: 20px;
+  clear: all;
 }
 
-.navLinks{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-right: 20px;
 }
 
-.nav-link{
-    margin-left: 10px;
-    margin-right: 10px;
+.nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
 }

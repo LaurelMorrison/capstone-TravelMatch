@@ -8,7 +8,15 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
-import TextField from '@material-ui/core/TextField';
+import family from "../../images/family.png";
+import solo from "../../images/solo.png";
+import hike from "../../images/hike.png";
+import swim from "../../images/swim.png";
+import beach from "../../images/beach.png";
+import quiz1 from "../../images/quiz1.png";
+import quiz2 from "../../images/quiz2.png";
+import quiz3 from "../../images/quiz3.png";
+import { Grid } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
     formControl: {
@@ -41,7 +49,6 @@ export const QuizQuestions = (question) => {
 
     const handleControlledInputChange = (event) => {
         const newUserAnswer = { ...userAnswer }
-        console.log(event.target.name)
         let selectedVal = event.target.value
         newUserAnswer[event.target.name] = selectedVal
         setUserAnswer(newUserAnswer)
@@ -58,37 +65,56 @@ export const QuizQuestions = (question) => {
 
 
     return (
-        <div>
-            <div>
-                <h1>Get started!</h1>
-                <h4>Answer the questions below and get matched with your dream destination.</h4>
-            </div>
-            <form id="form1">
-                <div>
-                    <FormControl>
-                        <FormLabel htmlFor="tripName"> Name your trip: </FormLabel>
-                        <TextField name="tripName" label="Trip Name" value={userAnswer.tripName} onChange={handleControlledInputChange} />
-                    </FormControl>
+        <Grid container justify="center">
+            <Grid item xs={7}>
+                <div className="topQuiz">
+                    <div className="getStartedBox">
+                        <h1>Get started!</h1>
+                        <h4>Answer the questions below and get matched with your dream destination.</h4>
+                    </div>
+                    <div className="tripNameBox">
+                        <label htmlFor="tripName"> Name your trip: </label>
+                        <input name="tripName" type="text" value={userAnswer.tripName} onChange={handleControlledInputChange} />
+                    </div>
                 </div>
-                <br />
+            </Grid>
+            <br />
+
+            <Grid item xs={5}>
+                <img className="family" src={family} alt="family" />
+            </Grid>
+            <Grid item xs={3}>
+                <img className="quiz1" src={quiz1} alt="blob" />
+            </Grid>
+            <Grid item xs={9}>
                 <div>
                     <p>1/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response1" component="legend">Which acitvity is a must-do on your vacation:</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response1} onChange={handleControlledInputChange} name="response1">
-                            <FormControlLabel control={<Radio />} value="hiking" id="hiking" label="Hiking" />
-                            <FormControlLabel control={<Radio />} value="bungee" id="bungee" label="Bungee Jumping" />
-                            <FormControlLabel control={<Radio />} value="beach" id="beach" label="Beach" />
-                            <FormControlLabel control={<Radio />} value="cooking" id="cooking" label="Cooking Class" />
-                            <FormControlLabel control={<Radio />} value="skiing" id="skiing" label="Skiing" />
-                            <FormControlLabel control={<Radio />} value="vineyard" id="vineyard" label="Vineyard Visit" />
-                            <FormControlLabel control={<Radio />} value="museum" id="museum" label="Cultural Museums" />
-                            <FormControlLabel control={<Radio />} value="shopping" id="shopping" label="Shopping" />
-                            <FormControlLabel control={<Radio />} value="bar" id="bar" label="Bar hopping" />
-                            <FormControlLabel control={<Radio />} value="snorkeling" id="snorkeling" label="Snorkeling" />
+                            <Grid container direction="row" justify="center" alignItems="center">
+                                <div className="question1Answers">
+                                    <Grid item xs={6}>
+                                        <FormControlLabel control={<Radio />} value="hiking" id="hiking" label="Hiking" />
+                                        <FormControlLabel control={<Radio />} value="bungee" id="bungee" label="Bungee Jumping" />
+                                        <FormControlLabel control={<Radio />} value="beach" id="beach" label="Beach" />
+                                        <FormControlLabel control={<Radio />} value="cooking" id="cooking" label="Cooking Class" />
+                                        <FormControlLabel control={<Radio />} value="skiing" id="skiing" label="Skiing" />
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <FormControlLabel control={<Radio />} value="vineyard" id="vineyard" label="Vineyard Visit" />
+                                        <FormControlLabel control={<Radio />} value="museum" id="museum" label="Cultural Museums" />
+                                        <FormControlLabel control={<Radio />} value="shopping" id="shopping" label="Shopping" />
+                                        <FormControlLabel control={<Radio />} value="bar" id="bar" label="Bar hopping" />
+                                        <FormControlLabel control={<Radio />} value="snorkeling" id="snorkeling" label="Snorkeling" />
+                                    </Grid>
+                                </div>
+                            </Grid>
                         </RadioGroup>
                     </FormControl>
                 </div>
+            </Grid>
+            <Grid item xs={9}>
                 <div>
                     <p>2/6</p>
                     <FormControl component="fieldset">
@@ -103,6 +129,14 @@ export const QuizQuestions = (question) => {
                         </RadioGroup>
                     </FormControl>
                 </div>
+            </Grid>
+            <Grid item xs={3}>
+                <img className="solo" src={solo} alt="Solo adventure" />
+            </Grid>
+            <Grid item xs={3}>
+                <img className="hike" src={hike} alt="Hiking adventure" />
+            </Grid>
+            <Grid item xs={9}>
                 <div>
                     <p>3/6</p>
                     <FormControl component="fieldset">
@@ -117,6 +151,11 @@ export const QuizQuestions = (question) => {
                         </RadioGroup>
                     </FormControl>
                 </div>
+            </Grid>
+            <Grid item xs={2}>
+                <img className="quiz3" src={quiz3} alt="Blob" />
+            </Grid>
+            <Grid item xs={8}>
                 <div>
                     <p>4/6</p>
                     <FormControl component="fieldset">
@@ -129,10 +168,15 @@ export const QuizQuestions = (question) => {
                         </RadioGroup>
                     </FormControl>
                 </div>
+            </Grid>
+            <Grid item xs={2}>
+                <img className="quiz2" src={quiz2} alt="Blob" />
+            </Grid>
+            <Grid item xs={10}>
                 <div>
                     <p>5/6</p>
                     <FormControl component="fieldset">
-                        <FormLabel htmlFor="response5" component="legend">On a vacation, you want to be:</FormLabel>
+                        <FormLabel htmlFor="response5" component="legend">What do you want to eat on your trip?</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response5} onChange={handleControlledInputChange} name="response5" >
                             <FormControlLabel control={<Radio />} value="seafood" id="seafood" label="Seafood, please" />
                             <FormControlLabel control={<Radio />} value="healthy" id="healthy" label="Healthy is key" />
@@ -143,27 +187,36 @@ export const QuizQuestions = (question) => {
                         </RadioGroup>
                     </FormControl>
                 </div>
+            </Grid>
+            <Grid item xs={2}>
+                <img className="swim" src={swim} alt="swim" />
+            </Grid>
+            <Grid item xs={3}>
+                <img className="beach" src={beach} alt="beach" />
+            </Grid>
+            <Grid item xs={9}>
                 <div>
                     <p>6/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response6" component="legend">What is your trip budget?</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response6} onChange={handleControlledInputChange} name="response6" >
-                            <FormControlLabel control={<Radio />} value="cheap" id="cheap" label="$" />
-                            <FormControlLabel control={<Radio />} value="affordable" id="affordable" label="$$" />
-                            <FormControlLabel control={<Radio />} value="lavish" id="lavish" label="$$$" />
-                            <FormControlLabel control={<Radio />} value="expensive" id="expensive" label="$$$$" />
+                            <FormControlLabel control={<Radio />} value="$" id="cheap" label="$" />
+                            <FormControlLabel control={<Radio />} value="$$" id="affordable" label="$$" />
+                            <FormControlLabel control={<Radio />} value="$$$" id="lavish" label="$$$" />
+                            <FormControlLabel control={<Radio />} value="$$$$" id="expensive" label="$$$$" />
                         </RadioGroup>
                     </FormControl>
                 </div>
-                <div>
-                    <button
-                        type="submit"
-                        onClick={handleClickSaveAnswer}
-                        disabled={isLoading}>
-                        Submit</button>
-                </div>
-            </form>
-        </div>
+            </Grid>
+            <div>
+                <button
+                    type="submit"
+                    className="submitButton"
+                    onClick={handleClickSaveAnswer}
+                    disabled={isLoading}>
+                    Submit</button>
+            </div>
+        </Grid >
     )
 }
 

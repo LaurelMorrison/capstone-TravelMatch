@@ -7,4 +7,30 @@
 
 .resultCard {
   display: flex;
+  background-color: white;
+  border-radius: 15px;
+  border: solid #2c2c33 3px;
+  padding: 10px;
+  margin: 30px 40px 0px 40px;
+}
+
+.spotButton {
+  border-radius: 15px;
+  height: 35px;
+  margin: 5px;
+  width: 150px;
+  border-width: 3px;
+  padding: 5px;
+  background-color: white;
+  font: 18px "Raleway";
+}
+
+.destinationImg {
+  border-radius: 15px;
+  margin: 3px;
+}
+
+.locationCardContent {
+  margin-left: 10px;
+  margin-right: 10px;
 }

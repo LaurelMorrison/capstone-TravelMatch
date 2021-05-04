@@ -1,0 +1,84 @@
+.quizButton {
+  border-radius: 15px;
+  height: 35px;
+  margin: 5px;
+  width: 150px;
+  border-width: 3px;
+  padding: 5px;
+  background-color: white;
+  font: 18px "Raleway";
+}
+
+.homepage1 {
+  height: 350px;
+}
+
+.getStarted {
+  border-radius: 15px;
+  height: 35px;
+  margin: 5px;
+  width: 150px;
+  border-width: 3px;
+  padding: 5px;
+  background-color: white;
+  font: 18px "Raleway";
+}
+
+.homepage2 {
+  height: 350px;
+  transform: rotate(90deg);
+}
+
+.item1title {
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.friends {
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+h1 {
+  font-weight: regular !important;
+}
+
+.introCopy {
+  margin-right: 150px;
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.homepage2 {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* .MuiGrid-grid-xs-12 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0;
+  padding-right: 0;
+} */
+
+.one {
+  margin-left: 200px;
+}
+
+.two {
+  margin-left: 200px;
+}
+
+.three {
+  margin-left: 200px;
+}
+
+.stepSectionHeadline {
+  margin-left: 200px;
+}
+
+.getStarted {
+  margin-left: 200px;
+  margin-top: 50px;
+}

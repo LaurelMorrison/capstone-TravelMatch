@@ -1,41 +1,37 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useHistory } from 'react-router';
 import "./result.css"
-import {addNewTrip} from "../../modules/UserTripManager"
+import { addNewTrip } from "../../modules/UserTripManager"
 
 
-export const DestinationCard = ({result}) => {
+export const DestinationCard = ({ result }) => {
     const [isLoading, setIsLoading] = useState(false)
     const history = useHistory();
 
-    const [userTrip, setUserTrip] = React.useState({
-        tripName: '',
-        userId: parseInt(sessionStorage.getItem("travelmatch_user")),
-        locationName: '',
-    });
-
     const handleClickAddTrip = (event) => {
         event.preventDefault()
+        console.log(event)
         setIsLoading(true)
-        addNewTrip()
+        addNewTrip(result)
             .then(history.push("/trips"))
     }
 
-    return(
+    return (
         <div className="resultCard">
             <div className="cardImage">
-            <img className="destinationImg" src={result.locationImage} alt="destination picture"/>
+                <img className="destinationImg" src={result.locationImage} alt="destination" />
             </div>
-            <div>
-            <h3>Name: {result.locationName}</h3>
-            <p>{result.locationDescription}</p>
+            <div className="locationCardContent">
+                <h3>Name: {result.locationName}</h3>
+                <p>{result.locationDescription}</p>
 
-            <button
-            type="submit"
-            onClick={handleClickAddTrip}
-            disabled={isLoading}>
-            This is the spot!</button>
+                <button
+                    type="submit"
+                    id={result.id}
+                    className="spotButton"
+                    onClick={handleClickAddTrip}
+                    disabled={isLoading}>
+                    This is the spot!</button>
             </div>
         </div>
     )

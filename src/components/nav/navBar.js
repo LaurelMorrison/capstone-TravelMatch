@@ -18,15 +18,10 @@ const history = useHistory();
       </div>
       <div className="navLinks">
       <ul className="nav nav-pills nav-fill">
-        {/* <li className="nav-item"> */}
           <Link className="nav-link" to="/">Home</Link>
-        {/* </li>
-        <li className="nav-item"> */}
           <Link className="nav-link" to="/quiz">Plan a trip</Link>
-        {/* </li>
-        <li className="nav-item"> */}
+         <Link className="nav-link" to="/trips">My trips</Link>
           <Link className="nav-link" onClick={handleLogout} to="/Login"> Logout </Link>
-        {/* </li> */}
       </ul>
       </div>
     </nav>
