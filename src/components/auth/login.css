@@ -1,0 +1,116 @@
+.register1 {
+  transform: scaleX(-1);
+  height: 350px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  width: 300px;
+}
+
+.logoLogin {
+  width: 300px;
+}
+
+body {
+  font-size: 20px;
+}
+
+.nameBox {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 220px;
+  height: 25px;
+  border-radius: 15px;
+  border-width: 3px;
+  padding: 3px;
+}
+
+.registerButton {
+  border-radius: 15px;
+  height: 35px;
+  width: 120px;
+  margin-top: 10px;
+  border-width: 3px;
+  background-color: white;
+  font: 18px "Raleway";
+}
+
+.loginButton {
+  border-radius: 15px;
+  height: 35px;
+  margin: 5px;
+  width: 120px;
+  border-width: 3px;
+  padding: 5px;
+  background-color: white;
+  font: 18px "Raleway";
+}
+
+.button--close {
+  border-radius: 15px;
+  height: 35px;
+  margin: 5px;
+  width: 120px;
+  border-width: 3px;
+  padding: 5px;
+  /* display: flex;
+  align-items: center; */
+  background-color: white;
+  font: 18px "Raleway";
+}
+
+.formBox {
+  text-align: left;
+  padding-left: 26%;
+}
+
+.login2 {
+  transform: scaleX(-1);
+  width: 300px;
+}
+
+.logoLogin {
+  /* height: 120px; */
+  margin-top: 20px;
+  margin-bottom: 150px;
+  width: 200px;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.emailInput {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.loginHeader {
+  display: flex;
+  justify-content: center;
+}
+
+#email {
+  margin: 5px;
+}
+
+.emailInput {
+  margin-top: 10px;
+}
+
+.registerLink {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.login1 {
+  height: 400px;
+}

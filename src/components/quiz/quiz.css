@@ -42,3 +42,42 @@
   background: #4caf50; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
+
+.submitButton {
+  border-radius: 15px;
+  height: 35px;
+  margin: 5px;
+  width: 120px;
+  border-width: 3px;
+  padding: 5px;
+  background-color: white;
+  font: 18px "Raleway";
+}
+
+.topQuiz {
+  margin: 100px 100px 100px;
+}
+
+.family {
+  margin: 80px 100px 50px;
+}
+
+.MuiTypography-body1 {
+  font: 20px "Raleway" !important;
+  color: #2c2c33 !important;
+}
+
+.MuiFormLabel-root {
+  font: 25px "Raleway" !important;
+  color: #2c2c33 !important;
+}
+
+.question1Answers {
+  display: flex;
+  justify-content: column;
+  column-count: 2;
+}
+
+.beach {
+  height: 300px;
+}

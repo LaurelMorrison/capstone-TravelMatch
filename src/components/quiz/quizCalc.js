@@ -1,4 +1,3 @@
-import React from "react";
 import { getAllLocations } from "../../modules/LocationManager"
 import { getAnswerById } from "../../modules/UserAnswerManager"
 
@@ -21,9 +20,10 @@ const scoreCalc = (locations, userAnswer) => {
     score += resultFunc(userAnswer.response6, location.budget)
     results.push({
       locationID: location.id,
+      tripName: userAnswer.tripName,
       locationName: location.name,
       locationDescription: location.description,
-      locationActivities: location.activity,
+      userId: parseInt(sessionStorage.getItem("travelmatch_user")),
       locationImage: location.image,
       score: score
     })
@@ -31,13 +31,12 @@ const scoreCalc = (locations, userAnswer) => {
   return results
 }
 
-export const getRankedLocation = async(userAnswerId) => {
+export const getRankedLocation = async (userAnswerId) => {
   const locations = await getAllLocations();
   const userAnswer = await getAnswerById(userAnswerId);
   const rankedArray = scoreCalc(locations, userAnswer)
-  rankedArray.sort((a,b) => b.score - a.score)
-  console.log(rankedArray)
-  const topMatchArray = rankedArray.slice(0, 20)
+  rankedArray.sort((a, b) => b.score - a.score)
+  const topMatchArray = rankedArray.slice(0, 5)
   return topMatchArray
 }
 

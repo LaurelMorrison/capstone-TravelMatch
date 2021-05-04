@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import {DestinationCard} from './resultCard'
-import {getRankedLocation} from '../quiz/quizCalc'
+import { DestinationCard } from './resultCard';
+import { getRankedLocation } from '../quiz/quizCalc';
+import locations1 from "../../images/locations1.png";
+import locations2 from "../../images/locations2.png";
+
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);
-  }
+}
 
 export const ResultList = () => {
     const [results, setResults] = useState([]);
@@ -13,20 +16,21 @@ export const ResultList = () => {
 
     useEffect(() => {
         const userAnswerId = (query.get("userAnswerId"))
-        getRankedLocation(userAnswerId).then((rankedLocationArray)=>{
+        getRankedLocation(userAnswerId).then((rankedLocationArray) => {
             setResults(rankedLocationArray)
         })
     }, []);
 
     return (
         <>
-           <div><h1>Your Top Destination Matches</h1></div>
-           <div className="container-cards">
+            <div><h1>Your Top Destination Matches</h1></div>
+            <div className="container-cards">
                 {results.map(result =>
 
                     <DestinationCard
                         key={result.id}
                         result={result}
+                        user={result.user}
                     />)}
             </div>
 

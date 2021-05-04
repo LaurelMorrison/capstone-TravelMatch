@@ -1,32 +1,37 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from "react-dom";
-import { getTripByUserId } from "../../modules/UserTripManager"
-import { useHistory } from 'react-router';
-import {TripCard} from './tripCard'
+import { getTripsByUserId, deleteTrip } from "../../modules/UserTripManager"
+import { TripCard } from './tripCard'
 
 export const TripList = () => {
     const [trips, setTrips] = useState([]);
 
-    const loggedInUser = sessionStorage.getItem("travelmatch_user")
     const getLoggedInTrips = () => {
-    return getTripByUserId(loggedInUser)
-    .then(trips => {
-        setTrips(trips)
-    })
- }
+        return getTripsByUserId()
+            .then(tripsFromApi => {
+                setTrips(tripsFromApi)
+            })
+    }
+
+    const handleDeleteTrip = id => {
+        deleteTrip(id)
+            .then(() => getTripsByUserId().then(setTrips));
+    };
+
     useEffect(() => {
         getLoggedInTrips();
     }, []);
 
     return (
         <>
-           <div><h1>Your Upcoming Trips</h1></div>
-           <div className="container-cards">
+            <div><h1>Your Upcoming Trips</h1></div>
+            <div className="container-cards">
                 {trips.map(trip =>
 
                     <TripCard
                         key={trip.id}
                         result={trip}
+                        handleDeleteTrip={handleDeleteTrip}
+                        user={trip.user}
                     />)}
             </div>
 

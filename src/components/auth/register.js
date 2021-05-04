@@ -1,7 +1,10 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom";
 import "./login.css"
-
+import Grid from '@material-ui/core/Grid'
+import register1 from "../../images/register1.png";
+import register2 from "../../images/register2.png";
+import logo from "../../images/logo.png";
 
 export const Register = () => {
 
@@ -63,19 +66,38 @@ export const Register = () => {
             </dialog>
 
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3">Please Register for Application Name</h1>
-                <fieldset>
-                    <label htmlFor="name"> Name: </label>
-                    <input type="text" name="name" id="name" className="form-control" placeholder="name" required autoFocus value={registerUser.name} onChange={handleInputChange} />
-                </fieldset>
+                <Grid container justify="center" alignItems="center" spacing={2}>
+                <Grid item xs={12}>
+                    <img className="logo" src={logo}  alt="logo"/>
+                </Grid>
+                <Grid item xs={2}>
+                <img className="register1" src={register1}  alt="blob"/>
+                </Grid>
+                <Grid item xs={8} jutify="center">
+                <Grid item xs={12} >
+                <h1 className="h3">Create an Account</h1>
+                </Grid>
+                <Grid item xs={12} >
+                    <div className="formBox">
+                <div className="nameBox" >
+                    <label htmlFor="name">Name: </label>
+                    <input type="text" name="name" id="name" className="form-control" required autoFocus value={registerUser.name} onChange={handleInputChange} />
+                </div>
 
-                <fieldset>
-                    <label htmlFor="inputEmail"> Email address: </label>
-                    <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
-                </fieldset>
-                <fieldset className="submitButtonSection">
-                    <button type="submit" className="registerButton"> Sign in </button>
-                </fieldset>
+                <div>
+                    <label htmlFor="inputEmail">  Email address: </label>
+                    <input type="email" name="email" id="email" className="form-control" required value={registerUser.email} onChange={handleInputChange} />
+                </div>
+                <div className="submitButtonSection">
+                    <button type="submit" className="registerButton"> Register </button>
+                </div>
+                </div>
+                </Grid>
+                </Grid>
+                <Grid item xs={2}>
+                <img className="register2" src={register2} alt="blob"/>
+                </Grid>
+                </Grid>
             </form>
         </main>
     )

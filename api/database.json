@@ -28,257 +28,58 @@
   ],
   "userTrips": [
     {
-      "id": 1,
-      "userId": 1,
-      "locationId": 1,
-      "quizScore": "",
-      "tripName": "Honeymoon"
-    },
-    {
-      "id": 2,
-      "userId": 3,
-      "locationId": 1,
-      "quizScore": "",
-      "tripName": "Family Reunion"
-    },
-    {
-      "id": 3,
-      "userId": 1,
-      "locationId": 1,
-      "quizScore": "",
-      "tripName": "Girl's Trip"
-    },
-    {
-      "id": 4,
+      "locationID": 2,
+      "tripName": "Girls Trip",
+      "locationName": "Cape Town, South Africa",
+      "locationDescription": "A coming-together of cultures, cuisines and landscapes, there's nowhere quite like Cape Town, a singularly beautiful city crowned by the magnificent Table Mountain National Park.",
       "userId": 2,
-      "locationId": 1,
-      "quizScore": "",
-      "tripName": "Boy's Trip"
+      "locationImage": "../../images/capetown.jpg",
+      "score": 5,
+      "id": 2
     },
     {
-      "id": 5
+      "locationID": 2,
+      "tripName": "Family Reunion",
+      "locationName": "Cook Islands",
+      "locationDescription": "Fifteen droplets of land cast across 2 million sq km of wild Pacific blue, the Cook Islands are simultaneously remote and accessible, modern and traditional.",
+      "userId": 1,
+      "locationImage": "../../images/cook.jpg",
+      "score": 1,
+      "id": 3
+    },
+    {
+      "locationID": 6,
+      "tripName": "",
+      "locationName": "South Island, New Zealand",
+      "locationDescription": "Get ready for mammoth national parks, dynamic Māori culture, and world-class surfing and skiing. New Zealand can be mellow or action-packed, but it's always epic.",
+      "userId": 1,
+      "locationImage": "../../images/nz.jpg",
+      "score": 1,
+      "id": 4
     }
   ],
   "userAnswers": [
     {
-      "tripName": "hi",
-      "userId": 5,
-      "response1": "cooking",
-      "response2": "apartment",
-      "response3": "adventure",
-      "response4": "moderate",
-      "response5": "wine",
-      "response6": "lavish",
-      "id": 1
-    },
-    {
-      "tripName": "yo",
+      "tripName": "Family Reunion",
       "userId": 5,
       "response1": "beach",
-      "response2": "bungalow",
-      "response3": "adventure",
-      "response4": "moderate",
-      "response5": "restaurant",
-      "response6": "expensive",
-      "id": 2
-    },
-    {
-      "tripName": "hi",
-      "userId": 5,
-      "response1": "vineyard",
       "response2": "apartment",
-      "response3": "learn",
-      "response4": "snow",
-      "response5": "cook",
-      "response6": "lavish",
-      "id": 3
+      "response3": "party",
+      "response4": "hot",
+      "response5": "local",
+      "response6": "$$$",
+      "id": 22
     },
     {
-      "tripName": "hello",
-      "userId": 5,
-      "response1": "museum",
+      "tripName": "bubba",
+      "userId": 1,
+      "response1": "bungee",
       "response2": "boat",
-      "response3": "cultural",
-      "response4": "hot",
-      "response5": "wine",
-      "response6": "afforable",
-      "id": 4
-    },
-    {
-      "tripName": "hi",
-      "userId": 5,
-      "response1": "beach",
-      "response2": "apartment",
-      "response3": "adventure",
+      "response3": "relaxed",
       "response4": "sweater",
-      "response5": "wine",
-      "response6": "lavish",
-      "id": 5
-    },
-    {
-      "tripName": "yo",
-      "userId": 5,
-      "response1": "hiking",
-      "response2": "resort",
-      "response3": "cultural",
-      "response4": "sweater",
-      "response5": "healthy",
-      "response6": "afforable",
-      "id": 6
-    },
-    {
-      "tripName": "",
-      "userId": 5,
-      "response1": "beach",
-      "response2": "hotel",
-      "response3": "learn",
-      "response4": "hot",
-      "response5": "restaurant",
-      "response6": "lavish",
-      "id": 7
-    },
-    {
-      "tripName": "",
-      "userId": 5,
-      "response1": "beach",
-      "response2": "",
-      "response3": "party",
-      "response4": "snow",
-      "response5": "local",
-      "response6": "lavish",
-      "id": 8
-    },
-    {
-      "tripName": "yo",
-      "userId": 5,
-      "response1": "cooking",
-      "response2": "boat",
-      "response3": "adventure",
-      "response4": "hot",
-      "response5": "local",
-      "response6": "afforable",
-      "id": 9
-    },
-    {
-      "tripName": "yo",
-      "userId": 5,
-      "response1": "beach",
-      "response2": "villa",
-      "response3": "cultural",
-      "response4": "snow",
-      "response5": "restaurant",
-      "response6": "lavish",
-      "id": 10
-    },
-    {
-      "tripName": "yo",
-      "userId": 5,
-      "response1": "beach",
-      "response2": "resort",
-      "response3": "learn",
-      "response4": "moderate",
-      "response5": "local",
-      "response6": "lavish",
-      "id": 11
-    },
-    {
-      "tripName": "",
-      "userId": 5,
-      "response1": "bungee",
-      "response2": "villa",
-      "response3": "party",
-      "response4": "moderate",
-      "response5": "wine",
-      "response6": "expensive",
-      "id": 12
-    },
-    {
-      "tripName": "",
-      "userId": 5,
-      "response1": "beach",
-      "response2": "",
-      "response3": "cultural",
-      "response4": "moderate",
-      "response5": "local",
-      "response6": "cheap",
-      "id": 13
-    },
-    {
-      "tripName": "paris",
-      "userId": 5,
-      "response1": "cooking",
-      "response2": "apartment",
-      "response3": "cultural",
-      "response4": "moderate",
-      "response5": "restaurant",
-      "response6": "lavish",
-      "id": 14
-    },
-    {
-      "tripName": "yo",
-      "userId": 5,
-      "response1": "bungee",
-      "response2": "apartment",
-      "response3": "learn",
-      "response4": "hot",
-      "response5": "wine",
-      "response6": "affordable",
-      "id": 15
-    },
-    {
-      "tripName": "yo",
-      "userId": 5,
-      "response1": "beach",
-      "response2": "resort",
-      "response3": "party",
-      "response4": "moderate",
-      "response5": "restaurant",
-      "response6": "lavish",
-      "id": 16
-    },
-    {
-      "tripName": "",
-      "userId": 5,
-      "response1": "cooking",
-      "response2": "resort",
-      "response3": "cultural",
-      "response4": "hot",
-      "response5": "restaurant",
-      "response6": "lavish",
-      "id": 17
-    },
-    {
-      "tripName": "boggle",
-      "userId": 5,
-      "response1": "hiking",
-      "response2": "villa",
-      "response3": "party",
-      "response4": "moderate",
-      "response5": "restaurant",
-      "response6": "expensive",
-      "id": 18
-    },
-    {
-      "tripName": "",
-      "userId": 5,
-      "response1": "bungee",
-      "response2": "apartment",
-      "response3": "",
-      "response4": "moderate",
-      "response5": "local",
-      "response6": "lavish",
-      "id": 19
-    },
-    {
-      "tripName": "",
-      "userId": 5,
-      "response1": "cooking",
-      "response2": "hotel",
-      "response3": "cultural",
-      "response4": "hot",
-      "response5": "local",
-      "response6": "expensive",
-      "id": 20
+      "response5": "seafood",
+      "response6": "$$",
+      "id": 35
     }
   ],
   "Locations": [

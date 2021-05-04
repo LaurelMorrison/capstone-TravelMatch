@@ -1,15 +1,14 @@
 const remoteURL = "http://localhost:8088"
-
-const currentUser = parseInt(sessionStorage.getItem("travelmatch_user"));
+const currentUserId = sessionStorage.getItem("travelmatch_user")
 
 export const getAllUserTrips = () => {
     return fetch(`${remoteURL}/userTrips`)
-    .then(result => result.json())
+        .then(result => result.json())
 };
 
-export const getTripByUserId = (currentUser) => {
-    return fetch(`${remoteURL}/userTrips/?currentUserId=${currentUser}&_expand=user`)
-    .then(result => result.json())
+export const getTripsByUserId = () => {
+    return fetch(`${remoteURL}/userTrips?userId=${currentUserId}`)
+        .then(result => result.json())
 };
 
 
@@ -20,5 +19,11 @@ export const addNewTrip = (trip) => {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(trip)
-    }).then(response => response.json())
+    }).then(result => result.json())
+};
+
+export const deleteTrip = (id) => {
+    return fetch(`${remoteURL}/friends/${id}`, {
+        method: "DELETE"
+    }).then(result => result.json())
 };
