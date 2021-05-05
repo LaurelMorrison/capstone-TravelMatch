@@ -11,7 +11,7 @@ TravelMatch will allow users to create a profile, fill out a vacation questionna
 ![Screen Shot 2021-04-26 at 9 55 55 AM](https://user-images.githubusercontent.com/78938657/116094894-eba86c00-a675-11eb-908c-0d0f0a253145.png)
 
 ## ERD
-![Screen Shot 2021-04-26 at 9 55 21 AM](https://user-images.githubusercontent.com/78938657/116094986-febb3c00-a675-11eb-9dee-d57e9990ac54.png)
+![Screen Shot 2021-05-05 at 9 20 46 AM](https://user-images.githubusercontent.com/78938657/117147444-4717df80-ad83-11eb-8cbb-e08b0aff48e6.png)
 
 ## Setup: 
 
