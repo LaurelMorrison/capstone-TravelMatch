@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { DestinationCard } from './resultCard';
 import { getRankedLocation } from '../quiz/quizCalc';
-import locations1 from "../../images/locations1.png";
-import locations2 from "../../images/locations2.png";
+// import locations1 from "../../images/locations1.png";
+// import locations2 from "../../images/locations2.png";
 
 
 function useQuery() {
@@ -23,7 +23,7 @@ export const ResultList = () => {
 
     return (
         <>
-            <div><h1>Your Top Destination Matches</h1></div>
+            <div className="destinationHeader"><h1>Your Top Destination Matches</h1></div>
             <div className="container-cards">
                 {results.map(result =>
 

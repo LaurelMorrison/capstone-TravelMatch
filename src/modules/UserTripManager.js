@@ -23,7 +23,7 @@ export const addNewTrip = (trip) => {
 };
 
 export const deleteTrip = (id) => {
-    return fetch(`${remoteURL}/friends/${id}`, {
+    return fetch(`${remoteURL}/userTrips/${id}`, {
         method: "DELETE"
     }).then(result => result.json())
 };

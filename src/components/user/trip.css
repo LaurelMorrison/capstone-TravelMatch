@@ -7,4 +7,28 @@
   padding: 5px;
   background-color: white;
   font: 18px "Raleway";
+  text-align: center;
+}
+
+.tripHeader {
+  margin: 50px;
+}
+
+.tripCard {
+  display: inline-grid;
+  background-color: white;
+  border-radius: 15px;
+  width: 300px;
+  height: 500px;
+  border: solid #2c2c33 3px;
+  padding: 20px;
+  margin: 0px 40px 30px 40px;
+}
+
+.tripImg {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 15px;
 }

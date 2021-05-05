@@ -93,39 +93,51 @@ export const QuizQuestions = (question) => {
                         <FormLabel htmlFor="response1" component="legend">Which acitvity is a must-do on your vacation:</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response1} onChange={handleControlledInputChange} name="response1">
                             <Grid container direction="row" justify="center" alignItems="center">
-                                <div className="question1Answers">
-                                    <Grid item xs={6}>
+                                <Grid item xs={6}>
+                                    <div className="question1Answers">
                                         <FormControlLabel control={<Radio />} value="hiking" id="hiking" label="Hiking" />
                                         <FormControlLabel control={<Radio />} value="bungee" id="bungee" label="Bungee Jumping" />
                                         <FormControlLabel control={<Radio />} value="beach" id="beach" label="Beach" />
                                         <FormControlLabel control={<Radio />} value="cooking" id="cooking" label="Cooking Class" />
                                         <FormControlLabel control={<Radio />} value="skiing" id="skiing" label="Skiing" />
-                                    </Grid>
-                                    <Grid item xs={6}>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="question1Answers">
                                         <FormControlLabel control={<Radio />} value="vineyard" id="vineyard" label="Vineyard Visit" />
                                         <FormControlLabel control={<Radio />} value="museum" id="museum" label="Cultural Museums" />
                                         <FormControlLabel control={<Radio />} value="shopping" id="shopping" label="Shopping" />
                                         <FormControlLabel control={<Radio />} value="bar" id="bar" label="Bar hopping" />
                                         <FormControlLabel control={<Radio />} value="snorkeling" id="snorkeling" label="Snorkeling" />
-                                    </Grid>
-                                </div>
+                                    </div>
+                                </Grid>
                             </Grid>
                         </RadioGroup>
                     </FormControl>
                 </div>
             </Grid>
             <Grid item xs={9}>
-                <div>
+                <div className="question2">
                     <p>2/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response2" component="legend">Which is your dream accomadation:</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response2} onChange={handleControlledInputChange} name="response2" >
-                            <FormControlLabel control={<Radio />} value="boat" id="boat" label="On a boat" />
-                            <FormControlLabel control={<Radio />} value="villa" id="villa" label="Local villa" />
-                            <FormControlLabel control={<Radio />} value="apartment" id="apartment" label="City Apartment" />
-                            <FormControlLabel control={<Radio />} value="resort" id="resort" label="All-inclusive Resort" />
-                            <FormControlLabel control={<Radio />} value="bungalow" id="bungalow" label="Beach bungalow" />
-                            <FormControlLabel control={<Radio />} value="hotel" id="hotel" label="Posh hotel" />
+                            <Grid container direction="row" justify="center" alignItems="center">
+                                <Grid item xs={6}>
+                                    <div className="question1Answers">
+                                        <FormControlLabel control={<Radio />} value="boat" id="boat" label="On a boat" />
+                                        <FormControlLabel control={<Radio />} value="villa" id="villa" label="Local villa" />
+                                        <FormControlLabel control={<Radio />} value="apartment" id="apartment" label="City Apartment" />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="question1Answers">
+                                        <FormControlLabel control={<Radio />} value="resort" id="resort" label="All-inclusive Resort" />
+                                        <FormControlLabel control={<Radio />} value="bungalow" id="bungalow" label="Beach bungalow" />
+                                        <FormControlLabel control={<Radio />} value="hotel" id="hotel" label="Posh hotel" />
+                                    </div>
+                                </Grid>
+                            </Grid>
                         </RadioGroup>
                     </FormControl>
                 </div>
@@ -133,21 +145,31 @@ export const QuizQuestions = (question) => {
             <Grid item xs={3}>
                 <img className="solo" src={solo} alt="Solo adventure" />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={4}>
                 <img className="hike" src={hike} alt="Hiking adventure" />
             </Grid>
-            <Grid item xs={9}>
-                <div>
+            <Grid item xs={8}>
+                <div className="question3">
                     <p>3/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response3" component="legend">On a vacation, you want to be:</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response3} onChange={handleControlledInputChange} name="response3" >
-                            <FormControlLabel control={<Radio />} value="relaxed" id="relaxed" label="Relaxed 24/7" />
-                            <FormControlLabel control={<Radio />} value="adventure" id="adventure" label="On an adventure" />
-                            <FormControlLabel control={<Radio />} value="learn" id="learn" label="Learning something new" />
-                            <FormControlLabel control={<Radio />} value="party" id="party" label="A party animal" />
-                            <FormControlLabel control={<Radio />} value="cultural" id="cultural" label="Celebrating other cultures" />
-                            <FormControlLabel control={<Radio />} value="pampered" id="pampered" label="Getting pampered" />
+                            <Grid container direction="row" justify="center" alignItems="center">
+                                <Grid item xs={6}>
+                                    <div className="question1Answers">
+                                        <FormControlLabel control={<Radio />} value="relaxed" id="relaxed" label="Relaxed 24/7" />
+                                        <FormControlLabel control={<Radio />} value="adventure" id="adventure" label="On an adventure" />
+                                        <FormControlLabel control={<Radio />} value="learn" id="learn" label="Learning something new" />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="question1Answers">
+                                        <FormControlLabel control={<Radio />} value="party" id="party" label="A party animal" />
+                                        <FormControlLabel control={<Radio />} value="cultural" id="cultural" label="Celebrating other cultures" />
+                                        <FormControlLabel control={<Radio />} value="pampered" id="pampered" label="Getting pampered" />
+                                    </div>
+                                </Grid>
+                            </Grid>
                         </RadioGroup>
                     </FormControl>
                 </div>
@@ -156,7 +178,7 @@ export const QuizQuestions = (question) => {
                 <img className="quiz3" src={quiz3} alt="Blob" />
             </Grid>
             <Grid item xs={8}>
-                <div>
+                <div className="question4">
                     <p>4/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response4" component="legend">What is your ideal temperature?</FormLabel>
@@ -172,30 +194,40 @@ export const QuizQuestions = (question) => {
             <Grid item xs={2}>
                 <img className="quiz2" src={quiz2} alt="Blob" />
             </Grid>
-            <Grid item xs={10}>
-                <div>
+            <Grid item xs={8}>
+                <div className="question5">
                     <p>5/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response5" component="legend">What do you want to eat on your trip?</FormLabel>
                         <RadioGroup className={classes.formControl} value={userAnswer.response5} onChange={handleControlledInputChange} name="response5" >
-                            <FormControlLabel control={<Radio />} value="seafood" id="seafood" label="Seafood, please" />
-                            <FormControlLabel control={<Radio />} value="healthy" id="healthy" label="Healthy is key" />
-                            <FormControlLabel control={<Radio />} value="local" id="local" label="Local cuisine" />
-                            <FormControlLabel control={<Radio />} value="restaurant" id="restaurant" label="5-Star restaurants" />
-                            <FormControlLabel control={<Radio />} value="wine" id="wine" label="Anything with wine" />
-                            <FormControlLabel control={<Radio />} value="cook" id="cook" label="I want to cook!" />
+                            <Grid container direction="row" justify="center" alignItems="center">
+                                <Grid item xs={6}>
+                                    <div className="question1Answers">
+                                        <FormControlLabel control={<Radio />} value="seafood" id="seafood" label="Seafood, please" />
+                                        <FormControlLabel control={<Radio />} value="healthy" id="healthy" label="Healthy is key" />
+                                        <FormControlLabel control={<Radio />} value="local" id="local" label="Local cuisine" />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="question1Answers">
+                                        <FormControlLabel control={<Radio />} value="restaurant" id="restaurant" label="5-Star restaurants" />
+                                        <FormControlLabel control={<Radio />} value="wine" id="wine" label="Anything with wine" />
+                                        <FormControlLabel control={<Radio />} value="cook" id="cook" label="I want to cook!" />
+                                    </div>
+                                </Grid>
+                            </Grid>
                         </RadioGroup>
                     </FormControl>
                 </div>
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={4}>
                 <img className="swim" src={swim} alt="swim" />
             </Grid>
             <Grid item xs={3}>
                 <img className="beach" src={beach} alt="beach" />
             </Grid>
             <Grid item xs={9}>
-                <div>
+                <div className="question6">
                     <p>6/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response6" component="legend">What is your trip budget?</FormLabel>
