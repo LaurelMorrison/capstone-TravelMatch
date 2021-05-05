@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getTripsByUserId, deleteTrip } from "../../modules/UserTripManager"
 import { TripCard } from './tripCard'
+import './trip.css'
 
 export const TripList = () => {
     const [trips, setTrips] = useState([]);
@@ -23,7 +24,7 @@ export const TripList = () => {
 
     return (
         <>
-            <div><h1>Your Upcoming Trips</h1></div>
+            <div className="tripHeader"><h1>Your Upcoming Trips</h1></div>
             <div className="container-cards">
                 {trips.map(trip =>
 

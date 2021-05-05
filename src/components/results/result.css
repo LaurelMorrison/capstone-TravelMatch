@@ -23,6 +23,13 @@
   padding: 5px;
   background-color: white;
   font: 18px "Raleway";
+  text-align: center;
+}
+
+.buttonSpotBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .destinationImg {
@@ -33,4 +40,12 @@
 .locationCardContent {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.cardImage {
+  margin-top: 10px;
+}
+
+.destinationHeader {
+  margin: 50px;
 }

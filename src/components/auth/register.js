@@ -67,36 +67,36 @@ export const Register = () => {
 
             <form className="form--login" onSubmit={handleRegister}>
                 <Grid container justify="center" alignItems="center" spacing={2}>
-                <Grid item xs={12}>
-                    <img className="logo" src={logo}  alt="logo"/>
-                </Grid>
-                <Grid item xs={2}>
-                <img className="register1" src={register1}  alt="blob"/>
-                </Grid>
-                <Grid item xs={8} jutify="center">
-                <Grid item xs={12} >
-                <h1 className="h3">Create an Account</h1>
-                </Grid>
-                <Grid item xs={12} >
-                    <div className="formBox">
-                <div className="nameBox" >
-                    <label htmlFor="name">Name: </label>
-                    <input type="text" name="name" id="name" className="form-control" required autoFocus value={registerUser.name} onChange={handleInputChange} />
-                </div>
+                    <Grid item xs={12}>
+                        <img className="logo" src={logo} alt="logo" />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <img className="register1" src={register1} alt="blob" />
+                    </Grid>
+                    <Grid item xs={8} jutify="center">
+                        <Grid item xs={12} >
+                            <h1 className="h3">Create an Account</h1>
+                        </Grid>
+                        <Grid item xs={12} >
+                            <div className="formBox">
+                                <div className="nameBox" >
+                                    <label htmlFor="name">Name: </label>
+                                    <input type="text" name="name" id="name" className="form-control" required autoFocus value={registerUser.name} onChange={handleInputChange} />
+                                </div>
 
-                <div>
-                    <label htmlFor="inputEmail">  Email address: </label>
-                    <input type="email" name="email" id="email" className="form-control" required value={registerUser.email} onChange={handleInputChange} />
-                </div>
-                <div className="submitButtonSection">
-                    <button type="submit" className="registerButton"> Register </button>
-                </div>
-                </div>
-                </Grid>
-                </Grid>
-                <Grid item xs={2}>
-                <img className="register2" src={register2} alt="blob"/>
-                </Grid>
+                                <div>
+                                    <label htmlFor="inputEmail">  Email address: </label>
+                                    <input type="email" name="email" id="email" className="form-control" required value={registerUser.email} onChange={handleInputChange} />
+                                </div>
+                                <div className="submitButtonSection">
+                                    <button type="submit" className="registerButton"> Register </button>
+                                </div>
+                            </div>
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={2}>
+                        <img className="register2" src={register2} alt="blob" />
+                    </Grid>
                 </Grid>
             </form>
         </main>

@@ -2,7 +2,7 @@ import React from "react";
 import "./home.css";
 import friends from "../../images/friends.png";
 import homepage1 from "../../images/homepage1.png";
-import homepage2 from "../../images/homepage2.png";
+// import homepage2 from "../../images/homepage2.png";
 import one from "../../images/one.png";
 import two from "../../images/two.png";
 import three from "../../images/three.png";
@@ -16,7 +16,9 @@ export const Homepage = () => {
         <Grid item xs={6}>
           <div className="item1title">
             <h1>Planning a trip with nowhere to go?</h1>
-            <button className="quizButton">Take the quiz</button>
+            <form method="get" action="/quiz">
+              <button className="quizButton" type="submit">Take the quiz</button>
+            </form>
           </div>
         </Grid>
         <Grid item xs={6}>
@@ -58,7 +60,9 @@ export const Homepage = () => {
               </Grid>
             </Grid>
             <Grid item xs={10}>
-              <button className="getStarted">Get Started</button>
+              <form method="get" action="/quiz">
+                <button className="getStarted" type="submit">Get Started</button>
+              </form>
             </Grid>
           </div>
         </Grid>

@@ -49,13 +49,23 @@
     },
     {
       "locationID": 6,
-      "tripName": "",
+      "tripName": "Solo Adventure",
       "locationName": "South Island, New Zealand",
       "locationDescription": "Get ready for mammoth national parks, dynamic Māori culture, and world-class surfing and skiing. New Zealand can be mellow or action-packed, but it's always epic.",
       "userId": 1,
       "locationImage": "../../images/nz.jpg",
       "score": 1,
       "id": 4
+    },
+    {
+      "locationID": 3,
+      "tripName": "Honeymoon",
+      "locationName": "Azores Islands, Portugal",
+      "locationDescription": "This remote archipelago simply abounds with adventures; it is, in fact, the Hawaii of the mid-Atlantic. It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider. Then there is the landscape itself: a wonderland of seething mud pots, fantastical caverns, and vivid crater lakes that speak of a volcanic origin.",
+      "userId": 1,
+      "locationImage": "../../images/azores.jpg",
+      "score": 6,
+      "id": 5
     }
   ],
   "userAnswers": [
@@ -80,6 +90,50 @@
       "response5": "seafood",
       "response6": "$$",
       "id": 35
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "vineyard",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 36
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 37
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$$$",
+      "id": 38
+    },
+    {
+      "tripName": "Honeymoon",
+      "userId": 1,
+      "response1": "beach",
+      "response2": "bungalow",
+      "response3": "adventure",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "$$$",
+      "id": 39
     }
   ],
   "Locations": [

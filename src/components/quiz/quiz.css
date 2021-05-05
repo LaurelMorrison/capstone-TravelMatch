@@ -52,6 +52,8 @@
   padding: 5px;
   background-color: white;
   font: 18px "Raleway";
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .topQuiz {
@@ -59,7 +61,8 @@
 }
 
 .family {
-  margin: 80px 100px 50px;
+  margin: 50px 100px 50px;
+  height: 320px;
 }
 
 .MuiTypography-body1 {
@@ -74,10 +77,61 @@
 
 .question1Answers {
   display: flex;
-  justify-content: column;
-  column-count: 2;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 250px;
+}
+
+.quiz1 {
+  height: 350px;
 }
 
 .beach {
   height: 300px;
+}
+
+.tripNameBox {
+  margin-top: 20px;
+}
+
+.hike {
+  height: 400px;
+}
+
+.quiz3 {
+  height: 300px;
+  margin-top: 50px;
+}
+
+.question4 {
+  margin-top: 80px;
+}
+
+.quiz2 {
+  margin: 80px 0px 50px 50px;
+}
+
+.question2 {
+  margin: 120px 100px 80px;
+}
+
+.solo {
+  height: 320px;
+}
+
+.question5 {
+  margin: 50px 100px 80px;
+}
+
+.swim {
+  height: 300px;
+  margin-right: 200px;
+}
+
+.question6 {
+  margin: 80px 0px 00px 100px;
+}
+
+.question3 {
+  margin-top: 70px;
 }
