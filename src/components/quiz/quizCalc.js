@@ -21,11 +21,15 @@ const scoreCalc = (locations, userAnswer) => {
     results.push({
       locationID: location.id,
       tripName: userAnswer.tripName,
+      tripType: userAnswer.tripType,
       locationName: location.name,
+      locationActivities: location.topActivities,
+      locationTime: location.time,
       locationDescription: location.description,
       userId: parseInt(sessionStorage.getItem("travelmatch_user")),
       locationImage: location.image,
-      score: score
+      score: score,
+      id: ''
     })
   })
   return results
@@ -36,7 +40,7 @@ export const getRankedLocation = async (userAnswerId) => {
   const userAnswer = await getAnswerById(userAnswerId);
   const rankedArray = scoreCalc(locations, userAnswer)
   rankedArray.sort((a, b) => b.score - a.score)
-  const topMatchArray = rankedArray.slice(0, 5)
+  const topMatchArray = rankedArray.slice(0, 3)
   return topMatchArray
 }
 

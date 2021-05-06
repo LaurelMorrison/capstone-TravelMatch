@@ -82,3 +82,9 @@ h1 {
   margin-left: 200px;
   margin-top: 50px;
 }
+
+.stepsContainer {
+  background-image: url("../../images/home2.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}

@@ -33,7 +33,7 @@ export const Homepage = () => {
           </div>
         </Grid>
         <Grid item xs={12}>
-          <div>
+          <div className="stepsContainer">
             <Grid container >
               <Grid item xs={10}>
                 <div className="stepSectionHeadline">

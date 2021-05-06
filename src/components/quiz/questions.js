@@ -32,6 +32,21 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
+
+
+const callback = function (entries) {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("is-visible");
+    });
+};
+
+const observer = new IntersectionObserver(callback);
+
+const targets = document.querySelectorAll(".show-on-scroll");
+targets.forEach(function (target) {
+    observer.observe(target);
+});
+
 export const QuizQuestions = (question) => {
     const [isLoading, setIsLoading] = useState(false)
     const classes = useStyles();
@@ -74,7 +89,17 @@ export const QuizQuestions = (question) => {
                     </div>
                     <div className="tripNameBox">
                         <label htmlFor="tripName"> Name your trip: </label>
-                        <input name="tripName" type="text" value={userAnswer.tripName} onChange={handleControlledInputChange} />
+                        <input name="tripName" type="text" value={userAnswer.tripName} onChange={handleControlledInputChange} required />
+                    </div>
+                    <div className="tripTypeBox">
+                        <label htmlFor="tripType">Type of trip: </label>
+                        <select className="typeDropdown" name="tripType" value={userAnswer.tripType} onChange={handleControlledInputChange}>
+                            <option value="" defaultValue disabled hidden>Choose a trip type</option>
+                            <option className="dropdown" value="Couples Retreat" >Couple's Retreat</option>
+                            <option className="dropdown" value="Family Vacay"  >Family Vacay</option>
+                            <option className="dropdown" value="Friends Trip"  >Friends Trip</option>
+                            <option className="dropdown" value="Solo Adventure" >Solo Adventure</option>
+                        </select>
                     </div>
                 </div>
             </Grid>
@@ -91,7 +116,7 @@ export const QuizQuestions = (question) => {
                     <p>1/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response1" component="legend">Which acitvity is a must-do on your vacation:</FormLabel>
-                        <RadioGroup className={classes.formControl} value={userAnswer.response1} onChange={handleControlledInputChange} name="response1">
+                        <RadioGroup className={classes.formControl} value={userAnswer.response1} onChange={handleControlledInputChange} required name="response1">
                             <Grid container direction="row" justify="center" alignItems="center">
                                 <Grid item xs={6}>
                                     <div className="question1Answers">
@@ -117,11 +142,11 @@ export const QuizQuestions = (question) => {
                 </div>
             </Grid>
             <Grid item xs={9}>
-                <div className="question2">
+                <div className="question2 show-on-scroll">
                     <p>2/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response2" component="legend">Which is your dream accomadation:</FormLabel>
-                        <RadioGroup className={classes.formControl} value={userAnswer.response2} onChange={handleControlledInputChange} name="response2" >
+                        <RadioGroup className={classes.formControl} value={userAnswer.response2} onChange={handleControlledInputChange} required name="response2" >
                             <Grid container direction="row" justify="center" alignItems="center">
                                 <Grid item xs={6}>
                                     <div className="question1Answers">
@@ -149,11 +174,11 @@ export const QuizQuestions = (question) => {
                 <img className="hike" src={hike} alt="Hiking adventure" />
             </Grid>
             <Grid item xs={8}>
-                <div className="question3">
+                <div className="question3 show-on-scroll">
                     <p>3/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response3" component="legend">On a vacation, you want to be:</FormLabel>
-                        <RadioGroup className={classes.formControl} value={userAnswer.response3} onChange={handleControlledInputChange} name="response3" >
+                        <RadioGroup className={classes.formControl} value={userAnswer.response3} onChange={handleControlledInputChange} required name="response3" >
                             <Grid container direction="row" justify="center" alignItems="center">
                                 <Grid item xs={6}>
                                     <div className="question1Answers">
@@ -178,11 +203,11 @@ export const QuizQuestions = (question) => {
                 <img className="quiz3" src={quiz3} alt="Blob" />
             </Grid>
             <Grid item xs={8}>
-                <div className="question4">
+                <div className="question4 show-on-scroll">
                     <p>4/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response4" component="legend">What is your ideal temperature?</FormLabel>
-                        <RadioGroup className={classes.formControl} value={userAnswer.response4} onChange={handleControlledInputChange} name="response4" >
+                        <RadioGroup className={classes.formControl} value={userAnswer.response4} required onChange={handleControlledInputChange} name="response4" >
                             <FormControlLabel control={<Radio />} value="snow" id="snow" label="Snow bunny" />
                             <FormControlLabel control={<Radio />} value="sweater" id="sweater" label="Sweater weather" />
                             <FormControlLabel control={<Radio />} value="moderate" id="moderate" label="Moderate is key" />
@@ -195,11 +220,11 @@ export const QuizQuestions = (question) => {
                 <img className="quiz2" src={quiz2} alt="Blob" />
             </Grid>
             <Grid item xs={8}>
-                <div className="question5">
+                <div className="question5 show-on-scroll">
                     <p>5/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response5" component="legend">What do you want to eat on your trip?</FormLabel>
-                        <RadioGroup className={classes.formControl} value={userAnswer.response5} onChange={handleControlledInputChange} name="response5" >
+                        <RadioGroup className={classes.formControl} value={userAnswer.response5} required onChange={handleControlledInputChange} name="response5" >
                             <Grid container direction="row" justify="center" alignItems="center">
                                 <Grid item xs={6}>
                                     <div className="question1Answers">
@@ -227,11 +252,11 @@ export const QuizQuestions = (question) => {
                 <img className="beach" src={beach} alt="beach" />
             </Grid>
             <Grid item xs={9}>
-                <div className="question6">
+                <div className="question6 show-on-scroll">
                     <p>6/6</p>
                     <FormControl component="fieldset">
                         <FormLabel htmlFor="response6" component="legend">What is your trip budget?</FormLabel>
-                        <RadioGroup className={classes.formControl} value={userAnswer.response6} onChange={handleControlledInputChange} name="response6" >
+                        <RadioGroup className={classes.formControl} value={userAnswer.response6} required onChange={handleControlledInputChange} name="response6" >
                             <FormControlLabel control={<Radio />} value="$" id="cheap" label="$" />
                             <FormControlLabel control={<Radio />} value="$$" id="affordable" label="$$" />
                             <FormControlLabel control={<Radio />} value="$$$" id="lavish" label="$$$" />

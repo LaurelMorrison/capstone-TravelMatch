@@ -23,7 +23,7 @@ export const TripList = () => {
     }, []);
 
     return (
-        <>
+        <div className="tripList">
             <div className="tripHeader"><h1>Your Upcoming Trips</h1></div>
             <div className="container-cards">
                 {trips.map(trip =>
@@ -34,8 +34,13 @@ export const TripList = () => {
                         handleDeleteTrip={handleDeleteTrip}
                         user={trip.user}
                     />)}
+                <div className="accountButtonBox">
+                    <form method="get" action="/quiz">
+                        <button className="accountButton" type="submit">Add a new trip</button>
+                    </form>
+                </div>
             </div>
 
-        </>
+        </div>
     )
 }
