@@ -152,3 +152,12 @@
 input[type="radio"] {
   display: none;
 }
+
+input {
+  font: 18px "Raleway";
+  padding: 5px;
+}
+
+.subheadQuiz {
+  font-size: 28px;
+}
