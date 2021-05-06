@@ -85,7 +85,7 @@ export const QuizQuestions = (question) => {
                 <div className="topQuiz">
                     <div className="getStartedBox">
                         <h1>Get started!</h1>
-                        <h4>Answer the questions below and get matched with your dream destination.</h4>
+                        <p className="subheadQuiz">Answer the questions below and get matched with your dream destination.</p>
                     </div>
                     <div className="tripNameBox">
                         <label htmlFor="tripName"> Name your trip: </label>
