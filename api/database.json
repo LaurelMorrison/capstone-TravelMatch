@@ -38,40 +38,43 @@
       "id": 2
     },
     {
-      "locationID": 3,
-      "tripName": "hello",
-      "tripType": "Family Vacay",
-      "locationName": "Azores Islands, Portugal",
-      "locationDescription": "This remote archipelago simply abounds with adventures; it is, in fact, the Hawaii of the mid-Atlantic. It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider. Then there is the landscape itself: a wonderland of seething mud pots, fantastical caverns, and vivid crater lakes that speak of a volcanic origin.",
+      "locationID": 1,
+      "tripName": "Spring Getaway",
+      "tripType": "Friends Trip",
+      "locationName": "Santorini, Greece",
+      "locationActivities": "Visiting molten-dyed beaches, visit a winery or hiking along the calera from Fira",
+      "locationTime": "April, May, June",
+      "locationDescription": "Santorini is the supermodel of the Greek islands, a head-turner whose face is instantly recognisable around the world: multicoloured cliffs soar out of a sea-drowned caldera, topped by drifts of whitewashed buildings. With its reputation for dazzling panoramas, romantic sunsets and volcanic-sand beaches, it’s hardly surprising the island features on so many travellers’ bucket lists.",
       "userId": 1,
-      "locationImage": "../../images/azores.jpg",
-      "score": 5,
-      "id": 3
+      "locationImage": "../../images/santorini.jpg",
+      "score": 4,
+      "id": 8
     },
     {
-      "locationID": 4,
-      "tripName": "hello",
-      "tripType": "Solo Adventure",
-      "locationName": "Jackson Hole, Wyoming",
-      "locationActivities": "Although Jackson, being posh and popular, does have its downsides for the traveler, it does mean you’ll find a lively urban buzz, a refreshing variety of foods and no shortage of things to do – both in and out of town.",
+      "locationID": 10,
+      "tripName": "Family Reunion",
+      "tripType": "Family Vacay",
+      "locationName": "Maui, Hawaii",
+      "locationActivities": "When it comes to outdoor recreation, Maui wins best in show. Just look at that zipliner launching into a canopy of green. Or the mountain biker hurtling past eucalyptus and pine. Or go hiking with trails winding through lava flows and bamboo forests.",
       "locationTime": "April, May, September, October",
-      "locationDescription": "One of the state's most appealing towns. Hiding in a verdant valley between some of America’s most rugged and wild mountains, Jackson looks similar to other towns in the state – false-front roof lines, covered wooden walkways, saloons on every block – but it ain't quite the same.",
+      "locationDescription": "Maui lures travelers with an invigorating mix of natural beauty and outdoor fun, all shared with warm alohas.",
       "userId": 1,
-      "locationImage": "../../images/jackson.jpg",
-      "score": 4,
-      "id": 6
+      "locationImage": "../../images/maui.jpg",
+      "score": 6,
+      "id": 9
     },
     {
       "locationID": 8,
-      "tripName": "",
+      "tripName": "Sister's Trip",
+      "tripType": "Friends Trip",
       "locationName": "London, England",
       "locationActivities": "Enjoy the art, go to a pub, take a tour of the architecture and get swept up in the culture/history.",
       "locationTime": "March, April, May",
       "locationDescription": "One of the world's most visited cities, London has something for everyone: from history and culture to fine food and good times.",
       "userId": 1,
       "locationImage": "../../images/london.jpg",
-      "score": 0,
-      "id": 7
+      "score": 6,
+      "id": 10
     }
   ],
   "userAnswers": [
@@ -248,6 +251,42 @@
       "response5": "",
       "response6": "$$$$",
       "id": 57
+    },
+    {
+      "tripName": "Spring Getaway",
+      "userId": 1,
+      "response1": "cooking",
+      "response2": "bungalow",
+      "response3": "adventure",
+      "response4": "hot",
+      "response5": "restaurant",
+      "response6": "$$$",
+      "tripType": "Friends Trip",
+      "id": 58
+    },
+    {
+      "tripName": "Family Reunion",
+      "userId": 1,
+      "response1": "beach",
+      "response2": "bungalow",
+      "response3": "relaxed",
+      "response4": "moderate",
+      "response5": "seafood",
+      "response6": "$$",
+      "tripType": "Family Vacay",
+      "id": 59
+    },
+    {
+      "tripName": "Sister's Trip",
+      "userId": 1,
+      "response1": "bar",
+      "response2": "apartment",
+      "response3": "party",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "$$$",
+      "tripType": "Friends Trip",
+      "id": 60
     }
   ],
   "Locations": [

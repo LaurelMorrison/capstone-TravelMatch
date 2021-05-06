@@ -18,7 +18,7 @@ export const NavBar = (props) => {
         <a href="/"><img className="logo" src={logo} alt="logo" /></a>
       </div>
       <div className="navLinks">
-        <ul className="nav nav-pills nav-fill">
+        <ul className="navlinkbox nav nav-pills nav-fill">
           <Link className="nav-link" to="/">Home</Link>
           <Link className="nav-link" to="/quiz">Plan a trip</Link>
           <Link className="nav-link" to="/trips">My trips</Link>
