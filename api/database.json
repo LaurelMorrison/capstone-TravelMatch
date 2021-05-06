@@ -38,34 +38,40 @@
       "id": 2
     },
     {
-      "locationID": 2,
-      "tripName": "Family Reunion",
-      "locationName": "Cook Islands",
-      "locationDescription": "Fifteen droplets of land cast across 2 million sq km of wild Pacific blue, the Cook Islands are simultaneously remote and accessible, modern and traditional.",
-      "userId": 1,
-      "locationImage": "../../images/cook.jpg",
-      "score": 1,
-      "id": 3
-    },
-    {
-      "locationID": 6,
-      "tripName": "Solo Adventure",
-      "locationName": "South Island, New Zealand",
-      "locationDescription": "Get ready for mammoth national parks, dynamic Māori culture, and world-class surfing and skiing. New Zealand can be mellow or action-packed, but it's always epic.",
-      "userId": 1,
-      "locationImage": "../../images/nz.jpg",
-      "score": 1,
-      "id": 4
-    },
-    {
       "locationID": 3,
-      "tripName": "Honeymoon",
+      "tripName": "hello",
+      "tripType": "Family Vacay",
       "locationName": "Azores Islands, Portugal",
       "locationDescription": "This remote archipelago simply abounds with adventures; it is, in fact, the Hawaii of the mid-Atlantic. It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider. Then there is the landscape itself: a wonderland of seething mud pots, fantastical caverns, and vivid crater lakes that speak of a volcanic origin.",
       "userId": 1,
       "locationImage": "../../images/azores.jpg",
-      "score": 6,
-      "id": 5
+      "score": 5,
+      "id": 3
+    },
+    {
+      "locationID": 4,
+      "tripName": "hello",
+      "tripType": "Solo Adventure",
+      "locationName": "Jackson Hole, Wyoming",
+      "locationActivities": "Although Jackson, being posh and popular, does have its downsides for the traveler, it does mean you’ll find a lively urban buzz, a refreshing variety of foods and no shortage of things to do – both in and out of town.",
+      "locationTime": "April, May, September, October",
+      "locationDescription": "One of the state's most appealing towns. Hiding in a verdant valley between some of America’s most rugged and wild mountains, Jackson looks similar to other towns in the state – false-front roof lines, covered wooden walkways, saloons on every block – but it ain't quite the same.",
+      "userId": 1,
+      "locationImage": "../../images/jackson.jpg",
+      "score": 4,
+      "id": 6
+    },
+    {
+      "locationID": 8,
+      "tripName": "",
+      "locationName": "London, England",
+      "locationActivities": "Enjoy the art, go to a pub, take a tour of the architecture and get swept up in the culture/history.",
+      "locationTime": "March, April, May",
+      "locationDescription": "One of the world's most visited cities, London has something for everyone: from history and culture to fine food and good times.",
+      "userId": 1,
+      "locationImage": "../../images/london.jpg",
+      "score": 0,
+      "id": 7
     }
   ],
   "userAnswers": [
@@ -78,29 +84,67 @@
       "response4": "hot",
       "response5": "local",
       "response6": "$$$",
+      "tripType": "Family Vacay",
       "id": 22
     },
     {
-      "tripName": "bubba",
+      "tripName": "hello",
       "userId": 1,
       "response1": "bungee",
-      "response2": "boat",
-      "response3": "relaxed",
+      "response2": "resort",
+      "response3": "learn",
       "response4": "sweater",
-      "response5": "seafood",
+      "response5": "local",
       "response6": "$$",
-      "id": 35
+      "tripType": "Couples Retreat",
+      "id": 43
     },
     {
-      "tripName": "",
+      "tripName": "Honeymoon",
       "userId": 1,
-      "response1": "vineyard",
+      "response1": "",
       "response2": "",
       "response3": "",
       "response4": "",
       "response5": "",
-      "response6": "",
-      "id": 36
+      "response6": "$$$$",
+      "tripType": "Couples Retreat",
+      "id": 45
+    },
+    {
+      "tripName": "hello",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$$$",
+      "tripType": "Solo Adventure",
+      "id": 46
+    },
+    {
+      "tripName": "hello",
+      "userId": 1,
+      "response1": "bungee",
+      "response2": "hotel",
+      "response3": "adventure",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "$$$",
+      "tripType": "Family Vacay",
+      "id": 47
+    },
+    {
+      "tripName": "Honeymoon",
+      "userId": 1,
+      "response1": "beach",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$",
+      "id": 48
     },
     {
       "tripName": "",
@@ -111,7 +155,88 @@
       "response4": "",
       "response5": "",
       "response6": "",
-      "id": 37
+      "tripType": "Couples Retreat",
+      "id": 49
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 50
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "cook",
+      "response6": "",
+      "tripType": "Friends Trip",
+      "id": 51
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "shopping",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 52
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "tripType": "Family Vacay",
+      "id": 53
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 54
+    },
+    {
+      "tripName": "hello",
+      "userId": 1,
+      "response1": "bungee",
+      "response2": "resort",
+      "response3": "adventure",
+      "response4": "sweater",
+      "response5": "wine",
+      "response6": "$$$$",
+      "tripType": "Solo Adventure",
+      "id": 55
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 56
     },
     {
       "tripName": "",
@@ -122,18 +247,7 @@
       "response4": "",
       "response5": "",
       "response6": "$$$$",
-      "id": 38
-    },
-    {
-      "tripName": "Honeymoon",
-      "userId": 1,
-      "response1": "beach",
-      "response2": "bungalow",
-      "response3": "adventure",
-      "response4": "moderate",
-      "response5": "wine",
-      "response6": "$$$",
-      "id": 39
+      "id": 57
     }
   ],
   "Locations": [
@@ -141,6 +255,8 @@
       "id": 1,
       "name": "Santorini, Greece",
       "image": "../../images/santorini.jpg",
+      "time": "April, May, June",
+      "topActivities": "Visiting molten-dyed beaches, visit a winery or hiking along the calera from Fira",
       "description": "Santorini is the supermodel of the Greek islands, a head-turner whose face is instantly recognisable around the world: multicoloured cliffs soar out of a sea-drowned caldera, topped by drifts of whitewashed buildings. With its reputation for dazzling panoramas, romantic sunsets and volcanic-sand beaches, it’s hardly surprising the island features on so many travellers’ bucket lists.",
       "activity": [
         "hiking",
@@ -178,6 +294,8 @@
       "id": 2,
       "name": "Cook Islands",
       "image": "../../images/cook.jpg",
+      "time": "September, October, November",
+      "topActivities": "Drink home brew at a traditional ‘Atiuan tumunu (bush-beer drinking club), explore the ancient makatea (raised coral cliffs) and taro fields of Mangaia, or swim in the underground cave pools of Mitiaro and Ma’uke.",
       "description": "Fifteen droplets of land cast across 2 million sq km of wild Pacific blue, the Cook Islands are simultaneously remote and accessible, modern and traditional.",
       "activity": [
         "beach",
@@ -209,6 +327,8 @@
       "id": 3,
       "name": "Azores Islands, Portugal",
       "image": "../../images/azores.jpg",
+      "time": "June, July, August",
+      "topActivities": "It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider.",
       "description": "This remote archipelago simply abounds with adventures; it is, in fact, the Hawaii of the mid-Atlantic. It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider. Then there is the landscape itself: a wonderland of seething mud pots, fantastical caverns, and vivid crater lakes that speak of a volcanic origin.",
       "activity": [
         "beach",
@@ -243,6 +363,8 @@
       "id": 4,
       "name": "Jackson Hole, Wyoming",
       "image": "../../images/jackson.jpg",
+      "time": "April, May, September, October",
+      "topActivities": "Although Jackson, being posh and popular, does have its downsides for the traveler, it does mean you’ll find a lively urban buzz, a refreshing variety of foods and no shortage of things to do – both in and out of town.",
       "description": "One of the state's most appealing towns. Hiding in a verdant valley between some of America’s most rugged and wild mountains, Jackson looks similar to other towns in the state – false-front roof lines, covered wooden walkways, saloons on every block – but it ain't quite the same.",
       "activity": [
         "skiing",
@@ -277,6 +399,8 @@
       "id": 5,
       "name": "Paris, France",
       "image": "../../images/paris.jpg",
+      "time": "July, August, September, October",
+      "topActivities": "View the iconic architecture, enjoy the food, shopping, or visit a museum.",
       "description": "Paris' monument-lined boulevards, museums, classical bistros and boutiques are enhanced by a new wave of multimedia galleries, creative wine bars, design shops and tech start-ups.",
       "activity": [
         "museum",
@@ -312,6 +436,8 @@
       "id": 6,
       "name": "South Island, New Zealand",
       "image": "../../images/nz.jpg",
+      "time": "December, January, March",
+      "topActivities": "Do one of NZ Great Hikes, enjoy the Māori Culture, go to a vineyard or enjoy a rugby match.",
       "description": "Get ready for mammoth national parks, dynamic Māori culture, and world-class surfing and skiing. New Zealand can be mellow or action-packed, but it's always epic.",
       "activity": [
         "hiking",
@@ -347,6 +473,8 @@
       "id": 7,
       "name": "Bora Bora, French Polynesia",
       "image": "../../images/bora.jpg",
+      "time": "November, December, January, February",
+      "topActivities": "From going on a boat tour to visiting a stunning beach, Bora Bora offers peak relaxation and adventure activities.",
       "description": "How not to be mesmerised by this stunning palette of sapphire, indigo and turquoise, all mixed together in modern-art abstractions? And these sand-edged motu (islets) and soaring rainforest-covered basaltic peaks? With such a dreamlike setting, Bora Bora is, unsurprisingly, a honeymooners’ choice. ",
       "activity": [
         "hiking",
@@ -382,6 +510,8 @@
       "id": 8,
       "name": "London, England",
       "image": "../../images/london.jpg",
+      "time": "March, April, May",
+      "topActivities": "Enjoy the art, go to a pub, take a tour of the architecture and get swept up in the culture/history.",
       "description": "One of the world's most visited cities, London has something for everyone: from history and culture to fine food and good times.",
       "activity": [
         "museum",
@@ -415,6 +545,8 @@
       "id": 9,
       "name": "Tokyo, Japan",
       "image": "../../images/tokyo.jpg",
+      "time": "March, April, September, November",
+      "topActivities": "Experience the art and culture, check out the food scene, got to a show.",
       "description": "Yoking past and future, Tokyo dazzles with its traditional culture and passion for everything new.",
       "activity": [
         "shopping",
@@ -449,6 +581,8 @@
       "id": 10,
       "name": "Maui, Hawaii",
       "image": "../../images/maui.jpg",
+      "time": "April, May, September, October",
+      "topActivities": "When it comes to outdoor recreation, Maui wins best in show. Just look at that zipliner launching into a canopy of green. Or the mountain biker hurtling past eucalyptus and pine. Or go hiking with trails winding through lava flows and bamboo forests.",
       "description": "Maui lures travelers with an invigorating mix of natural beauty and outdoor fun, all shared with warm alohas.",
       "activity": [
         "hiking",
@@ -486,6 +620,8 @@
       "id": 11,
       "name": "Banff National Park, Canada",
       "image": "../../images/banff.jpg",
+      "time": "July, August, December, March",
+      "topActivities": "Whether it’s hiking along a snow-dusted ridgeline or canoeing across a placid glacial lake, Banff and Jasper boast some of North America's finest outdoor adventures. ",
       "description": "Sit atop a mountain, hike through the forest, feel the spray of a waterfall: Banff offers outdoor experiences at their simplest and best.",
       "activity": [
         "hiking",
@@ -521,6 +657,8 @@
       "id": 12,
       "name": "Florida Keys",
       "image": "../../images/keys.jpg",
+      "time": "December, January, March, April",
+      "topActivities": "Checkout the main strip in Key West, go on a road trip on the Overseas Hwy, go fishing or on a boat excursion.",
       "description": "It’s hard not to fall for South Florida, with its sun-kissed beaches, alluring islands and wildlife-rich wetlands.",
       "activity": [
         "beach",
@@ -554,6 +692,8 @@
       "id": 13,
       "name": "Phuket and the Andaman Coast, Thailand",
       "image": "../../images/phuket.jpg",
+      "time": "November, January, February",
+      "topActivities": "Visit one of the incredible beaches, go diving or snorkeling, or visit a cultural museum or temple.",
       "description": "The Andaman is Thailand’s dream coast: one of those places that you see on a postcard which make you want to quit your job and live in flip-flops…forever. And it is stunning. Pure-white beaches of soft sand, a turquoise sea, towering limestone cliffs and jungle-covered isles extend down the Andaman Sea.",
       "activity": [
         "snorkeling",
@@ -588,6 +728,8 @@
       "id": 14,
       "name": "Bali, Indonesia",
       "image": "../../images/bali.jpg",
+      "time": "May, July, September, October",
+      "topActivities": "Surf or hang out at one of the stunning Bali beaches, visit a hillside temple, go scuba diving or just relax.",
       "description": "The mere mention of Bali evokes thoughts of a paradise. It's more than a place; it's a mood, an aspiration, a tropical state of mind.",
       "activity": [
         "beach",
@@ -621,6 +763,8 @@
       "id": 15,
       "name": "Barcelona, Spain",
       "image": "../../images/barcelona.jpg",
+      "time": "April, May, June",
+      "topActivities": "Visit the Sagrada Familia, marvel at Santa Maria del Mar and attend a Cooking Class.",
       "description": "Barcelona is an enchanting seaside city with boundless culture, fabled architecture and a world-class drinking and dining scene.",
       "activity": [
         "shopping",
@@ -656,6 +800,8 @@
       "id": 16,
       "name": "Zermatt, Switzerland",
       "image": "../../images/zermatt.jpg",
+      "time": "August, September, October",
+      "topActivities": "Today skiers cruise along well-kept pistes, spellbound by the scenery, while style-conscious darlings flash designer threads in the town's swish lounge bars. But all are smitten with the Matterhorn, an unfathomable monolith you can’t quite stop looking at.",
       "description": "You can sense the anticipation on the train from Täsch: couples gaze wistfully out of the window, kids fidget and stuff in Toblerone, folk rummage for their cameras. And then, as they arrive in Zermatt, all give little whoops of joy at the pop-up-book effect of the Matterhorn (4478m), the hypnotically beautiful, one-of-a-kind peak that rises like a shark's fin above town.",
       "activity": [
         "skiing",
@@ -690,6 +836,8 @@
       "id": 17,
       "name": "Cape Town, South Africa",
       "image": "../../images/capetown.jpg",
+      "time": "March, April, May",
+      "topActivities": "Go surfing along the Garden Route, hike Table Mountain, visit a vineyard or museum.",
       "description": "A coming-together of cultures, cuisines and landscapes, there's nowhere quite like Cape Town, a singularly beautiful city crowned by the magnificent Table Mountain National Park.",
       "activity": [
         "hiking",
@@ -725,6 +873,8 @@
       "id": 18,
       "name": "St.John, Virgin Islands",
       "image": "../../images/stjohn.jpg",
+      "time": "January, February, March",
+      "topActivities": "Hiking and snorkeling are top of the to-do list. Trails wind by petroglyphs and sugar-mill ruins, and several drop out onto beaches prime for swimming, with turtles and spotted eagle rays.",
       "description": "Two-thirds of St John is a protected national park, with gnarled trees and spiky cacti spilling over its edges. There are no airports or cruise-ship docks, and the usual Caribbean resorts are few and far between. It's blissfully low-key compared to its island neighbors.",
       "activity": [
         "hiking",
@@ -761,6 +911,8 @@
       "id": 19,
       "name": "Park City, Utah",
       "image": "../../images/parkcity.jpg",
+      "time": "December, January, February, July",
+      "topActivities": "Skiing and snowboard are key during winter month, hiking and mountain biking are popular in the summer months.",
       "description": "Park City could certainly stake a rightful claim of being the “perfect mountain town.” Combining its silver mining town heritage, an artistic vibe and a deep appreciation for the outdoors, Park City strikes a balance between luxury and comfort, all the while showing a deep appreciation for athletics, arts and community.",
       "activity": [
         "hiking",
@@ -796,6 +948,8 @@
       "id": 20,
       "name": "Andes, Peru",
       "image": "../../images/peru.jpg",
+      "time": "May, June, July, August",
+      "topActivities": "Hike Machu Picchu, visit Uyuni Salt Flat or Caterdral Metropolitana de Merida.",
       "description": "Peru is as complex as its most intricate and exquisite weavings. Festivals mark ancient rites, the urban vanguard fuels innovation and nature bestows splendid diversity.",
       "activity": [
         "hiking",

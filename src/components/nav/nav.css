@@ -32,4 +32,22 @@
 .nav-link {
   margin-left: 10px;
   margin-right: 10px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: #2c2c33;
+}
+
+a:hover {
+  color: #638177;
+}
+
+a:active {
+  color: #ca6840;
 }

@@ -21,7 +21,7 @@
   width: 300px;
   height: 500px;
   border: solid #2c2c33 3px;
-  padding: 20px;
+  padding: 15px;
   margin: 0px 40px 30px 40px;
 }
 
@@ -31,4 +31,28 @@
   object-fit: cover;
   padding: 10px;
   border-radius: 15px;
+}
+
+.accountButton {
+  border-radius: 15px;
+  height: 38px;
+  margin: 5px;
+  width: 150px;
+  border-width: 3px;
+  padding: 5px;
+  background-color: white;
+  font: 18px "Raleway";
+  text-align: center;
+}
+
+.accountButtonBox {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tripList {
+  background-image: url("../../images/mytrips1.png"),
+    url("../../images/quiz2.png");
+  background-repeat: no-repeat;
+  background-position: left bottom, right;
 }

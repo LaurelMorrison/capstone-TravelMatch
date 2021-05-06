@@ -11,7 +11,6 @@ export const DestinationCard = ({ result }) => {
 
     const handleClickAddTrip = (event) => {
         event.preventDefault()
-        console.log(event)
         setIsLoading(true)
         addNewTrip(result)
             .then(history.push("/trips"))
@@ -29,6 +28,8 @@ export const DestinationCard = ({ result }) => {
                     <div className="locationCardContent">
                         <h3>Name: {result.locationName}</h3>
                         <p>{result.locationDescription}</p>
+                        <p>Top activities: {result.locationActivities}</p>
+                        <p>Best time to visit: {result.locationTime}</p>
                     </div>
                 </Grid>
                 <Grid item xs={12}>

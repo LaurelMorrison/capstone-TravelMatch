@@ -38,14 +38,26 @@
 }
 
 .locationCardContent {
-  margin-left: 10px;
+  margin-left: 50px;
   margin-right: 10px;
 }
 
 .cardImage {
-  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .destinationHeader {
   margin: 50px;
+}
+
+#more {
+  display: none;
+}
+
+.destinationList {
+  background-image: url("../../images/homepage1.png"),
+    url("../../images/destination2.png");
+  background-repeat: no-repeat;
+  background-position: left bottom, right top;
 }

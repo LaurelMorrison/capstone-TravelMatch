@@ -16,7 +16,7 @@ export const TravelMatch = () => (
             <>
               <NavBar />
               <div className="applicationView">
-              <ApplicationViews />
+                <ApplicationViews />
               </div>
               <Footer />
             </>
@@ -25,12 +25,12 @@ export const TravelMatch = () => (
           return <Redirect to="/login" />;
         }
       }}
-    /> 
+    />
 
-     <Route path="/login">
+    <Route exact path="/login">
       <Login />
     </Route>
-    <Route path="/register">
+    <Route exact path="/register">
       <Register />
     </Route>
   </>

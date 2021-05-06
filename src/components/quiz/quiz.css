@@ -94,6 +94,10 @@
   margin-top: 20px;
 }
 
+.tripTypeBox {
+  margin-top: 20px;
+}
+
 .hike {
   height: 400px;
 }
@@ -134,4 +138,17 @@
 
 .question3 {
   margin-top: 70px;
+}
+
+.typeDropdown {
+  width: 220px;
+  height: 35px;
+  border-radius: 15px;
+  border-width: 3px;
+  padding: 3px;
+  font: 18px "Raleway";
+}
+
+input[type="radio"] {
+  display: none;
 }
