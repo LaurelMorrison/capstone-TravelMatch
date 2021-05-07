@@ -287,6 +287,96 @@
       "response6": "$$$",
       "tripType": "Friends Trip",
       "id": 60
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "bar",
+      "response2": "hotel",
+      "response3": "relaxed",
+      "response4": "sweater",
+      "response5": "cook",
+      "response6": "$$$$",
+      "id": 61
+    },
+    {
+      "tripName": "kyle test-2",
+      "userId": 1,
+      "response1": "bar",
+      "response2": "boat",
+      "response3": "party",
+      "response4": "hot",
+      "response5": "wine",
+      "response6": "$",
+      "tripType": "Friends Trip",
+      "id": 62
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 63
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 64
+    },
+    {
+      "tripName": "kyle test-2",
+      "userId": 1,
+      "response1": "bar",
+      "response2": "boat",
+      "response3": "party",
+      "response4": "hot",
+      "response5": "wine",
+      "response6": "$",
+      "tripType": "Friends Trip",
+      "id": 65
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "beach",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$$",
+      "id": 66
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "vineyard",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 67
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "museum",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 68
     }
   ],
   "Locations": [
@@ -1017,6 +1107,77 @@
       "budget": [
         "$$",
         "$"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Big Sky, Montana",
+      "image": "../../images/bigsky.jpg",
+      "time": "November, December, January, February",
+      "topActivities": "Big Sky is a community in the Rocky Mountains of southern Montana. It’s known for the ski and downhill mountain-bike trails of Big Sky Resort. ",
+      "description": "Big Sky offers unlimited access to outdoor recreation: the wet and wild whitewater experience, blue ribbon trout streams, backcountry hikes, meandering wildlife and widespread wildflowers.",
+      "activity": [
+        "hiking",
+        "skiing",
+        "shopping"
+      ],
+      "accomodation": [
+        "hotel",
+        "resort"
+      ],
+      "mood": [
+        "party",
+        "learn",
+        "adventure"
+      ],
+      "temp": [
+        "snow",
+        "sweater"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "cook"
+      ],
+      "budget": [
+        "$$",
+        "$"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "New York, New York",
+      "image": "../../images/newyork.jpg",
+      "time": "April, May, June, September",
+      "topActivities": "There is a lot to see and do in New York. From seeing the Statue of Liberty to going to a show on broadway to visiting Central Park, NY has a lot of adventures to offer.",
+      "description": "New York has to be one of the most famous cities in the world. Often referred to as the 'Big Apple', this vibrant city is known for its exclusive shops, flashy Broadway performances, and high-flying business tycoons, and it's a city that has long captivated people from all over the world.",
+      "activity": [
+        "bar",
+        "cooking",
+        "museum",
+        "shopping"
+      ],
+      "accomodation": [
+        "apartment",
+        "hotel"
+      ],
+      "mood": [
+        "party",
+        "cultural",
+        "learn"
+      ],
+      "temp": [
+        "moderate",
+        "sweater"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "wine"
+      ],
+      "budget": [
+        "$$",
+        "$$$"
       ]
     }
   ]

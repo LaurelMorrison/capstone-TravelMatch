@@ -161,3 +161,7 @@ input {
 .subheadQuiz {
   font-size: 28px;
 }
+
+.question1box {
+  transition: top 1.3s;
+}

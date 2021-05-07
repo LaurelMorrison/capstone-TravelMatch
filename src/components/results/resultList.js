@@ -22,7 +22,7 @@ export const ResultList = () => {
     }, []);
 
     return (
-        <div className="destinationList">
+        <div className="destinationList" >
             <div className="destinationHeader"><h1>Your Top Destination Matches</h1></div>
             <div className="container-cards">
                 {results.map(result =>
