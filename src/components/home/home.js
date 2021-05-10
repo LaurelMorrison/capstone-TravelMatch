@@ -59,6 +59,23 @@ export const Homepage = () => {
                 <p>Save your trip and get ready for an adventure.</p>
               </Grid>
             </Grid>
+            <Grid container className="articleContainer">
+              <Grid item xs={3}>
+                <div className="topArticleCard">
+                  <h3>Top Travel Destinations for 2021</h3>
+                </div>
+              </Grid>
+              <Grid item xs={3}>
+                <div className="topArticleCard">
+                  <h3>10 Travel Activities You have to Try?</h3>
+                </div>
+              </Grid>
+              <Grid item xs={3}>
+                <div className="topArticleCard">
+                  <h3>10 Best Undiscovered Islands</h3>
+                </div>
+              </Grid>
+            </Grid>
             <Grid item xs={10}>
               <form method="get" action="/quiz">
                 <button className="getStarted" type="submit">Get Started</button>

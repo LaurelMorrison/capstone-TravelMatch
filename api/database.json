@@ -62,19 +62,6 @@
       "locationImage": "../../images/london.jpg",
       "score": 6,
       "id": 10
-    },
-    {
-      "locationID": 3,
-      "tripName": "Honeymoon",
-      "tripType": "Couples Retreat",
-      "locationName": "Azores Islands, Portugal",
-      "locationActivities": "It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider.",
-      "locationTime": "June, July, August",
-      "locationDescription": "This remote archipelago simply abounds with adventures; it is, in fact, the Hawaii of the mid-Atlantic. It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider. Then there is the landscape itself: a wonderland of seething mud pots, fantastical caverns, and vivid crater lakes that speak of a volcanic origin.",
-      "userId": 1,
-      "locationImage": "../../images/azores.jpg",
-      "score": 6,
-      "id": 11
     }
   ],
   "userAnswers": [
