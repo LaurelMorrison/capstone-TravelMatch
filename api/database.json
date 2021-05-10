@@ -51,19 +51,6 @@
       "id": 8
     },
     {
-      "locationID": 10,
-      "tripName": "Family Reunion",
-      "tripType": "Family Vacay",
-      "locationName": "Maui, Hawaii",
-      "locationActivities": "When it comes to outdoor recreation, Maui wins best in show. Just look at that zipliner launching into a canopy of green. Or the mountain biker hurtling past eucalyptus and pine. Or go hiking with trails winding through lava flows and bamboo forests.",
-      "locationTime": "April, May, September, October",
-      "locationDescription": "Maui lures travelers with an invigorating mix of natural beauty and outdoor fun, all shared with warm alohas.",
-      "userId": 1,
-      "locationImage": "../../images/maui.jpg",
-      "score": 6,
-      "id": 9
-    },
-    {
       "locationID": 8,
       "tripName": "Sister's Trip",
       "tripType": "Friends Trip",
@@ -75,6 +62,19 @@
       "locationImage": "../../images/london.jpg",
       "score": 6,
       "id": 10
+    },
+    {
+      "locationID": 3,
+      "tripName": "Honeymoon",
+      "tripType": "Couples Retreat",
+      "locationName": "Azores Islands, Portugal",
+      "locationActivities": "It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider.",
+      "locationTime": "June, July, August",
+      "locationDescription": "This remote archipelago simply abounds with adventures; it is, in fact, the Hawaii of the mid-Atlantic. It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider. Then there is the landscape itself: a wonderland of seething mud pots, fantastical caverns, and vivid crater lakes that speak of a volcanic origin.",
+      "userId": 1,
+      "locationImage": "../../images/azores.jpg",
+      "score": 6,
+      "id": 11
     }
   ],
   "userAnswers": [
@@ -377,6 +377,52 @@
       "response5": "",
       "response6": "",
       "id": 68
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 69
+    },
+    {
+      "tripName": "Honeymoon",
+      "userId": 1,
+      "response1": "beach",
+      "response2": "bungalow",
+      "response3": "adventure",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "$$$",
+      "tripType": "Couples Retreat",
+      "id": 70
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "beach",
+      "response2": "hotel",
+      "response3": "adventure",
+      "response4": "hot",
+      "response5": "restaurant",
+      "response6": "$$$",
+      "id": 71
+    },
+    {
+      "tripName": "Honeymoon",
+      "userId": 1,
+      "response1": "beach",
+      "response2": "bungalow",
+      "response3": "adventure",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "$$$",
+      "tripType": "Couples Retreat",
+      "id": 72
     }
   ],
   "Locations": [
@@ -1178,6 +1224,78 @@
       "budget": [
         "$$",
         "$$$"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Gold Coast, Australia",
+      "image": "../../images/goldcoast.jpg",
+      "time": "August, September, October",
+      "topActivities": "Incredible beaches, lush hinterland, theme parks – there's no end to the reasons to visit the Gold Coast. This iconic tourist destination is a must for a glimpse into the quintessential “Aussie lifestyle.”",
+      "description": "The Gold Coast is a metropolitan region south of Brisbane on Australia’s east coast. It's famed for its long sandy beaches, surfing spots and elaborate system of inland canals and waterways. It’s also home to theme parks such as Dreamworld, Sea World and Wet’n’Wild.",
+      "activity": [
+        "bar",
+        "beach",
+        "bungee",
+        "shopping"
+      ],
+      "accomodation": [
+        "apartment",
+        "hotel",
+        "boat"
+      ],
+      "mood": [
+        "party",
+        "cultural",
+        "adventure"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "restaurant",
+        "healthy",
+        "seafood"
+      ],
+      "budget": [
+        "$$",
+        "$$$"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Morocco",
+      "image": "../../images/morocco.png",
+      "time": "March, April, May",
+      "topActivities": "There is a lot to do in Morocco, including: visiting the Sahara Desert, explore Casablanca, see the medina in Fez or wander through Aït Benhaddou.",
+      "description": "Morocco, a North African country bordering the Atlantic Ocean and Mediterranean Sea, is distinguished by its Berber, Arabian and European cultural influences. Marrakesh’s medina, a mazelike medieval quarter, offers entertainment in its Djemaa el-Fna square and souks (marketplaces) selling ceramics, jewelry and metal lanterns.",
+      "activity": [
+        "beach",
+        "museum",
+        "shopping"
+      ],
+      "accomodation": [
+        "apartment",
+        "hotel",
+        "villa"
+      ],
+      "mood": [
+        "learn",
+        "cultural",
+        "adventure"
+      ],
+      "temp": [
+        "moderate",
+        "hot"
+      ],
+      "food": [
+        "healthy",
+        "local"
+      ],
+      "budget": [
+        "$",
+        "$$"
       ]
     }
   ]

@@ -3,6 +3,7 @@ import { useHistory } from 'react-router';
 import { addNewAnswers } from '../../modules/UserAnswerManager';
 import "./quiz.css";
 import { makeStyles } from '@material-ui/core/styles';
+import Slider from '@material-ui/core/Slider';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -52,6 +53,15 @@ targets.forEach(function (target) {
     observer.observe(target);
 });
 
+
+function valueTemp(value) {
+    return `${value}`;
+}
+
+function valueBudget(value) {
+    return `${value}`;
+}
+
 export const QuizQuestions = (question) => {
     const [isLoading, setIsLoading] = useState(false)
     const classes = useStyles();
@@ -66,6 +76,28 @@ export const QuizQuestions = (question) => {
         response5: '',
         response6: ''
     });
+
+    const budgetMarks = [
+        {
+            value: 1,
+            label: "Budget Friendly"
+        },
+        {
+            value: 10,
+            label: "Spare No Expense"
+        }
+    ]
+
+    const weatherMarks = [
+        {
+            value: 1,
+            label: "Snow Bunny"
+        },
+        {
+            value: 10,
+            label: "Hotter the Better"
+        }
+    ]
 
     const handleControlledInputChange = (event) => {
         const newUserAnswer = { ...userAnswer }
@@ -210,8 +242,7 @@ export const QuizQuestions = (question) => {
                 </Grid>
                 <Grid item xs={8}>
                     <div className="question4 " data-aos='fade-up'>
-                        <p>4/6</p>
-                        <FormControl component="fieldset">
+                        {/* <FormControl component="fieldset">
                             <FormLabel htmlFor="response4" component="legend">What is your ideal temperature?</FormLabel>
                             <RadioGroup className={classes.formControl} value={userAnswer.response4} onChange={handleControlledInputChange} required autoFocus name="response4" >
                                 <FormControlLabel control={<Radio />} value="snow" id="snow" label="Snow bunny" />
@@ -219,6 +250,23 @@ export const QuizQuestions = (question) => {
                                 <FormControlLabel control={<Radio />} value="moderate" id="moderate" label="Moderate is key" />
                                 <FormControlLabel control={<Radio />} value="hot" id="hot" label="Hotter the better" />
                             </RadioGroup>
+                        </FormControl> */}
+                        <p>4/6</p>
+                        <FormControl component="fieldset">
+                            <label htmlFor="response4">What is your ideal temperature?</label>
+                            <Slider
+                                className="tempSlider"
+                                defaultValue={5}
+                                value={userAnswer.response4}
+                                name="response4"
+                                // onChange={handleControlledInputChange} required
+                                getAriaValueText={valueTemp}
+                                aria-labelledby="discrete-slider-custom"
+                                min={1}
+                                max={10}
+                                valueLabelDisplay="auto"
+                                marks={weatherMarks}
+                            />
                         </FormControl>
                     </div>
                 </Grid>
@@ -280,7 +328,7 @@ export const QuizQuestions = (question) => {
                         Submit</button>
                 </div>
             </Grid >
-        </form>
+        </form >
     )
 }
 

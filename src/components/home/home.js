@@ -37,7 +37,7 @@ export const Homepage = () => {
             <Grid container >
               <Grid item xs={10}>
                 <div className="stepSectionHeadline">
-                  <h2>Three easy steps to get started</h2>
+                  <h2>Three easy steps to get started:</h2>
                 </div>
               </Grid>
               <Grid item xs={3}>
