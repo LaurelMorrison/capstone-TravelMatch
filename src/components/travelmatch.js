@@ -5,10 +5,18 @@ import { Login } from "./auth/login"
 import { Register } from "./auth/register"
 import { NavBar } from "./nav/navBar"
 import { Footer } from "./nav/footer"
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
+
+const theme = createMuiTheme({
+  palette: {
+    primary: { main: '#DC8966' },
+    secondary: { main: '#DC8966' },
+  },
+});
 export const TravelMatch = () => (
 
-  <>
+  <MuiThemeProvider theme={theme}>
     <Route
       render={() => {
         if (sessionStorage.getItem("travelmatch_user")) {
@@ -33,5 +41,5 @@ export const TravelMatch = () => (
     <Route exact path="/register">
       <Register />
     </Route>
-  </>
+  </MuiThemeProvider>
 )

@@ -161,3 +161,19 @@ input {
 .subheadQuiz {
   font-size: 28px;
 }
+
+.question1box {
+  transition: top 1.3s;
+}
+
+label {
+  padding: 5px;
+}
+
+.MuiSlider-valueLabel {
+  font: 18px "Raleway";
+}
+
+.MuiSlider-markLabel {
+  font: 18px "Raleway";
+}
