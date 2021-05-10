@@ -1,15 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import './trip.css'
 import Grid from '@material-ui/core/Grid'
 
 export const TripCard = ({ result, handleDeleteTrip }) => {
 
     return (
-        <div className="tripCard">
+        <div className="tripCard" >
             {/* <div className="cardImage">
             <img className="destinationImg" src={trip.tripName} alt="destination picture"/>
             </div> */}
-            <Grid container justify="center">
+            < Grid container justify="center" >
                 <Grid item xs={12} >
                     <h3>Trip: {result.tripName}</h3>
                     <p>Destination: {result.locationName}</p>
@@ -20,6 +20,8 @@ export const TripCard = ({ result, handleDeleteTrip }) => {
                 </Grid>
                 <Grid item xs={12} >
                     <div className="buttonSpotBox">
+                        <button type="button" className="addDetailButton" onClick={() =>
+                            handleDeleteTrip(result.id)}>Trip Checklist</button>
                         <button type="button" className="deleteButton" onClick={() =>
                             handleDeleteTrip(result.id)}>Delete</button>
                     </div>

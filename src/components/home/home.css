@@ -90,3 +90,13 @@ h1 {
   background-repeat: no-repeat;
   background-position: right bottom;
 }
+
+.topArticleCard {
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.articleContainer {
+  display: flex;
+}

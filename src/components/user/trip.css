@@ -10,6 +10,18 @@
   text-align: center;
 }
 
+.addDetailButton {
+  border-radius: 15px;
+  height: 35px;
+  margin: 5px;
+  width: 150px;
+  border-width: 3px;
+  padding: 5px;
+  background-color: white;
+  font: 18px "Raleway";
+  text-align: center;
+}
+
 .tripHeader {
   margin: 50px;
 }

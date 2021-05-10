@@ -27,3 +27,13 @@ export const deleteTrip = (id) => {
         method: "DELETE"
     }).then(result => result.json())
 };
+
+export const updateTrip = (editedTrip) => {
+    return fetch(`${remoteURL}/userTrips/${editedTrip.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(editedTrip),
+    }).then((data) => data.json());
+};
