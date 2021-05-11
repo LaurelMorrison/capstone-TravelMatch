@@ -173,6 +173,17 @@
       "response6": "$$",
       "tripType": "Friends Trip",
       "id": 67
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$",
+      "id": 68
     }
   ],
   "Locations": [
