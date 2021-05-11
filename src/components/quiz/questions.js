@@ -35,22 +35,9 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-const callback = function (entries) {
-    entries.forEach(entry => {
-        entry.target.classList.toggle("is-visible");
-    });
-};
-
 
 AOS.init({
     duration: 1200
-});
-
-const observer = new IntersectionObserver(callback);
-
-const targets = document.querySelectorAll(".show-on-scroll");
-targets.forEach(function (target) {
-    observer.observe(target);
 });
 
 
@@ -322,7 +309,7 @@ export const QuizQuestions = (question) => {
                 <div>
                     <button
                         type="submit"
-                        className="submitButton"
+                        className="button"
                         onClick={handleClickSaveAnswer}
                         disabled={isLoading}>
                         Submit</button>

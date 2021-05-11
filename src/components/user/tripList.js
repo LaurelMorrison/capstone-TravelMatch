@@ -36,7 +36,7 @@ export const TripList = () => {
                     />)}
                 <div className="accountButtonBox">
                     <form method="get" action="/quiz">
-                        <button className="accountButton" type="submit">Add a new trip</button>
+                        <button className="buttonLarge" type="submit">Add a New Trip</button>
                     </form>
                 </div>
             </div>

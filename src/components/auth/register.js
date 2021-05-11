@@ -89,7 +89,7 @@ export const Register = () => {
                                     <input type="email" name="email" id="email" className="form-control" required value={registerUser.email} onChange={handleInputChange} />
                                 </div>
                                 <div className="submitButtonSection">
-                                    <button type="submit" className="registerButton"> Register </button>
+                                    <button type="submit" className="button"> Register </button>
                                 </div>
                             </div>
                         </Grid>

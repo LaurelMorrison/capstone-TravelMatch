@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import './trip.css'
 import Grid from '@material-ui/core/Grid'
+import trash from "../../images/trash.png";
+import packing from "../../images/packing.png";
+import planning from "../../images/planning.png";
+
 
 export const TripCard = ({ result, handleDeleteTrip }) => {
 
@@ -19,10 +23,13 @@ export const TripCard = ({ result, handleDeleteTrip }) => {
                     </div>
                 </Grid>
                 <Grid item xs={12} >
+                    {/* <div>
+                        <a href="/packingList"><img className="icon" src={packing} alt="packing list" /></a>
+                    </div> */}
                     <div className="buttonSpotBox">
-                        <button type="button" className="addDetailButton" onClick={() =>
-                            handleDeleteTrip(result.id)}>Trip Checklist</button>
-                        <button type="button" className="deleteButton" onClick={() =>
+                        <form method="get" action="/packingList">
+                            <button className="button" type="submit">Packing List</button>
+                        </form>                        <button type="button" className="button" onClick={() =>
                             handleDeleteTrip(result.id)}>Delete</button>
                     </div>
                 </Grid>

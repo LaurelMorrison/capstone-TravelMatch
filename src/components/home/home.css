@@ -1,27 +1,5 @@
-.quizButton {
-  border-radius: 15px;
-  height: 35px;
-  margin: 5px;
-  width: 150px;
-  border-width: 3px;
-  padding: 5px;
-  background-color: white;
-  font: 18px "Raleway";
-}
-
 .homepage1 {
   height: 350px;
-}
-
-.getStarted {
-  border-radius: 15px;
-  height: 35px;
-  margin: 5px;
-  width: 150px;
-  border-width: 3px;
-  padding: 5px;
-  background-color: white;
-  font: 18px "Raleway";
 }
 
 .homepage2 {
@@ -56,23 +34,22 @@ h1 {
   padding-right: 0;
 }
 
-/* .MuiGrid-grid-xs-12 {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 0;
-  padding-right: 0;
-} */
-
 .one {
   margin-left: 250px;
+  margin-right: 30px;
+  max-height: 120px;
 }
 
 .two {
   margin-left: 250px;
+  margin-right: 30px;
+  max-height: 120px;
 }
 
 .three {
   margin-left: 250px;
+  margin-right: 30px;
+  max-height: 120px;
 }
 
 .stepSectionHeadline {
@@ -88,15 +65,63 @@ h1 {
 .stepsContainer {
   background-image: url("../../images/home2.png");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right;
 }
 
 .topArticleCard {
   margin: 15px;
   padding: 10px;
+  border: solid #2c2c33 3px;
+  border-radius: 15px;
+  background-color: white;
+  height: 320px;
+}
+
+.articleHeadline {
   text-align: center;
 }
 
 .articleContainer {
   display: flex;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.articletitle {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.articleSection {
+  margin-bottom: 50px;
+}
+
+.articleImage1 {
+  max-width: 400px;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepBox {
+  display: flex;
+}
+
+.article3Image {
+  max-width: 900px;
+}
+
+.buttonHomeBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.stepsButtonBox {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }

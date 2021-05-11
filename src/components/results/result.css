@@ -14,18 +14,6 @@
   margin: 30px 40px 0px 40px;
 }
 
-.spotButton {
-  border-radius: 15px;
-  height: 35px;
-  margin: 5px;
-  width: 150px;
-  border-width: 3px;
-  padding: 5px;
-  background-color: white;
-  font: 18px "Raleway";
-  text-align: center;
-}
-
 .buttonSpotBox {
   display: flex;
   justify-content: flex-end;

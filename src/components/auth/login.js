@@ -68,7 +68,7 @@ export const Login = () => {
                                     value={loginUser.email}
                                     onChange={handleInputChange} />
                                 <div className="buttonBox">
-                                    <button type="submit" className="loginButton">
+                                    <button type="submit" className="button">
                                         Sign in
                         </button>
                                 </div>

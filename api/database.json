@@ -26,6 +26,33 @@
       "id": 5
     }
   ],
+  "packinglists": [
+    {
+      "id": 1,
+      "userTripID": 1,
+      "item": "phone"
+    },
+    {
+      "id": 2,
+      "userTripID": 46,
+      "item": "tablet"
+    },
+    {
+      "id": 4,
+      "userTripID": 47,
+      "item": "sunscreen"
+    },
+    {
+      "id": 5,
+      "userTripID": 46,
+      "item": "suitcase"
+    },
+    {
+      "id": 6,
+      "userTripID": 47,
+      "item": "swimsuit"
+    }
+  ],
   "userTrips": [
     {
       "locationID": 2,
@@ -38,30 +65,29 @@
       "id": 2
     },
     {
-      "locationID": 1,
-      "tripName": "Spring Getaway",
-      "tripType": "Friends Trip",
-      "locationName": "Santorini, Greece",
-      "locationActivities": "Visiting molten-dyed beaches, visit a winery or hiking along the calera from Fira",
-      "locationTime": "April, May, June",
-      "locationDescription": "Santorini is the supermodel of the Greek islands, a head-turner whose face is instantly recognisable around the world: multicoloured cliffs soar out of a sea-drowned caldera, topped by drifts of whitewashed buildings. With its reputation for dazzling panoramas, romantic sunsets and volcanic-sand beaches, it’s hardly surprising the island features on so many travellers’ bucket lists.",
+      "locationID": 5,
+      "tripName": "",
+      "locationName": "Paris, France",
+      "locationActivities": "View the iconic architecture, enjoy the food, shopping, or visit a museum.",
+      "locationTime": "July, August, September, October",
+      "locationDescription": "Paris' monument-lined boulevards, museums, classical bistros and boutiques are enhanced by a new wave of multimedia galleries, creative wine bars, design shops and tech start-ups.",
       "userId": 1,
-      "locationImage": "../../images/santorini.jpg",
-      "score": 4,
-      "id": 8
+      "locationImage": "../../images/paris.jpg",
+      "score": 1,
+      "id": 6
     },
     {
-      "locationID": 8,
-      "tripName": "Sister's Trip",
+      "locationID": 11,
+      "tripName": "hello",
       "tripType": "Friends Trip",
-      "locationName": "London, England",
-      "locationActivities": "Enjoy the art, go to a pub, take a tour of the architecture and get swept up in the culture/history.",
-      "locationTime": "March, April, May",
-      "locationDescription": "One of the world's most visited cities, London has something for everyone: from history and culture to fine food and good times.",
+      "locationName": "Banff National Park, Canada",
+      "locationActivities": "Whether it’s hiking along a snow-dusted ridgeline or canoeing across a placid glacial lake, Banff and Jasper boast some of North America's finest outdoor adventures. ",
+      "locationTime": "July, August, December, March",
+      "locationDescription": "Sit atop a mountain, hike through the forest, feel the spray of a waterfall: Banff offers outdoor experiences at their simplest and best.",
       "userId": 1,
-      "locationImage": "../../images/london.jpg",
-      "score": 6,
-      "id": 10
+      "locationImage": "../../images/banff.jpg",
+      "score": 4,
+      "id": 7
     }
   ],
   "userAnswers": [
@@ -76,30 +102,6 @@
       "response6": "$$$",
       "tripType": "Family Vacay",
       "id": 22
-    },
-    {
-      "tripName": "hello",
-      "userId": 1,
-      "response1": "bungee",
-      "response2": "resort",
-      "response3": "learn",
-      "response4": "sweater",
-      "response5": "local",
-      "response6": "$$",
-      "tripType": "Couples Retreat",
-      "id": 43
-    },
-    {
-      "tripName": "Honeymoon",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "$$$$",
-      "tripType": "Couples Retreat",
-      "id": 45
     },
     {
       "tripName": "hello",
@@ -126,120 +128,6 @@
       "id": 47
     },
     {
-      "tripName": "Honeymoon",
-      "userId": 1,
-      "response1": "beach",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "$$",
-      "id": 48
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "tripType": "Couples Retreat",
-      "id": 49
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "id": 50
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "cook",
-      "response6": "",
-      "tripType": "Friends Trip",
-      "id": 51
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "shopping",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "id": 52
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "tripType": "Family Vacay",
-      "id": 53
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "id": 54
-    },
-    {
-      "tripName": "hello",
-      "userId": 1,
-      "response1": "bungee",
-      "response2": "resort",
-      "response3": "adventure",
-      "response4": "sweater",
-      "response5": "wine",
-      "response6": "$$$$",
-      "tripType": "Solo Adventure",
-      "id": 55
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "id": 56
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "$$$$",
-      "id": 57
-    },
-    {
       "tripName": "Spring Getaway",
       "userId": 1,
       "response1": "cooking",
@@ -250,75 +138,6 @@
       "response6": "$$$",
       "tripType": "Friends Trip",
       "id": 58
-    },
-    {
-      "tripName": "Family Reunion",
-      "userId": 1,
-      "response1": "beach",
-      "response2": "bungalow",
-      "response3": "relaxed",
-      "response4": "moderate",
-      "response5": "seafood",
-      "response6": "$$",
-      "tripType": "Family Vacay",
-      "id": 59
-    },
-    {
-      "tripName": "Sister's Trip",
-      "userId": 1,
-      "response1": "bar",
-      "response2": "apartment",
-      "response3": "party",
-      "response4": "moderate",
-      "response5": "wine",
-      "response6": "$$$",
-      "tripType": "Friends Trip",
-      "id": 60
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "bar",
-      "response2": "hotel",
-      "response3": "relaxed",
-      "response4": "sweater",
-      "response5": "cook",
-      "response6": "$$$$",
-      "id": 61
-    },
-    {
-      "tripName": "kyle test-2",
-      "userId": 1,
-      "response1": "bar",
-      "response2": "boat",
-      "response3": "party",
-      "response4": "hot",
-      "response5": "wine",
-      "response6": "$",
-      "tripType": "Friends Trip",
-      "id": 62
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "id": 63
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "id": 64
     },
     {
       "tripName": "kyle test-2",
@@ -335,81 +154,25 @@
     {
       "tripName": "",
       "userId": 1,
-      "response1": "beach",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "$$$",
-      "id": 66
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "vineyard",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "id": 67
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "museum",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "id": 68
-    },
-    {
-      "tripName": "",
-      "userId": 1,
       "response1": "",
       "response2": "",
       "response3": "",
       "response4": "",
       "response5": "",
-      "response6": "",
-      "id": 69
+      "response6": "$$$$",
+      "id": 66
     },
     {
-      "tripName": "Honeymoon",
+      "tripName": "hello",
       "userId": 1,
-      "response1": "beach",
+      "response1": "skiing",
       "response2": "bungalow",
-      "response3": "adventure",
-      "response4": "moderate",
-      "response5": "wine",
-      "response6": "$$$",
-      "tripType": "Couples Retreat",
-      "id": 70
-    },
-    {
-      "tripName": "",
-      "userId": 1,
-      "response1": "beach",
-      "response2": "hotel",
-      "response3": "adventure",
-      "response4": "hot",
-      "response5": "restaurant",
-      "response6": "$$$",
-      "id": 71
-    },
-    {
-      "tripName": "Honeymoon",
-      "userId": 1,
-      "response1": "beach",
-      "response2": "bungalow",
-      "response3": "adventure",
-      "response4": "moderate",
-      "response5": "wine",
-      "response6": "$$$",
-      "tripType": "Couples Retreat",
-      "id": 72
+      "response3": "relaxed",
+      "response4": "",
+      "response5": "cook",
+      "response6": "$$",
+      "tripType": "Friends Trip",
+      "id": 67
     }
   ],
   "Locations": [
