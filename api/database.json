@@ -184,6 +184,17 @@
       "response5": "",
       "response6": "$",
       "id": 68
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$$$",
+      "id": 69
     }
   ],
   "Locations": [
@@ -192,7 +203,7 @@
       "name": "Santorini, Greece",
       "image": "../../images/santorini.jpg",
       "time": "April, May, June",
-      "topActivities": "Visiting molten-dyed beaches, visit a winery or hiking along the calera from Fira",
+      "topActivities": "Visiting molten-dyed beaches, visit a winery or hiking along the calera from Fira.",
       "description": "Santorini is the supermodel of the Greek islands, a head-turner whose face is instantly recognisable around the world: multicoloured cliffs soar out of a sea-drowned caldera, topped by drifts of whitewashed buildings. With its reputation for dazzling panoramas, romantic sunsets and volcanic-sand beaches, it’s hardly surprising the island features on so many travellers’ bucket lists.",
       "activity": [
         "hiking",
