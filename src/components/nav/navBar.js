@@ -22,7 +22,7 @@ export const NavBar = (props) => {
           <Link className="nav-link" to="/">Home</Link>
           <Link className="nav-link" to="/quiz">Plan a trip</Link>
           <Link className="nav-link" to="/trips">My trips</Link>
-          <Link className="nav-link" onClick={handleLogout} to="/Login"> Logout </Link>
+          <Link className="nav-link" onClick={handleLogout} to="/login"> Logout </Link>
         </ul>
       </div>
     </nav>

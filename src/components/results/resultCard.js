@@ -38,7 +38,7 @@ export const DestinationCard = ({ result }) => {
                         <button
                             type="submit"
                             id={result.id}
-                            className="spotButton"
+                            className="buttonLarge"
                             onClick={handleClickAddTrip}
                             disabled={isLoading}>
                             This is the spot!</button>
