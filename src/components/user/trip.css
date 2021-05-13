@@ -125,3 +125,21 @@
   flex-direction: column;
   vertical-align: top;
 }
+
+.tripDetails {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.packingListForm {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.MuiChip-colorPrimary {
+  color: #f0d7cc;
+}
+
+.MuiChip-label {
+  font: "Raleway";
+}

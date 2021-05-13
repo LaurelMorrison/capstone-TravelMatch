@@ -1,66 +1,42 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
 import Grid from '@material-ui/core/Grid'
-import ListItem from '@material-ui/core/ListItem';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import ListItemText from '@material-ui/core/ListItemText';
-import Checkbox from '@material-ui/core/Checkbox';
+import React, { useState } from "react";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import TextField from "@material-ui/core/TextField";
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        width: '100%',
-        maxWidth: 360,
-        backgroundColor: theme.palette.background.paper,
-    },
-}));
+
 
 export function PackingCheckboxList() {
-    const classes = useStyles();
-    const [checked, setChecked] = React.useState([1]);
-
-    const handleToggle = (value) => () => {
-        const currentIndex = checked.indexOf(value);
-        const newChecked = [...checked];
-
-        if (currentIndex === -1) {
-            newChecked.push(value);
-        } else {
-            newChecked.splice(currentIndex, 1);
-        }
-
-        setChecked(newChecked);
-    };
+    const [packingList, setPackingList] = useState([]);
 
     return (
-        <>
-            <Grid container justify="center">
-                <Grid item xs={9} >
-                    <div>
-                        <h1>Packing List</h1>
-                    </div>
-                </Grid>
-                <Grid item xs={9} >
-                    <List dense className={classes.root}>
-                        {["Toothbrush", "Toothpaste", "Phone charger", "Passport (or other form of ID)"].map((value) => {
-                            const labelId = `checkbox-list-secondary-label-${value}`;
-                            return (
-                                <ListItem key={value} button>
-                                    <ListItemText id={labelId} primary={`${value}`} />
-                                    <ListItemSecondaryAction>
-                                        <Checkbox
-                                            edge="end"
-                                            onChange={handleToggle(value)}
-                                            checked={checked.indexOf(value) !== -1}
-                                            inputProps={{ 'aria-labelledby': labelId }}
-                                        />
-                                    </ListItemSecondaryAction>
-                                </ListItem>
-                            );
-                        })}
-                    </List>
+        <div className="packingListForm">
+            <Grid container>
+                <Grid>
+                    <label>Build out your packing checklist: </label>
+                    <Autocomplete
+                        multiple
+                        id="tags-outlined"
+                        options={['backpack', 'book', 'bras', 'bug spray', 'cash/currency', 'computer', 'deodorant', 'dresses', 'emergency contact info', 'flip flops', 'glasses/contacts', 'gloves', 'hair brush', 'hair ties/headband', 'hat', 'headphones', 'hiking shoes', 'journal', 'makeup', 'medication', 'neck pillow', 'outlet converter', 'pants', 'pjs', 'purse', 'razor', 'shampoo/conditioner', 'shorts', 'skiing poles', 'skis', 'snow pants', 'snowboard', 'socks', 'sunglasses', 'surfboard', 'swimsuit', 't-shirts', 'tank tops', 'tickets', 'toothbrush', 'towel', 'tweezer', 'umbrella', 'underwear', 'wallet', 'winter jacket']}
+                        value={packingList}
+                        onChange={(e, newval, reason) => {
+                            setPackingList(newval);
+                        }}
+                        renderInput={(params) => (
+                            <TextField
+                                {...params}
+                                variant="outlined"
+                                color="primary"
+                                style={{ colorPrimary: '#f0d7cc' }}
+                                onKeyDown={(e) => {
+                                    if (e.keyCode === 13 && e.target.value) {
+                                        setPackingList(packingList.concat(e.target.value));
+                                    }
+                                }}
+                            />
+                        )}
+                    />
                 </Grid>
             </Grid>
-        </>
+        </div>
     );
 }
