@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import { addNewAnswers } from '../../modules/UserAnswerManager';
 import "./quiz.css";
 import { makeStyles } from '@material-ui/core/styles';
-import Slider from '@material-ui/core/Slider';
+// import Slider from '@material-ui/core/Slider';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -41,13 +41,13 @@ AOS.init({
 });
 
 
-function valueTemp(value) {
-    return `${value}`;
-}
+// function valueTemp(value) {
+//     return `${value}`;
+// }
 
-function valueBudget(value) {
-    return `${value}`;
-}
+// function valueBudget(value) {
+//     return `${value}`;
+// }
 
 export const QuizQuestions = (question) => {
     const [isLoading, setIsLoading] = useState(false)
@@ -64,27 +64,27 @@ export const QuizQuestions = (question) => {
         response6: ''
     });
 
-    const budgetMarks = [
-        {
-            value: 1,
-            label: "Budget Friendly"
-        },
-        {
-            value: 10,
-            label: "Spare No Expense"
-        }
-    ]
+    // const budgetMarks = [
+    //     {
+    //         value: 1,
+    //         label: "Budget Friendly"
+    //     },
+    //     {
+    //         value: 10,
+    //         label: "Spare No Expense"
+    //     }
+    // ]
 
-    const weatherMarks = [
-        {
-            value: 1,
-            label: "Snow Bunny"
-        },
-        {
-            value: 10,
-            label: "Hotter the Better"
-        }
-    ]
+    // const weatherMarks = [
+    //     {
+    //         value: 1,
+    //         label: "Snow Bunny"
+    //     },
+    //     {
+    //         value: 10,
+    //         label: "Hotter the Better"
+    //     }
+    // ]
 
     const handleControlledInputChange = (event) => {
         const newUserAnswer = { ...userAnswer }
@@ -229,7 +229,8 @@ export const QuizQuestions = (question) => {
                 </Grid>
                 <Grid item xs={8}>
                     <div className="question4 " data-aos='fade-up'>
-                        {/* <FormControl component="fieldset">
+                        <p>4/6</p>
+                        <FormControl component="fieldset">
                             <FormLabel htmlFor="response4" component="legend">What is your ideal temperature?</FormLabel>
                             <RadioGroup className={classes.formControl} value={userAnswer.response4} onChange={handleControlledInputChange} required autoFocus name="response4" >
                                 <FormControlLabel control={<Radio />} value="snow" id="snow" label="Snow bunny" />
@@ -237,9 +238,9 @@ export const QuizQuestions = (question) => {
                                 <FormControlLabel control={<Radio />} value="moderate" id="moderate" label="Moderate is key" />
                                 <FormControlLabel control={<Radio />} value="hot" id="hot" label="Hotter the better" />
                             </RadioGroup>
-                        </FormControl> */}
-                        <p>4/6</p>
-                        <FormControl component="fieldset">
+                        </FormControl>
+
+                        {/* <FormControl component="fieldset">
                             <label htmlFor="response4">What is your ideal temperature?</label>
                             <Slider
                                 className="tempSlider"
@@ -254,7 +255,7 @@ export const QuizQuestions = (question) => {
                                 valueLabelDisplay="auto"
                                 marks={weatherMarks}
                             />
-                        </FormControl>
+                        </FormControl> */}
                     </div>
                 </Grid>
                 <Grid item xs={2}>

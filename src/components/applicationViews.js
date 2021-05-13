@@ -7,7 +7,6 @@ import { TripList } from './user/tripList'
 import { DestinationArticle } from './home/destinationArticle'
 import { PlanningArticle } from './home/planningArticle'
 import { IslandArticle } from './home/islandArticle'
-import { PackingCheckboxList } from './user/packingChecklist'
 import { TripChecklist } from './user/tripChecklist'
 
 export const ApplicationViews = () => {
@@ -42,11 +41,7 @@ export const ApplicationViews = () => {
         <IslandArticle />
       </Route>
 
-      <Route exact path="/packingList">
-        <PackingCheckboxList />
-      </Route>
-
-      <Route exact path="/tripList">
+      <Route path="/tripList">
         <TripChecklist />
       </Route>
     </>

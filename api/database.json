@@ -88,6 +88,18 @@
       "locationImage": "../../images/banff.jpg",
       "score": 4,
       "id": 7
+    },
+    {
+      "locationID": 2,
+      "tripName": "",
+      "locationName": "Cook Islands",
+      "locationActivities": "Drink home brew at a traditional ‘Atiuan tumunu (bush-beer drinking club), explore the ancient makatea (raised coral cliffs) and taro fields of Mangaia, or swim in the underground cave pools of Mitiaro and Ma’uke.",
+      "locationTime": "September, October, November",
+      "locationDescription": "Fifteen droplets of land cast across 2 million sq km of wild Pacific blue, the Cook Islands are simultaneously remote and accessible, modern and traditional.",
+      "userId": 1,
+      "locationImage": "../../images/cook.jpg",
+      "score": 1,
+      "id": 8
     }
   ],
   "userAnswers": [
@@ -195,6 +207,54 @@
       "response5": "",
       "response6": "$$$$",
       "id": 69
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "beach",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 70
+    },
+    {
+      "tripName": "Family Reunion",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$",
+      "id": 71
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 72
+    }
+  ],
+  "TripPlanningLists": [
+    {
+      "id": 1,
+      "tripId": 7,
+      "packingList": [
+        "toothbrush",
+        "phone charger"
+      ],
+      "hotelConfirmation": "hi",
+      "flightConfirmation": "hi",
+      "hotelDetails": "hilton",
+      "startDate": "2021-05-18T16:00:00.000Z",
+      "endDate": "2021-05-18T16:00:00.000Z"
     }
   ],
   "Locations": [
