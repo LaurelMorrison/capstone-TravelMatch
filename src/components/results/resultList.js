@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { DestinationCard } from './resultCard';
 import { getRankedLocation } from '../quiz/quizCalc';
-// import locations1 from "../../images/locations1.png";
-// import locations2 from "../../images/locations2.png";
 
 
 function useQuery() {
