@@ -11,6 +11,11 @@ export const getTripsByUserId = () => {
         .then(result => result.json())
 };
 
+export const getTripById = (tripId) => {
+    return fetch(`${remoteURL}/userTrips/${tripId}`)
+        .then(result => result.json())
+};
+
 
 export const addNewTrip = (trip) => {
     return fetch(`${remoteURL}/userTrips`, {

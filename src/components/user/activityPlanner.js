@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { blue } from "@material-ui/core/colors";
+import Modal from '@material-ui/core/Modal';
+import { makeStyles } from "@material-ui/core/styles";
 
-// fake data generator
-const getItems = (count, offset = 0) =>
-    Array.from({ length: count }, (v, k) => k).map(k => ({
-        id: `item-${k + offset}-${new Date().getTime()}`,
-        content: `item ${k + offset}`
-    }));
 
 const reorder = (list, startIndex, endIndex) => {
     const result = Array.from(list);
@@ -54,59 +48,41 @@ const getListStyle = isDraggingOver => ({
     width: 250
 });
 
-const activityTypes = {
-    flight: 'flight',
-    food: 'food',
-    activity: 'activity',
-    accomodation: 'accomodation∂'
-}
-
-const dayActivityMockData = [
-    [
-        {
-            id: '1',
-            activityType: activityTypes.flight,
-            name: 'Flight from boston to mars',
-            time: Date.now(),
-            confirmationNumber: '123'
-        },
-        {
-            id: '2',
-            activityType: activityTypes.food,
-            name: 'dinner at the airport',
-            time: Date.now(),
-            confirmationNumber: '123'
-        },
-    ],
-    [
-        {
-            id: '3',
-            activityType: activityTypes.activity,
-            name: 'Skydiving',
-            time: Date.now(),
-            confirmationNumber: '123'
-        },
-        {
-            id: '4',
-            activityType: activityTypes.accomodation,
-            name: '1 night at the Ritz',
-            time: Date.now(),
-            confirmationNumber: '123'
-        },
-    ],
-]
 
 const emptyActivity = {
     activityType: '',
     name: '',
-    time: Date.now(),
+    detail: '',
     confirmationNumber: ''
 }
 
-export const ActivityList = () => {
-    const [dayActivities, setDayActivities] = useState(dayActivityMockData);
-    const [formMode, setFormMode] = useState(false);
+function getModalStyle() {
+    const top = 50;
+    const left = 50;
+    return {
+        top: `${top}%`,
+        left: `${left}%`,
+        transform: `translate(-${top}%, -${left}%)`
+    };
+}
+const useStyles = makeStyles(theme => ({
+    paper: {
+        position: "absolute",
+        width: 300,
+        backgroundColor: theme.palette.background.paper,
+        padding: 20
+    }
+}));
+
+export const ActivityList = ({ dayActivities, setDayActivities }) => {
     const [newActivity, setNewActivity] = useState(emptyActivity);
+    const classes = useStyles();
+    const [modalStyle] = React.useState(getModalStyle);
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
 
     function onDragEnd(result) {
         const { source, destination } = result;
@@ -154,32 +130,46 @@ export const ActivityList = () => {
             <button
                 type="button"
                 className="button"
-                onClick={() => {
-                    setFormMode(true)
-                }}
+                onClick={handleOpen}
             >
                 Add new item
       </button>
             <div style={{ display: "flex" }}>
-                <>
-                    {
-                        formMode &&
-                        <div>
-                            <input type="text" label="name" value={newActivity.name} id="name" onChange={setFormValue} />
-                            <input type="text" label="time" value={newActivity.time} id="time" onChange={setFormValue} />
-                            <input type="text" label="confirmation number" value={newActivity.confirmationNumber} id="confirmationNumber" onChange={setFormValue} />
-                            <button type="submit" className="button" onClick={
-                                () => {
-                                    const newActivityArr = [...dayActivities]
-                                    newActivityArr[0].push({ ...newActivity, id: Date.now().toString() })
-                                    setDayActivities(newActivityArr)
-                                    setNewActivity(emptyActivity)
-                                    setFormMode(false)
-                                }
-                            }>Save</button>
+                <Modal open={open}>
+                    <div style={modalStyle} className={classes.paper}>
+                        <div className="activityTypeDropdown">
+                            <label id="activityType">Type: </label>
+                            <select className="typeDropdown" name="tripType" value={newActivity.activityType} onChange={setFormValue}>
+                                <option value="" defaultValue hidden>Choose a type</option>
+                                <option className="dropdown" value="flight">Transportation</option>
+                                <option className="dropdown" value="activity"> Activity</option>
+                                <option className="dropdown" value="food"> Food</option>
+                                <option className="dropdown" value="accomodation" > Accomodation</option>
+                            </select>
                         </div>
-                    }
-                </>
+                        <div>
+                            <label>Name: </label>
+                            <input type="text" value={newActivity.name} id="name" onChange={setFormValue} />
+                        </div>
+                        <div>
+                            <label>Details:</label>
+                            <input type="text" value={newActivity.detail} id="detail" onChange={setFormValue} />
+                        </div>
+                        <div>
+                            <label>Confirmation number:</label>
+                            <input type="text" value={newActivity.confirmationNumber} id="confirmationNumber" onChange={setFormValue} />
+                        </div>
+                        <button type="submit" className="button" onClick={
+                            () => {
+                                const newActivityArr = [...dayActivities]
+                                newActivityArr[0].push({ ...newActivity, id: Date.now().toString() })
+                                setDayActivities(newActivityArr)
+                                setNewActivity(emptyActivity)
+                                setOpen(false)
+                            }
+                        }>Save</button>
+                    </div>
+                </Modal>
                 <DragDropContext onDragEnd={onDragEnd}>
                     {dayActivities.map((el, ind) => (
                         <Droppable key={ind} droppableId={`${ind}`}>
@@ -209,25 +199,26 @@ export const ActivityList = () => {
                                                     <div
                                                         style={{
                                                             display: "flex",
-                                                            justifyContent: "space-around",
-
-
+                                                            justifyContent:
+                                                                "space-around"
                                                         }}>
-                                                        <p>{item.activityType}</p>
-                                                        <p> {item.name}</p>
-                                                        <p>{item.time}</p>
-                                                        <p>{item.confirmationNumber}</p>
-                                                        <button
-                                                            type="button"
-                                                            className="button"
-                                                            onClick={() => {
-                                                                const newState = [...dayActivities];
-                                                                newState[ind].splice(index, 1);
-                                                                setDayActivities(
-                                                                    newState.filter(group => group.length)
-                                                                );
-                                                            }}>
-                                                            delete</button>
+                                                        <div className="activityCard">
+                                                            <p>Type: {item.activityType}</p>
+                                                            <p>Name: {item.name}</p>
+                                                            <p>Time: {item.time}</p>
+                                                            <p>Confirmation #: {item.confirmationNumber}</p>
+                                                            <button
+                                                                type="button"
+                                                                className="button"
+                                                                onClick={() => {
+                                                                    const newState = [...dayActivities];
+                                                                    newState[ind].splice(index, 1);
+                                                                    setDayActivities(
+                                                                        newState.filter(group => group.length)
+                                                                    );
+                                                                }}>
+                                                                delete</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             )}

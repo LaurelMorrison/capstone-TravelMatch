@@ -4,7 +4,6 @@ import Autocomplete from "@material-ui/lab/Autocomplete";
 import TextField from "@material-ui/core/TextField";
 
 
-
 export const PackingCheckboxList = ({ values, setFieldValue }) => {
     const [packingList, setPackingList] = useState([]);
 

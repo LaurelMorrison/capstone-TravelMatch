@@ -254,7 +254,235 @@
       "flightConfirmation": "hi",
       "hotelDetails": "hilton",
       "startDate": "2021-05-18T16:00:00.000Z",
-      "endDate": "2021-05-18T16:00:00.000Z"
+      "endDate": "2021-05-18T16:00:00.000Z",
+      "dayActivities": [
+        {
+          "activityType": "flight",
+          "confirmationNumber": "123",
+          "detail": "Departs at 2am, arrives at 8pm",
+          "id": "1",
+          "name": "Flight from boston to mars"
+        },
+        {
+          "activityType": "food",
+          "confirmationNumber": "123",
+          "detail": "yum",
+          "id": "2",
+          "name": "Food at airport"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "packingList": [
+        "flip flops",
+        "gloves"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "activityType": "flight",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "2",
+            "activityType": "food",
+            "name": "dinner at the airport",
+            "detail": "Maybe Red Lobster?",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "4",
+            "activityType": "accomodation",
+            "name": "1 night at the Ritz",
+            "detail": "Check-in is at 10am",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "activityType": "activity",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          }
+        ]
+      ]
+    },
+    {
+      "flightConfirmation": "",
+      "hotelConfirmation": "",
+      "hotelDetails": "",
+      "packingList": [
+        "glasses/contacts",
+        "emergency contact info"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "activityType": "flight",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "2",
+            "activityType": "food",
+            "name": "dinner at the airport",
+            "detail": "Maybe Red Lobster?",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "4",
+            "activityType": "accomodation",
+            "name": "1 night at the Ritz",
+            "detail": "Check-in is at 10am",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "activityType": "activity",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          }
+        ]
+      ],
+      "id": 3
+    },
+    {
+      "flightConfirmation": "",
+      "hotelConfirmation": "",
+      "hotelDetails": "",
+      "packingList": [
+        "gloves"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "activityType": "flight",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "2",
+            "activityType": "food",
+            "name": "dinner at the airport",
+            "detail": "Maybe Red Lobster?",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "4",
+            "activityType": "accomodation",
+            "name": "1 night at the Ritz",
+            "detail": "Check-in is at 10am",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "activityType": "activity",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          }
+        ]
+      ],
+      "id": 4
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "packingList": [
+        "gloves",
+        "flip flops"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "activityType": "flight",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "2",
+            "activityType": "food",
+            "name": "dinner at the airport",
+            "detail": "Maybe Red Lobster?",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "4",
+            "activityType": "accomodation",
+            "name": "1 night at the Ritz",
+            "detail": "Check-in is at 10am",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "activityType": "activity",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          }
+        ]
+      ]
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "packingList": [
+        "hair brush"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "activityType": "flight",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "2",
+            "activityType": "food",
+            "name": "dinner at the airport",
+            "detail": "Maybe Red Lobster?",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "4",
+            "activityType": "accomodation",
+            "name": "1 night at the Ritz",
+            "detail": "Check-in is at 10am",
+            "confirmationNumber": "123"
+          }
+        ]
+      ]
     }
   ],
   "Locations": [
