@@ -100,6 +100,18 @@
       "locationImage": "../../images/cook.jpg",
       "score": 1,
       "id": 8
+    },
+    {
+      "locationID": 3,
+      "tripName": "",
+      "locationName": "Azores Islands, Portugal",
+      "locationActivities": "It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider.",
+      "locationTime": "June, July, August",
+      "locationDescription": "This remote archipelago simply abounds with adventures; it is, in fact, the Hawaii of the mid-Atlantic. It has world-class whale watching, sailing, diving, hiking and canyoning; excellent surfing and other watersports; rich opportunities for on horseback, on bikes or, for the daredevils, by paraglider. Then there is the landscape itself: a wonderland of seething mud pots, fantastical caverns, and vivid crater lakes that speak of a volcanic origin.",
+      "userId": 1,
+      "locationImage": "../../images/azores.jpg",
+      "score": 1,
+      "id": 9
     }
   ],
   "userAnswers": [
@@ -240,177 +252,136 @@
       "response5": "",
       "response6": "",
       "id": 72
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$$",
+      "id": 73
     }
   ],
   "TripPlanningLists": [
     {
-      "id": 1,
-      "tripId": 7,
-      "packingList": [
-        "toothbrush",
-        "phone charger"
-      ],
-      "hotelConfirmation": "hi",
-      "flightConfirmation": "hi",
-      "hotelDetails": "hilton",
-      "startDate": "2021-05-18T16:00:00.000Z",
-      "endDate": "2021-05-18T16:00:00.000Z",
-      "dayActivities": [
-        {
-          "activityType": "flight",
-          "confirmationNumber": "123",
-          "detail": "Departs at 2am, arrives at 8pm",
-          "id": "1",
-          "name": "Flight from boston to mars"
-        },
-        {
-          "activityType": "food",
-          "confirmationNumber": "123",
-          "detail": "yum",
-          "id": "2",
-          "name": "Food at airport"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "packingList": [
-        "flip flops",
-        "gloves"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "1",
-            "activityType": "flight",
-            "name": "Flight from boston to mars",
-            "detail": "Departs at 2am, arrives at 8pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "4",
-            "activityType": "accomodation",
-            "name": "1 night at the Ritz",
-            "detail": "Check-in is at 10am",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "3",
-            "activityType": "activity",
-            "name": "Skydiving",
-            "detail": "departs at 3pm",
-            "confirmationNumber": "123"
-          }
-        ]
-      ]
-    },
-    {
-      "flightConfirmation": "",
-      "hotelConfirmation": "",
-      "hotelDetails": "",
-      "packingList": [
-        "glasses/contacts",
-        "emergency contact info"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "1",
-            "activityType": "flight",
-            "name": "Flight from boston to mars",
-            "detail": "Departs at 2am, arrives at 8pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "4",
-            "activityType": "accomodation",
-            "name": "1 night at the Ritz",
-            "detail": "Check-in is at 10am",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "3",
-            "activityType": "activity",
-            "name": "Skydiving",
-            "detail": "departs at 3pm",
-            "confirmationNumber": "123"
-          }
-        ]
-      ],
-      "id": 3
-    },
-    {
-      "flightConfirmation": "",
-      "hotelConfirmation": "",
-      "hotelDetails": "",
-      "packingList": [
-        "gloves"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "1",
-            "activityType": "flight",
-            "name": "Flight from boston to mars",
-            "detail": "Departs at 2am, arrives at 8pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "4",
-            "activityType": "accomodation",
-            "name": "1 night at the Ritz",
-            "detail": "Check-in is at 10am",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "3",
-            "activityType": "activity",
-            "name": "Skydiving",
-            "detail": "departs at 3pm",
-            "confirmationNumber": "123"
-          }
-        ]
-      ],
-      "id": 4
-    },
-    {
-      "id": 5,
       "userId": 1,
+      "id": 8,
       "packingList": [
-        "gloves",
+        "deodorant",
+        "cash/currency"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "activityType": "flight",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "activityType": "activity",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          }
+        ]
+      ],
+      "tripId": "8"
+    },
+    {
+      "userId": 1,
+      "id": 9,
+      "packingList": [
+        "hair ties/headband",
+        "emergency contact info",
+        "glasses/contacts",
+        "cash/currency",
+        "flip flops",
+        "deodorant"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "activityType": "flight",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "2",
+            "activityType": "food",
+            "name": "dinner at the airport",
+            "detail": "Maybe Red Lobster?",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "activityType": "activity",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "4",
+            "activityType": "accomodation",
+            "name": "1 night at the Ritz",
+            "detail": "Check-in is at 10am",
+            "confirmationNumber": "123"
+          }
+        ]
+      ],
+      "tripId": "9"
+    },
+    {
+      "userId": 1,
+      "id": 10,
+      "packingList": [
+        "glasses/contacts"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "activityType": "flight",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "activityType": "activity",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "4",
+            "activityType": "accomodation",
+            "name": "1 night at the Ritz",
+            "detail": "Check-in is at 10am",
+            "confirmationNumber": "123"
+          }
+        ]
+      ],
+      "tripId": "9"
+    },
+    {
+      "userId": 1,
+      "id": 11,
+      "packingList": [
+        "hair brush",
         "flip flops"
       ],
       "dayActivities": [
@@ -421,13 +392,6 @@
             "name": "Flight from boston to mars",
             "detail": "Departs at 2am, arrives at 8pm",
             "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
           }
         ],
         [
@@ -448,11 +412,12 @@
             "confirmationNumber": "123"
           }
         ]
-      ]
+      ],
+      "tripId": "6"
     },
     {
       "userId": 1,
-      "id": 6,
+      "id": 12,
       "packingList": [
         "hair brush"
       ],
@@ -475,6 +440,13 @@
         ],
         [
           {
+            "id": "3",
+            "activityType": "activity",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          },
+          {
             "id": "4",
             "activityType": "accomodation",
             "name": "1 night at the Ritz",
@@ -482,7 +454,8 @@
             "confirmationNumber": "123"
           }
         ]
-      ]
+      ],
+      "tripId": "6"
     }
   ],
   "Locations": [

@@ -179,7 +179,7 @@ export const ActivityList = ({ dayActivities, setDayActivities }) => {
                                     style={getListStyle(snapshot.isDraggingOver)}
                                     {...provided.droppableProps}
                                 >
-                                    <h2>{`Day ${ind + 1}`}</h2>
+                                    <h3>{`Day ${ind + 1}`}</h3>
                                     {el.map((item, index) => (
                                         <Draggable
                                             key={item.id}

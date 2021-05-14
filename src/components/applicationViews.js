@@ -8,7 +8,7 @@ import { DestinationArticle } from './home/destinationArticle'
 import { PlanningArticle } from './home/planningArticle'
 import { IslandArticle } from './home/islandArticle'
 import { TripChecklist } from './user/tripChecklist'
-import { Planninglist } from './tripPlans/planninglist'
+import { PlanningList } from './tripPlans/planninglist'
 
 export const ApplicationViews = () => {
   return (
@@ -47,7 +47,7 @@ export const ApplicationViews = () => {
       </Route>
 
       <Route exact path="/tripPlans/:tripId(\d+)">
-        <Planninglist />
+        <PlanningList />
       </Route>
     </>
   )

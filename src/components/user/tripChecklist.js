@@ -16,7 +16,6 @@ import airport from "../../images/airport.png";
 import dog from "../../images/dog.png";
 import { useHistory } from 'react-router';
 import { addNewPlan } from "../../modules/TripPlanningManager"
-import { id } from 'date-fns/locale';
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);
@@ -90,7 +89,8 @@ export const TripChecklist = () => {
                 userId: parseInt(sessionStorage.getItem("travelmatch_user")),
                 id: '',
                 packingList: [],
-                dayActivities: dayActivityMockData
+                dayActivities: dayActivityMockData,
+                tripId: tripId
             }}
 
 
@@ -103,7 +103,7 @@ export const TripChecklist = () => {
                 }, 500);
                 addNewPlan(values)
                     .then((tripPlans) => {
-                        history.push(`/tripPlans/${tripPlans.id}`)
+                        history.push(`/tripPlans/${tripPlans.tripId}`)
                     })
             }}
         >
@@ -151,15 +151,16 @@ export const TripChecklist = () => {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={4} >
-                                <img className="airport" src={airport} alt="airport" />
-                            </Grid>
+
                             <Grid item xs={8} >
                                 <div className="packingForm">
                                     <h2>Packing List</h2>
                                     <PackingCheckboxList values={values} setFieldValue={setFieldValue}
                                     />
                                 </div>
+                            </Grid>
+                            <Grid item xs={4} >
+                                <img className="airport" src={airport} alt="airport" />
                             </Grid>
                             <Box margin={1}>
                                 <button
