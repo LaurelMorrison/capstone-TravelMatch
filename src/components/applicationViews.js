@@ -8,6 +8,7 @@ import { DestinationArticle } from './home/destinationArticle'
 import { PlanningArticle } from './home/planningArticle'
 import { IslandArticle } from './home/islandArticle'
 import { TripChecklist } from './user/tripChecklist'
+import { ActivityList } from './user/activityPlanner'
 
 export const ApplicationViews = () => {
   return (
@@ -43,6 +44,10 @@ export const ApplicationViews = () => {
 
       <Route path="/tripList">
         <TripChecklist />
+      </Route>
+
+      <Route path="/ActivityList">
+        <ActivityList />
       </Route>
     </>
   )

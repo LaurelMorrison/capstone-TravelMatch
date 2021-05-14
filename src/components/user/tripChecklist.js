@@ -30,7 +30,7 @@ export const TripChecklist = () => {
                 flightConfirmation: '',
                 hotelConfirmation: '',
                 hotelDetails: '',
-                options: []
+                packingList: []
             }}
 
             onSubmit={(values, { setSubmitting }) => {
@@ -43,7 +43,7 @@ export const TripChecklist = () => {
                 }, 500);
             }}
         >
-            {({ submitForm, isSubmitting }) => (
+            {({ submitForm, isSubmitting, values, setFieldValue }) => (
                 <MuiPickersUtilsProvider utils={DateFnsUtils}>
                     <Form className="tripDetails">
                         <h1>Trip Planning</h1>
@@ -107,7 +107,7 @@ export const TripChecklist = () => {
                         <br></br>
                         <div className="packingForm">
                             <h3>Packing Checklist</h3>
-                            <PackingCheckboxList
+                            <PackingCheckboxList values={values} setFieldValue={setFieldValue}
                             />
                         </div>
                         <br></br>
