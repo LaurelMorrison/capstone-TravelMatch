@@ -21,6 +21,7 @@ export const PlanningList = () => {
     return (
         <div className="tripPlanList" >
             <p>Hey</p>
+            {/* <p>{tripPlan.packingList}</p> */}
 
         </div>
     )

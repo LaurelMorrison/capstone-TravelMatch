@@ -90,7 +90,8 @@ export const TripChecklist = () => {
                 id: '',
                 packingList: [],
                 dayActivities: dayActivityMockData,
-                tripId: tripId
+                tripId: tripId,
+                startDate: dates.startDate
             }}
 
 
@@ -99,7 +100,6 @@ export const TripChecklist = () => {
                 setTimeout(() => {
                     values.startDate = dates.startDate.toISOString()
                     values.endDate = dates.endDate.toISOString()
-                    console.log("value", { ...values, tripId })
                 }, 500);
                 addNewPlan(values)
                     .then((tripPlans) => {
