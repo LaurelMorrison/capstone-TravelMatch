@@ -8,6 +8,7 @@ export const getAllTripPlanningLists = () => {
 export const getTripPlanningListById = (tripId) => {
     return fetch(`${remoteURL}/TripPlanningLists/?tripId=${tripId}`)
         .then(result => result.json())
+        .then(result => result[0])
 };
 
 export const addNewPlan = (plan) => {

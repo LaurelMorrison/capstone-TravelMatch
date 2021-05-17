@@ -91,7 +91,9 @@ export const TripChecklist = () => {
                 packingList: [],
                 dayActivities: dayActivityMockData,
                 tripId: tripId,
-                startDate: dates.startDate
+                name: currentTrip.tripName
+                // startDate: dates.startDate,
+                // endDate: dates.endDate
             }}
 
 
@@ -100,11 +102,12 @@ export const TripChecklist = () => {
                 setTimeout(() => {
                     values.startDate = dates.startDate.toISOString()
                     values.endDate = dates.endDate.toISOString()
+                    addNewPlan(values)
+                        .then((tripPlans) => {
+                            history.push(`/tripPlans/${tripPlans.tripId}`)
+                        })
                 }, 500);
-                addNewPlan(values)
-                    .then((tripPlans) => {
-                        history.push(`/tripPlans/${tripPlans.tripId}`)
-                    })
+
             }}
         >
             {({ submitForm, isSubmitting, values, setFieldValue }) => (

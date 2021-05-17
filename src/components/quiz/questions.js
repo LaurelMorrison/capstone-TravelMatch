@@ -319,5 +319,3 @@ export const QuizQuestions = (question) => {
         </form >
     )
 }
-
-export default QuizQuestions;
