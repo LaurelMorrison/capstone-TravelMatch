@@ -18,7 +18,7 @@ export const DestinationCard = ({ result }) => {
 
     return (
         <div className="resultCard" id={result.id}>
-
+            {/* {result.id} */}
             <Grid container justify="center">
                 <Grid item xs={3} >
                     <div className="cardImage">

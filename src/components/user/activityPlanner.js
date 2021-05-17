@@ -50,7 +50,6 @@ const getListStyle = isDraggingOver => ({
 
 
 const emptyActivity = {
-    activityType: '',
     name: '',
     detail: '',
     confirmationNumber: ''
@@ -137,7 +136,7 @@ export const ActivityList = ({ dayActivities, setDayActivities }) => {
             <div style={{ display: "flex" }}>
                 <Modal open={open}>
                     <div style={modalStyle} className={classes.paper}>
-                        <div className="activityTypeDropdown">
+                        {/* <div className="activityTypeDropdown">
                             <label id="activityType">Type: </label>
                             <select className="typeDropdown" name="tripType" value={newActivity.activityType} onChange={setFormValue}>
                                 <option value="" defaultValue hidden>Choose a type</option>
@@ -146,7 +145,7 @@ export const ActivityList = ({ dayActivities, setDayActivities }) => {
                                 <option className="dropdown" value="food"> Food</option>
                                 <option className="dropdown" value="accomodation" > Accomodation</option>
                             </select>
-                        </div>
+                        </div> */}
                         <div>
                             <label>Name: </label>
                             <input type="text" value={newActivity.name} id="name" onChange={setFormValue} />
@@ -203,7 +202,6 @@ export const ActivityList = ({ dayActivities, setDayActivities }) => {
                                                                 "space-around"
                                                         }}>
                                                         <div className="activityCard">
-                                                            <p>Type: {item.activityType}</p>
                                                             <p>Name: {item.name}</p>
                                                             <p>Time: {item.time}</p>
                                                             <p>Confirmation #: {item.confirmationNumber}</p>

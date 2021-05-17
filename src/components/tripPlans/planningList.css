@@ -1,0 +1,44 @@
+.checkboxList {
+  display: flex;
+  column-count: 2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.checkBoxIcon {
+  margin: 0;
+  width: 50px;
+  background-color: #ab5c3a;
+}
+
+.checkBoxIcon:checked {
+  background-color: #ab5c3a;
+}
+
+.checkBoxIcon:checked:after {
+  background-color: #ab5c3a;
+}
+
+.tripPlanList {
+  padding: 0px 0px 20px 50px;
+}
+
+.TripDetailOverview {
+  margin-bottom: 40px;
+}
+
+.TripDetailItinerary {
+  margin-bottom: 40px;
+}
+
+.TripDetailPacking {
+  margin-bottom: 40px;
+}
+
+hr {
+  background-color: #ab5c3a;
+  height: 3px;
+  border: 0;
+}
