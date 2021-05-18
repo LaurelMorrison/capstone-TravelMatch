@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Route } from "react-router-dom"
 import { Homepage } from './home/home'
 import { QuizQuestions } from './quiz/questions'
@@ -13,7 +13,6 @@ import { PlanningList } from './tripPlans/planninglist'
 export const ApplicationViews = () => {
   return (
     <>
-
       <Route exact path="/">
         <Homepage />
       </Route>
@@ -49,6 +48,7 @@ export const ApplicationViews = () => {
       <Route exact path="/tripPlans/:tripId(\d+)">
         <PlanningList />
       </Route>
+
     </>
   )
 }

@@ -203,7 +203,7 @@ export const ActivityList = ({ dayActivities, setDayActivities }) => {
                                                         }}>
                                                         <div className="activityCard">
                                                             <p>Name: {item.name}</p>
-                                                            <p>Time: {item.time}</p>
+                                                            <p>Detail: {item.detail}</p>
                                                             <p>Confirmation #: {item.confirmationNumber}</p>
                                                             <button
                                                                 type="button"

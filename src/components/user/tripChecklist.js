@@ -32,33 +32,29 @@ const dayActivityMockData = [
     [
         {
             id: '1',
-            activityType: activityTypes.flight,
-            name: 'Flight from boston to mars',
-            detail: 'Departs at 2am, arrives at 8pm',
-            confirmationNumber: '123'
+            name: 'Flight (Bos to PDL)',
+            detail: 'Departs at 10:15am, arrives at 11:45pm',
+            confirmationNumber: 'AZ21FL'
         },
         {
             id: '2',
-            activityType: activityTypes.food,
-            name: 'dinner at the airport',
-            detail: 'Maybe Red Lobster?',
-            confirmationNumber: '123'
+            name: 'Scuba Diving - local reef',
+            detail: 'Boat leaves at 11am',
+            confirmationNumber: 'N/A'
         },
     ],
     [
         {
             id: '3',
-            activityType: activityTypes.activity,
             name: 'Skydiving',
             detail: 'departs at 3pm',
-            confirmationNumber: '123'
+            confirmationNumber: 'N/A'
         },
         {
             id: '4',
-            activityType: activityTypes.accomodation,
-            name: '1 night at the Ritz',
-            detail: 'Check-in is at 10am',
-            confirmationNumber: '123'
+            name: 'Dinner at The Gardner',
+            detail: 'Reservation is at 7pm',
+            confirmationNumber: 'N/A'
         },
     ],
 ]
@@ -92,8 +88,6 @@ export const TripChecklist = () => {
                 dayActivities: dayActivityMockData,
                 tripId: tripId,
                 name: currentTrip.tripName
-                // startDate: dates.startDate,
-                // endDate: dates.endDate
             }}
 
 

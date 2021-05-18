@@ -19,7 +19,7 @@ export const TripCard = ({ result, handleDeleteTrip }) => {
                     </div>
                 </Grid>
                 <Grid item xs={12} >
-                    <div className="buttonSpotBox">
+                    <div className="accountButtonSpotBox">
                         <button type="button" className="button" onClick={() => {
                             history.push(`/tripList/${result.id}`)
                         }}>Trip Details</button>
