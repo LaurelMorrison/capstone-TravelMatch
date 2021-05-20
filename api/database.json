@@ -65,30 +65,17 @@
       "id": 2
     },
     {
-      "locationID": 22,
-      "tripName": "Bachelorette",
-      "tripType": "Friends Trip",
-      "locationName": "New York, New York",
-      "locationActivities": "There is a lot to see and do in New York. From seeing the Statue of Liberty to going to a show on broadway to visiting Central Park, NY has a lot of adventures to offer.",
-      "locationTime": "April, May, June, September",
-      "locationDescription": "New York has to be one of the most famous cities in the world. Often referred to as the 'Big Apple', this vibrant city is known for its exclusive shops, flashy Broadway performances, and high-flying business tycoons, and it's a city that has long captivated people from all over the world.",
-      "userId": 1,
-      "locationImage": "../../images/newyork.jpg",
-      "score": 6,
-      "id": 19
-    },
-    {
-      "locationID": 12,
+      "locationID": 10,
       "tripName": "Family Reunion",
       "tripType": "Family Vacay",
-      "locationName": "Florida Keys",
-      "locationActivities": "Checkout the main strip in Key West, go on a road trip on the Overseas Hwy, go fishing or on a boat excursion.",
-      "locationTime": "December, January, March, April",
-      "locationDescription": "It’s hard not to fall for South Florida, with its sun-kissed beaches, alluring islands and wildlife-rich wetlands.",
+      "locationName": "Maui, Hawaii",
+      "locationActivities": "When it comes to outdoor recreation, Maui wins best in show. Just look at that zipliner launching into a canopy of green. Or the mountain biker hurtling past eucalyptus and pine. Or go hiking with trails winding through lava flows and bamboo forests.",
+      "locationTime": "April, May, September, October",
+      "locationDescription": "Maui lures travelers with an invigorating mix of natural beauty and outdoor fun, all shared with warm alohas.",
       "userId": 1,
-      "locationImage": "../../images/keys.jpg",
+      "locationImage": "../../images/maui.jpg",
       "score": 6,
-      "id": 20
+      "id": 4
     },
     {
       "locationID": 3,
@@ -101,13 +88,26 @@
       "userId": 1,
       "locationImage": "../../images/azores.jpg",
       "score": 6,
-      "id": 22
+      "id": 5
+    },
+    {
+      "locationID": 18,
+      "tripName": "Graduation Trip",
+      "tripType": "Solo Adventure",
+      "locationName": "St.John, Virgin Islands",
+      "locationActivities": "Hiking and snorkeling are top of the to-do list. Trails wind by petroglyphs and sugar-mill ruins, and several drop out onto beaches prime for swimming, with turtles and spotted eagle rays.",
+      "locationTime": "January, February, March",
+      "locationDescription": "Two-thirds of St John is a protected national park, with gnarled trees and spiky cacti spilling over its edges. There are no airports or cruise-ship docks, and the usual Caribbean resorts are few and far between. It's blissfully low-key compared to its island neighbors.",
+      "userId": 1,
+      "locationImage": "../../images/stjohn.jpg",
+      "score": 5,
+      "id": 6
     }
   ],
   "userAnswers": [
     {
       "tripName": "Family Reunion",
-      "userId": 1,
+      "userId": 5,
       "response1": "beach",
       "response2": "apartment",
       "response3": "party",
@@ -118,71 +118,97 @@
       "id": 22
     },
     {
-      "tripName": "Honeymoon",
-      "userId": 1,
-      "response1": "bungee",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "tripType": "Solo Adventure",
-      "id": 23
-    },
-    {
-      "tripName": "Family Reunion",
-      "userId": 1,
-      "response1": "bungee",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "cook",
-      "response6": "$$",
-      "id": 24
-    },
-    {
-      "tripName": "Honeymoon",
-      "userId": 1,
-      "response1": "beach",
-      "response2": "",
-      "response3": "",
-      "response4": "",
-      "response5": "",
-      "response6": "",
-      "id": 25
-    },
-    {
-      "tripName": "Honeymoon",
+      "tripName": "hello",
       "userId": 1,
       "response1": "",
       "response2": "",
       "response3": "",
       "response4": "",
       "response5": "",
-      "response6": "$$",
-      "id": 26
+      "response6": "$$$$",
+      "tripType": "Solo Adventure",
+      "id": 46
     },
     {
-      "tripName": "Family Reunion",
+      "tripName": "hello",
       "userId": 1,
-      "response1": "beach",
+      "response1": "bungee",
+      "response2": "hotel",
+      "response3": "adventure",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "$$$",
+      "tripType": "Family Vacay",
+      "id": 47
+    },
+    {
+      "tripName": "Spring Getaway",
+      "userId": 1,
+      "response1": "cooking",
+      "response2": "bungalow",
+      "response3": "adventure",
+      "response4": "hot",
+      "response5": "restaurant",
+      "response6": "$$$",
+      "tripType": "Friends Trip",
+      "id": 58
+    },
+    {
+      "tripName": "kyle test-2",
+      "userId": 1,
+      "response1": "bar",
+      "response2": "boat",
+      "response3": "party",
+      "response4": "hot",
+      "response5": "wine",
+      "response6": "$",
+      "tripType": "Friends Trip",
+      "id": 65
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
       "response2": "",
       "response3": "",
       "response4": "",
-      "response5": "cook",
-      "response6": "",
-      "id": 27
+      "response5": "",
+      "response6": "$$$$",
+      "id": 66
     },
     {
-      "tripName": "Family Reunion",
+      "tripName": "hello",
       "userId": 1,
-      "response1": "beach",
+      "response1": "skiing",
+      "response2": "bungalow",
+      "response3": "relaxed",
+      "response4": "",
+      "response5": "cook",
+      "response6": "$$",
+      "tripType": "Friends Trip",
+      "id": 67
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
       "response2": "",
       "response3": "",
-      "response4": "hot",
+      "response4": "",
       "response5": "",
-      "response6": "",
-      "id": 28
+      "response6": "$",
+      "id": 68
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$$$",
+      "id": 69
     },
     {
       "tripName": "",
@@ -192,80 +218,65 @@
       "response3": "",
       "response4": "",
       "response5": "",
-      "response6": "$$$$",
-      "id": 29
-    },
-    {
-      "tripName": "honeymoon",
-      "userId": 1,
-      "response1": "beach",
-      "response2": "villa",
-      "response3": "adventure",
-      "response4": "moderate",
-      "response5": "seafood",
-      "response6": "$$$",
-      "tripType": "Couples Retreat",
-      "id": 30
-    },
-    {
-      "tripName": "kyle test-2",
-      "userId": 1,
-      "response1": "bungee",
-      "response2": "bungalow",
-      "response3": "adventure",
-      "response4": "moderate",
-      "response5": "wine",
-      "response6": "$$$$",
-      "tripType": "Friends Trip",
-      "id": 31
-    },
-    {
-      "tripName": "Honeymoon",
-      "userId": 1,
-      "response1": "beach",
-      "response2": "hotel",
-      "response3": "adventure",
-      "response4": "moderate",
-      "response5": "restaurant",
-      "response6": "$$$$",
-      "tripType": "Couples Retreat",
-      "id": 32
-    },
-    {
-      "tripName": "Bachelorette",
-      "userId": 1,
-      "response1": "shopping",
-      "response2": "apartment",
-      "response3": "learn",
-      "response4": "sweater",
-      "response5": "wine",
-      "response6": "$$",
-      "tripType": "Friends Trip",
-      "id": 33
+      "response6": "",
+      "id": 70
     },
     {
       "tripName": "Family Reunion",
       "userId": 1,
-      "response1": "snorkeling",
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$",
+      "id": 71
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "",
+      "id": 72
+    },
+    {
+      "tripName": "",
+      "userId": 1,
+      "response1": "",
+      "response2": "",
+      "response3": "",
+      "response4": "",
+      "response5": "",
+      "response6": "$$$",
+      "id": 73
+    },
+    {
+      "tripName": "Girls Trip",
+      "userId": 1,
+      "response1": "skiing",
+      "response2": "hotel",
+      "response3": "learn",
+      "response4": "snow",
+      "response5": "healthy",
+      "response6": "$$",
+      "tripType": "Friends Trip",
+      "id": 74
+    },
+    {
+      "tripName": "Family Reunion",
+      "userId": 1,
+      "response1": "beach",
       "response2": "bungalow",
       "response3": "relaxed",
       "response4": "moderate",
       "response5": "seafood",
       "response6": "$$",
       "tripType": "Family Vacay",
-      "id": 34
-    },
-    {
-      "tripName": "Graduation Trip",
-      "userId": 1,
-      "response1": "bungee",
-      "response2": "villa",
-      "response3": "adventure",
-      "response4": "moderate",
-      "response5": "wine",
-      "response6": "$$",
-      "tripType": "Solo Adventure",
-      "id": 35
+      "id": 75
     },
     {
       "tripName": "Honeymoon",
@@ -277,167 +288,28 @@
       "response5": "wine",
       "response6": "$$$",
       "tripType": "Couples Retreat",
-      "id": 36
+      "id": 76
+    },
+    {
+      "tripName": "Graduation Trip",
+      "userId": 1,
+      "response1": "snorkeling",
+      "response2": "bungalow",
+      "response3": "adventure",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "$$$",
+      "tripType": "Solo Adventure",
+      "id": 77
     }
   ],
   "TripPlanningLists": [
     {
       "userId": 1,
-      "id": 20,
+      "id": 8,
       "packingList": [
-        "computer",
-        "flip flops"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "3",
-            "activityType": "activity",
-            "name": "Skydiving",
-            "detail": "departs at 3pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "4",
-            "activityType": "accomodation",
-            "name": "1 night at the Ritz",
-            "detail": "Check-in is at 10am",
-            "confirmationNumber": "123"
-          }
-        ]
-      ],
-      "tripId": "11",
-      "startDate": "2021-05-19T16:00:00.000Z",
-      "endDate": "2021-05-29T16:00:00.000Z"
-    },
-    {
-      "userId": 1,
-      "id": 21,
-      "packingList": [
-        "gloves",
-        "hair brush"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "1",
-            "activityType": "flight",
-            "name": "Flight from boston to mars",
-            "detail": "Departs at 2am, arrives at 8pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "3",
-            "activityType": "activity",
-            "name": "Skydiving",
-            "detail": "departs at 3pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "4",
-            "activityType": "accomodation",
-            "name": "1 night at the Ritz",
-            "detail": "Check-in is at 10am",
-            "confirmationNumber": "123"
-          }
-        ]
-      ],
-      "tripId": "12",
-      "startDate": "2021-05-27T16:00:00.000Z",
-      "endDate": "2021-06-28T16:00:00.000Z"
-    },
-    {
-      "userId": 1,
-      "id": 22,
-      "packingList": [
-        "flip flops"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "1",
-            "activityType": "flight",
-            "name": "Flight from boston to mars",
-            "detail": "Departs at 2am, arrives at 8pm",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "3",
-            "activityType": "activity",
-            "name": "Skydiving",
-            "detail": "departs at 3pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "4",
-            "activityType": "accomodation",
-            "name": "1 night at the Ritz",
-            "detail": "Check-in is at 10am",
-            "confirmationNumber": "123"
-          }
-        ]
-      ],
-      "tripId": "12",
-      "startDate": "2021-05-19T16:00:00.000Z",
-      "endDate": "2021-06-22T16:00:00.000Z"
-    },
-    {
-      "userId": 1,
-      "id": 23,
-      "packingList": [
-        "flip flops"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "1",
-            "activityType": "flight",
-            "name": "Flight from boston to mars",
-            "detail": "Departs at 2am, arrives at 8pm",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "3",
-            "activityType": "activity",
-            "name": "Skydiving",
-            "detail": "departs at 3pm",
-            "confirmationNumber": "123"
-          }
-        ]
-      ],
-      "tripId": "14",
-      "startDate": "2021-05-19T16:00:00.000Z",
-      "endDate": "2021-05-28T16:00:00.000Z"
-    },
-    {
-      "userId": 1,
-      "id": 24,
-      "packingList": [
-        "gloves",
         "deodorant",
-        "emergency contact info"
+        "cash/currency"
       ],
       "dayActivities": [
         [
@@ -447,21 +319,6 @@
             "name": "Flight from boston to mars",
             "detail": "Departs at 2am, arrives at 8pm",
             "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
-          },
-          {
-            "activityType": "",
-            "name": "Tom",
-            "detail": "",
-            "confirmationNumber": "",
-            "": "food",
-            "id": "1621267267067"
           }
         ],
         [
@@ -471,226 +328,21 @@
             "name": "Skydiving",
             "detail": "departs at 3pm",
             "confirmationNumber": "123"
-          },
-          {
-            "id": "4",
-            "activityType": "accomodation",
-            "name": "1 night at the Ritz",
-            "detail": "Check-in is at 10am",
-            "confirmationNumber": "123"
           }
         ]
       ],
-      "tripId": "15",
-      "startDate": "2021-05-19T16:00:00.000Z",
-      "endDate": "2021-06-28T16:00:00.000Z"
+      "tripId": "1"
     },
     {
       "userId": 1,
-      "id": 25,
+      "id": 9,
       "packingList": [
-        "book",
-        "deodorant",
-        "dresses",
+        "hair ties/headband",
+        "emergency contact info",
         "glasses/contacts",
+        "cash/currency",
         "flip flops",
-        "hair brush",
-        "outlet converter"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "1",
-            "activityType": "flight",
-            "name": "Flight from boston to mars",
-            "detail": "Departs at 2am, arrives at 8pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
-          },
-          {
-            "activityType": "",
-            "name": "Beach Resort",
-            "detail": "3 nights, in the city",
-            "confirmationNumber": "html5",
-            "": "accomodation",
-            "id": "1621277227570"
-          }
-        ],
-        [
-          {
-            "activityType": "",
-            "name": "Laurel Morrison",
-            "detail": "on artic mountain, at 3pm",
-            "confirmationNumber": "",
-            "": "accomodation",
-            "id": "1621277243365"
-          }
-        ],
-        [
-          {
-            "activityType": "",
-            "name": "Laurel Morrison",
-            "detail": "on artic mountain, at 3pm",
-            "confirmationNumber": "",
-            "": "accomodation",
-            "id": "1621277255541"
-          }
-        ],
-        [
-          {
-            "activityType": "",
-            "name": "Fly back to boston",
-            "detail": "check-in is at 3",
-            "confirmationNumber": "gsdg",
-            "": "flight",
-            "id": "1621277280927"
-          }
-        ]
-      ],
-      "tripId": "16",
-      "startDate": "2021-09-13T16:00:00.000Z",
-      "endDate": "2021-09-23T16:00:00.000Z"
-    },
-    {
-      "userId": 1,
-      "id": 26,
-      "packingList": [
-        "glasses/contacts",
-        "deodorant",
-        "dresses",
-        "underwear"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "1",
-            "activityType": "flight",
-            "name": "Flight from boston to mars",
-            "detail": "Departs at 2am, arrives at 8pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "4",
-            "activityType": "accomodation",
-            "name": "1 night at the Ritz",
-            "detail": "Check-in is at 10am",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "3",
-            "activityType": "activity",
-            "name": "Skydiving",
-            "detail": "departs at 3pm",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "activityType": "",
-            "name": "Hilton Garden Inn Richmond Innsbrook",
-            "detail": "on artic mountain, at 3pm",
-            "confirmationNumber": "n/a",
-            "id": "1621279157046"
-          }
-        ]
-      ],
-      "tripId": "17",
-      "startDate": "2021-06-06T16:00:00.000Z",
-      "endDate": "2021-06-23T16:00:00.000Z"
-    },
-    {
-      "userId": 1,
-      "id": 27,
-      "packingList": [
-        "computer",
-        "flip flops",
-        "glasses/contacts",
-        "swimsuit",
-        "hat"
-      ],
-      "dayActivities": [
-        [
-          {
-            "id": "1",
-            "activityType": "flight",
-            "name": "Flight from boston to mars",
-            "detail": "Departs at 2am, arrives at 8pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "4",
-            "activityType": "accomodation",
-            "name": "1 night at the Ritz",
-            "detail": "Check-in is at 10am",
-            "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "id": "3",
-            "activityType": "activity",
-            "name": "Skydiving",
-            "detail": "departs at 3pm",
-            "confirmationNumber": "123"
-          },
-          {
-            "activityType": "",
-            "name": "Dinner",
-            "detail": "5-stary Restaurant",
-            "confirmationNumber": "under laurel",
-            "id": "1621279889180"
-          }
-        ],
-        [
-          {
-            "activityType": "",
-            "name": "Ritz",
-            "detail": "1 night in Portugal ",
-            "confirmationNumber": "nm123",
-            "": "accomodation",
-            "id": "1621279864087"
-          }
-        ]
-      ],
-      "tripId": "18",
-      "startDate": "2021-11-01T16:00:00.000Z",
-      "endDate": "2021-11-09T17:00:00.000Z"
-    },
-    {
-      "userId": 1,
-      "id": 28,
-      "packingList": [
-        "dresses",
-        "glasses/contacts",
-        "swimsuit",
-        "scarf",
-        "hair brush"
+        "deodorant"
       ],
       "dayActivities": [
         [
@@ -716,18 +368,7 @@
             "name": "Skydiving",
             "detail": "departs at 3pm",
             "confirmationNumber": "123"
-          }
-        ],
-        [
-          {
-            "activityType": "",
-            "name": "",
-            "detail": "",
-            "confirmationNumber": "",
-            "id": "1621281086470"
-          }
-        ],
-        [
+          },
           {
             "id": "4",
             "activityType": "accomodation",
@@ -737,13 +378,11 @@
           }
         ]
       ],
-      "tripId": "22",
-      "startDate": "2021-06-16T16:00:00.000Z",
-      "endDate": "2021-06-30T16:00:00.000Z"
+      "tripId": "1"
     },
     {
       "userId": 1,
-      "id": 29,
+      "id": 10,
       "packingList": [
         "glasses/contacts"
       ],
@@ -755,13 +394,6 @@
             "name": "Flight from boston to mars",
             "detail": "Departs at 2am, arrives at 8pm",
             "confirmationNumber": "123"
-          },
-          {
-            "id": "2",
-            "activityType": "food",
-            "name": "dinner at the airport",
-            "detail": "Maybe Red Lobster?",
-            "confirmationNumber": "123"
           }
         ],
         [
@@ -781,9 +413,178 @@
           }
         ]
       ],
-      "tripId": "20",
-      "startDate": "2021-06-14T16:00:00.000Z",
-      "endDate": "2021-06-22T16:00:00.000Z"
+      "tripId": "1"
+    },
+    {
+      "userId": 1,
+      "id": 11,
+      "packingList": [
+        "hair brush",
+        "flip flops"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "activityType": "flight",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "4",
+            "activityType": "accomodation",
+            "name": "1 night at the Ritz",
+            "detail": "Check-in is at 10am",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "activityType": "activity",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          }
+        ]
+      ],
+      "tripId": "1"
+    },
+    {
+      "userId": 1,
+      "id": 12,
+      "packingList": [
+        "hair brush"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "name": "Flight from boston to mars",
+            "detail": "Departs at 2am, arrives at 8pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "2",
+            "name": "dinner at the airport",
+            "detail": "Maybe Red Lobster?",
+            "confirmationNumber": "123"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "123"
+          },
+          {
+            "id": "4",
+            "name": "1 night at the Ritz",
+            "detail": "Check-in is at 10am",
+            "confirmationNumber": "123"
+          }
+        ]
+      ],
+      "tripId": "1"
+    },
+    {
+      "userId": 1,
+      "id": 13,
+      "packingList": [
+        "gloves",
+        "hair brush"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "name": "Flight (Bos to PDL)",
+            "detail": "Departs at 10:15am, arrives at 11:45pm",
+            "confirmationNumber": "AZ21FL"
+          },
+          {
+            "id": "2",
+            "name": "Scuba Diving - local reef",
+            "detail": "Boat leaves at 11am",
+            "confirmationNumber": "N/A"
+          }
+        ],
+        [
+          {
+            "id": "4",
+            "name": "Dinner at The Gardner",
+            "detail": "Reservation is at 7pm",
+            "confirmationNumber": "N/A"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "N/A"
+          }
+        ]
+      ],
+      "tripId": "4",
+      "startDate": "2021-05-19T16:00:00.000Z",
+      "endDate": "2021-05-27T16:00:00.000Z"
+    },
+    {
+      "userId": 1,
+      "id": 14,
+      "packingList": [
+        "hat",
+        "glasses/contacts",
+        "swimsuit"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "name": "Flight (Bos to PDL)",
+            "detail": "Departs at 10:15am, arrives at 11:45pm",
+            "confirmationNumber": "AZ21FL"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "N/A"
+          }
+        ],
+        [
+          {
+            "id": "4",
+            "name": "Dinner at The Gardner",
+            "detail": "Reservation is at 7pm",
+            "confirmationNumber": "N/A"
+          },
+          {
+            "id": "2",
+            "name": "Scuba Diving - local reef",
+            "detail": "Boat leaves at 11am",
+            "confirmationNumber": "N/A"
+          }
+        ],
+        [
+          {
+            "name": "Flight home",
+            "detail": "departs at 3pm, arrives 2am",
+            "confirmationNumber": "flight",
+            "id": "1621432291474"
+          }
+        ]
+      ],
+      "tripId": "6",
+      "startDate": "2021-08-08T16:00:00.000Z",
+      "endDate": "2021-08-11T16:00:00.000Z"
     }
   ],
   "Locations": [
