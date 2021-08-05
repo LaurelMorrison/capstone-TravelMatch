@@ -33,7 +33,6 @@ export const PlanningList = () => {
             .then(setTripPlan)
     }
 
-    console.log(tripId)
     useEffect(() => {
         getCurrentTrip(tripId)
         getCurrentTripPlan(tripId)

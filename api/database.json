@@ -92,8 +92,8 @@
     },
     {
       "locationID": 18,
-      "tripName": "Graduation Trip",
-      "tripType": "Solo Adventure",
+      "tripName": "Graduating NSS Trip",
+      "tripType": "Friends Trip",
       "locationName": "St.John, Virgin Islands",
       "locationActivities": "Hiking and snorkeling are top of the to-do list. Trails wind by petroglyphs and sugar-mill ruins, and several drop out onto beaches prime for swimming, with turtles and spotted eagle rays.",
       "locationTime": "January, February, March",
@@ -101,7 +101,20 @@
       "userId": 1,
       "locationImage": "../../images/stjohn.jpg",
       "score": 5,
-      "id": 6
+      "id": 7
+    },
+    {
+      "locationID": 7,
+      "tripName": "Andy Collins",
+      "tripType": "Friends Trip",
+      "locationName": "Bora Bora, French Polynesia",
+      "locationActivities": "From going on a boat tour to visiting a stunning beach, Bora Bora offers peak relaxation and adventure activities.",
+      "locationTime": "November, December, January, February",
+      "locationDescription": "How not to be mesmerised by this stunning palette of sapphire, indigo and turquoise, all mixed together in modern-art abstractions? And these sand-edged motu (islets) and soaring rainforest-covered basaltic peaks? With such a dreamlike setting, Bora Bora is, unsurprisingly, a honeymooners’ choice. ",
+      "userId": 1,
+      "locationImage": "../../images/bora.jpg",
+      "score": 4,
+      "id": 8
     }
   ],
   "userAnswers": [
@@ -301,6 +314,42 @@
       "response6": "$$$",
       "tripType": "Solo Adventure",
       "id": 77
+    },
+    {
+      "tripName": "Graduating NSS Trip",
+      "userId": 1,
+      "response1": "beach",
+      "response2": "resort",
+      "response3": "adventure",
+      "response4": "hot",
+      "response5": "wine",
+      "response6": "$$$",
+      "tripType": "Friends Trip",
+      "id": 78
+    },
+    {
+      "tripName": "laurel laurel",
+      "userId": 1,
+      "response1": "cooking",
+      "response2": "bungalow",
+      "response3": "adventure",
+      "response4": "sweater",
+      "response5": "wine",
+      "response6": "$$$",
+      "tripType": "Friends Trip",
+      "id": 79
+    },
+    {
+      "tripName": "Andy Collins",
+      "userId": 1,
+      "response1": "bungee",
+      "response2": "resort",
+      "response3": "pampered",
+      "response4": "moderate",
+      "response5": "wine",
+      "response6": "$$$$",
+      "tripType": "Friends Trip",
+      "id": 80
     }
   ],
   "TripPlanningLists": [
@@ -585,6 +634,50 @@
       "tripId": "6",
       "startDate": "2021-08-08T16:00:00.000Z",
       "endDate": "2021-08-11T16:00:00.000Z"
+    },
+    {
+      "userId": 1,
+      "id": 15,
+      "packingList": [
+        "flip flops",
+        "deodorant",
+        "book"
+      ],
+      "dayActivities": [
+        [
+          {
+            "id": "1",
+            "name": "Flight (Bos to PDL)",
+            "detail": "Departs at 10:15am, arrives at 11:45pm",
+            "confirmationNumber": "AZ21FL"
+          },
+          {
+            "id": "2",
+            "name": "Scuba Diving - local reef",
+            "detail": "Boat leaves at 11am",
+            "confirmationNumber": "N/A"
+          }
+        ],
+        [
+          {
+            "id": "4",
+            "name": "Dinner at The Gardner",
+            "detail": "Reservation is at 7pm",
+            "confirmationNumber": "N/A"
+          }
+        ],
+        [
+          {
+            "id": "3",
+            "name": "Skydiving",
+            "detail": "departs at 3pm",
+            "confirmationNumber": "N/A"
+          }
+        ]
+      ],
+      "tripId": "7",
+      "startDate": "2021-10-20T16:00:00.000Z",
+      "endDate": "2021-10-28T16:00:00.000Z"
     }
   ],
   "Locations": [
